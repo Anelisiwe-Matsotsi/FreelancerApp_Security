@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 // dotenv allows us to call in sensitive information from a .env file, rather than hard-coding it (think appsettings.json)
 require("dotenv").config();
 
-// here we create a database object
+// creating database
 const database = {
   // that includes a start method (that accepts 0 parameters)
   start: async () => {
