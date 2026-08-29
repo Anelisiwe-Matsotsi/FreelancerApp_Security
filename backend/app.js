@@ -1,3 +1,4 @@
+//(Rudman, 2026)
 // here we import express, which allows us to create an instance of the API and web server
 const express = require("express");
 
@@ -11,9 +12,12 @@ const setupSecurity = require("./middleware/securityMiddleware.js");
 
 // here, we call in all of our routing files, allowing us to map them later on in the file
 const homeRoutes = require("./routes/homeRoutes.js");
-const bookRoutes = require("./routes/bookRoutes.js");
-const authRoutes = require("./routes/authRoutes.js");
+const authRoutes = require("./routes/authRoutes.js"); //user login and register 
+const gigRoutes = require("./routes/gigRoutes.js"); // CRUD gigs
+const bookingRoutes = require("./routes/bookingRoutes.js"); //client books gigs
+const transactionRoutes = require("./routes/transactionRoutes.js"); //record payments 
 
+//(W3Schools, 2026)
 // the first step in creating the API, is to create a singleton (single instance) of the express library to call in throughout the whole app
 const app = express();
 
@@ -33,8 +37,11 @@ setupSecurity(app);
 
 // then, you need to map the routes to specific endpoints, so that the user/client is able to access them
 app.use("/api/home", homeRoutes);
-app.use("/api/books", bookRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/gig", gigRoutes);
+app.use("/api/booking", bookingRoutes);
+app.use("/api/transaction", transactionRoutes);
+
 
 // lastly, we tell the application to start listening. we need to specify a port for the app to listen on, in this case, 3000
 // we do this using a then function. it does something first (in this case, connects to the database), THEN starts the listening for connections
@@ -44,3 +51,10 @@ database.start().then(() => {
     console.log("API started on port 3000");
   });
 });
+
+/*
+References
+
+Rudman, G., 2026. insy7314-library (Version 1.0) [Source Code] Available at: < https://github.com/rudderz243/insy7314-library > [Accessed 29 August 2026]
+W3Schools. 2026. Node.js HTTPS Module (Version 1.0) [Source Code] Available at: < https://www.w3schools.com/nodejs/nodejs_https.asp > [Accessed 29 August 2026]
+*/
