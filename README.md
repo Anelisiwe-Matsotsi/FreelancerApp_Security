@@ -5,7 +5,7 @@
 To run the backend application, follow the following steps:  
 
 **Step 1:** In the 'backend' folder, craete a new file called `.env`<br>
-**Step 2:** Add your environment variables to '.env':<br>
+**Step 2:** Add your environment variables to `.env`:<br>
 `CONN_STRING=your_mongodb_connection_string`<br>
 `JWT_SECRET=your_jwt_secret_key`<br>
 **Step 3:** Open a new terminal and navigate into the backend folder: `cd backend`<br>
@@ -26,8 +26,8 @@ The frontend application server will run on `http://localhost:5173`
 ## Packages to install 📦
 
 ### Backend Packages 🔙🔚
-**Step 1:** Open a new terminal and navigate into the backend folder: 'cd backend'<br>
-**Step 2:** Install the required packages: 'npm i express mongoose dotenv cors bcryptjs jsonwebtoken nodemon' <br>
+**Step 1:** Open a new terminal and navigate into the backend folder: `cd backend`<br>
+**Step 2:** Install the required packages: `npm i express mongoose dotenv cors bcryptjs jsonwebtoken nodemon` <br>
 
 ### Frontend Setup and Packages 🚪
 **Step 1:** Create and setup the Vite React TypeScript frontend. Open a new terminal and type the following:<br> `npx create-vite@latest frontend --template react-ts`<br>
@@ -72,6 +72,7 @@ The `.env` must be added to the `.gitignore` file so that the secret keys are no
 ## Testing with Postman 📫
 The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate hanling of invalid user input.
 
+## Request Flow
 
 ## References 📖
 Aravind, 2024. How to use env file in backend db. [online] Available at: < https://medium.com/engineeringcreativity/how-to-use-env-file-in-backend-db-e20d5480986f > [Accessed 29 August 2026] <br>
