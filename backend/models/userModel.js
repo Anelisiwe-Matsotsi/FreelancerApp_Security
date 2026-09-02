@@ -59,7 +59,7 @@ module.exports = mongoose.model("User", userSchema);
 
 /*Reference List:
 Medium. 2024. Mastering User Authentication: Building a Secure User Schema with Mongoose and Bcrypt. (Version 1.0) [Source Code] Available at: <https://medium.com/@finnkumar6/mastering-user-authentication-building-a-secure-user-schema-with-mongoose-and-bcrypt-539b9394e5d9> [Accessed 2 September 2026].
-rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/models/userModel.js> [Accessed 2 September 2026]. 
 Stack Overflow. 2019. Mongoose schema: Validating unique field, case insensitive. (Version 1.0) [Source Code] Available at: <https://stackoverflow.com/questions/13991604/mongoose-schema-validating-unique-field-case-insensitive> [Accessed 2 September 2026].
  
 */
