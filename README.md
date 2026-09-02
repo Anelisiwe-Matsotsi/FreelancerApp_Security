@@ -51,7 +51,7 @@ The frontend application server will run on `http://localhost:5173`
 |Package|Reason|
 |:------|:-----|
 |React | JavaScript UI framework for single page applications with dynamic updates (Dissanayake, 2026) |
-|React-DOM | Package offers DOM-specific methods to interact with the Document Object Model (DOM) for effectie management of web page elements (GeeksforGeeks, 2025) |
+|React-DOM | Package offers DOM-specific methods to interact with the Document Object Model (DOM) for effective management of web page elements (GeeksforGeeks, 2025) |
 |React-Router-Dom | Library that mitigates the gap between developers defining routes, linking components to URLs and seamless user experience (Dissanayake, 2026) |
 |Vite | Best tool for fast bundling and cleaner imports (Edmonds, 2025) |
 |TypeScript | Offers type safety and syntax support for code uniformity (Edmonds, 2025) |
