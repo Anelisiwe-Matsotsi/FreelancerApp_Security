@@ -6,11 +6,10 @@ const bcrypt = require("bcryptjs");
 
 
 const userSchema = new mongoose.Schema({
-  username: {
+  username: { /*Stack Overflow, 2019 */
     type: String,
     required: true,
     trim: true,
-    /*Stack Overflow, 2019 */
     minlength: 3,
     maxlength: 50,
   },
@@ -46,23 +45,20 @@ userSchema.pre("save", async function () {
   } catch (error) {
     /*Medium, 2024 */
     //Show an error message if the password hashing fails
-    console.log("Error hashing password:", error);
     throw new Error("Error hashing password");
   }
 });
 
-// write a helper function to compare the user input when logging in (which is plain text), with the seasoned password
-// in our database
+// A function used to compare an entered password with the hashed password stored in the database for a user
 userSchema.methods.matchPassword = async function (enteredPassword) {
-  /// uses the compare method to compare (wow)
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
-// export the model so that it can be used elsewhere :)
+//Export the user model
 module.exports = mongoose.model("User", userSchema);
 
 /*Reference List:
-Medium. 2024. Mastering User Authentication: Building a Secure User Schema with Mongoose and Bcrypt. (Version 1.0) [Source Code]
+Medium. 2024. Mastering User Authentication: Building a Secure User Schema with Mongoose and Bcrypt. (Version 1.0) [Source Code] Available at: <https://medium.com/@finnkumar6/mastering-user-authentication-building-a-secure-user-schema-with-mongoose-and-bcrypt-539b9394e5d9> [Accessed 2 September 2026].
 rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
 Stack Overflow. 2019. Mongoose schema: Validating unique field, case insensitive. (Version 1.0) [Source Code] Available at: <https://stackoverflow.com/questions/13991604/mongoose-schema-validating-unique-field-case-insensitive> [Accessed 2 September 2026].
  
