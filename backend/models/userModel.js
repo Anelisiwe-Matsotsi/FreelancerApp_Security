@@ -1,13 +1,17 @@
-// mongoose = allows us to interact with a mongo db
+/*rudderz243, 2026*/
+//Imports moongoose 
 const mongoose = require("mongoose");
-// bcrypt - it handles crpytography operations in our codebase (hashing)
+//Imports bcryptjs to hash and salt the password
 const bcrypt = require("bcryptjs");
 
+
 const userSchema = new mongoose.Schema({
-  username: {
+  username: { /*Stack Overflow, 2019 */
     type: String,
     required: true,
     trim: true,
+    minlength: 3,
+    maxlength: 50,
   },
   email: {
     type: String,
@@ -22,39 +26,40 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ["patron", "librarian"],
-    default: "patron",
+    enum: ["client", "freelancer", "admin"],
+    default: "client",
   },
 });
 
-// hook function -> is something that runs when something else is called
-// when we save the user -> a hook function will run to do something before the user is saved
+//This is a pre-save hook that will run before the user is saved to the database
 userSchema.pre("save", async function () {
-  // remove next from the brackets
-  // if the user is not modifying their password, we can skip this step
   if (!this.isModified("password")) {
-    return; //remove next() here;
+    return; 
   }
-  // otherwise, if it is a new user, or the user is updating their password, we must hash/salt the password
+
   try {
-    // 1st => season the password with some salt
+    //Generates a salt and hashes the password for security purposes
     const salt = await bcrypt.genSalt(10);
-    // 2 => we combine the salt with the users password
     this.password = await bcrypt.hash(this.password, salt);
-    // 3 => once the password is appropriately seasoned, we move to the next step, which is saving
-    // remove next();
+
   } catch (error) {
-    // change next(error) to:
-    console.log(error.message);
+    /*Medium, 2024 */
+    //Show an error message if the password hashing fails
+    throw new Error("Error hashing password");
   }
 });
 
-// write a helper function to compare the user input when logging in (which is plain text), with the seasoned password
-// in our database
+// A function used to compare an entered password with the hashed password stored in the database for a user
 userSchema.methods.matchPassword = async function (enteredPassword) {
-  /// uses the compare method to compare (wow)
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
-// export the model so that it can be used elsewhere :)
+//Export the user model
 module.exports = mongoose.model("User", userSchema);
+
+/*Reference List:
+Medium. 2024. Mastering User Authentication: Building a Secure User Schema with Mongoose and Bcrypt. (Version 1.0) [Source Code] Available at: <https://medium.com/@finnkumar6/mastering-user-authentication-building-a-secure-user-schema-with-mongoose-and-bcrypt-539b9394e5d9> [Accessed 2 September 2026].
+rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/models/userModel.js> [Accessed 2 September 2026]. 
+Stack Overflow. 2019. Mongoose schema: Validating unique field, case insensitive. (Version 1.0) [Source Code] Available at: <https://stackoverflow.com/questions/13991604/mongoose-schema-validating-unique-field-case-insensitive> [Accessed 2 September 2026].
+ 
+*/
