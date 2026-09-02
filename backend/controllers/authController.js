@@ -81,8 +81,8 @@ const loginUser = async (req, res) => {
 module.exports = { registerUser, loginUser };
 
 /*Reference List:
-Medium. 2025. JWT Authentication in MERN Apps: A Beginner-Friendly Guide. (Version 2.0) [Source Code] Available at: <https://medium.com/@adityamohiteakm/jwt-authentication-in-mern-apps-a-beginner-friendly-guide-00ed6b6405fc> [Accessed 2 September 2026].
-rudderz243. 2026. authController.(Version 2.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+Medium. 2025. JWT Authentication in MERN Apps: A Beginner-Friendly Guide. (Version 1.0) [Source Code] Available at: <https://medium.com/@adityamohiteakm/jwt-authentication-in-mern-apps-a-beginner-friendly-guide-00ed6b6405fc> [Accessed 2 September 2026].
+rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
 
 */
 
