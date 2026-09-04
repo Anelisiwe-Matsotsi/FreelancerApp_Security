@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+/*rudderz243, 2026*/
 const corsOptions = {
   origin: "https://localhost:5173",
   credentials: true,

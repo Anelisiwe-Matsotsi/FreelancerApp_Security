@@ -1,11 +1,11 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel.js");
-
+/*rudderz243, 2026*/
 // validate the user authentication token
 const validateAuth = async (req, res, next) => {
   let token;
-
-  // checks for the presence of the token
+/*Medium, 2025 */
+  // checks if token is present
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith("Bearer")
