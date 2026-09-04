@@ -1,11 +1,11 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel.js");
-
+/*rudderz243, 2026*/
 // validate the user authentication token
 const validateAuth = async (req, res, next) => {
   let token;
-
-  // checks for the presence of the token
+/*Medium, 2025 */
+  // checks if token is present
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith("Bearer")
@@ -55,3 +55,8 @@ const validateRole = (...roles) => {
 };
 
 module.exports = { validateAuth, validateRole };
+/*Reference List:
+Medium. 2025. JWT Authentication in MERN Apps: A Beginner-Friendly Guide. (Version 1.0) [Source Code] Available at: <https://medium.com/@adityamohiteakm/jwt-authentication-in-mern-apps-a-beginner-friendly-guide-00ed6b6405fc> [Accessed 2 September 2026].
+rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+
+*/

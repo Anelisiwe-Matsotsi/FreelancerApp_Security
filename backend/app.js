@@ -12,9 +12,9 @@ const setupSecurity = require("./middleware/securityMiddleware.js"); //call the 
 // calling all the routing files, allowing us to map them later in the file
 const homeRoutes = require("./routes/homeRoutes.js"); //the HustleHub+ home page (to be designed in part 2)
 const authRoutes = require("./routes/authRoutes.js"); //user login and register 
-const gigRoutes = require("./routes/gigRoutes.js"); // CRUD for gigs
-const bookingRoutes = require("./routes/bookingRoutes.js"); //client books gigs
-const transactionRoutes = require("./routes/transactionRoutes.js"); //create transaction records & payments are simulated 
+//const gigRoutes = require("./routes/gigRoutes.js"); // CRUD for gigs
+//const bookingRoutes = require("./routes/bookingRoutes.js"); //client books gigs
+//const transactionRoutes = require("./routes/transactionRoutes.js"); //create transaction records & payments are simulated 
 
 //(W3Schools, 2026)
 // created a single instance of the express library for the API (singleton)
@@ -38,9 +38,9 @@ setupSecurity(app);
 //mapped the routes to specific endpoints for the users to be able to go to the respective pages for logging in, booking, transactions or viewing gigs
 app.use("/api/home", homeRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/api/gig", gigRoutes);
-app.use("/api/booking", bookingRoutes);
-app.use("/api/transaction", transactionRoutes);
+//app.use("/api/gig", gigRoutes);
+//app.use("/api/booking", bookingRoutes);
+//app.use("/api/transaction", transactionRoutes);
 
 
 //(StackOverflow, 2018)

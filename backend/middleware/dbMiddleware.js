@@ -25,3 +25,8 @@ const database = {
 
 // export all the methods to make them "public" (accessible in other files)
 module.exports = database;
+/*Reference List:
+
+rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+
+*/
