@@ -64,6 +64,17 @@ The backend need a `.env` file created in the backend folder with the following 
 
 The `.env` must be added to the `.gitignore` file so that the secret keys are not publicly exposed (Raj, 2026)
 
+## Backend Structure
+HustleHub's backend stucture follows a Express.js architecture. Different parts of the backend are seperated into folders according to their purpose.
+<img width="212" height="278" alt="image" src="https://github.com/user-attachments/assets/18ca05e7-55b3-4472-9eee-567695217ad5" />
+
+The controllers have the main logic for processing requests. For example, the authController.js controlls user registration and login.
+The models define how information is stored in the database. userModel.js is used to define the structure of a user which includes their username, email, password and role.
+The routes 
+
+
+      
+
 ## API Endpoints 🎯
 
 ### Auth Routes (`/api/auth`) 🔑
