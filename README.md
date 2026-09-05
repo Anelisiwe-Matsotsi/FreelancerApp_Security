@@ -70,13 +70,25 @@ The `.env` must be added to the `.gitignore` file so that the secret keys are no
 - `POST /api/auth/login`: Authenticates registered users that want to login by providing their email and password. This returns the users details and JWT token.
 
 ## Testing with Postman 📫
-The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate hanling of invalid user input.
+The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate handling of invalid user input.
 
 ## Request Flow
+We have made request flow diagram through draw.io that explain the how the registration and login works. Here is the draw.io link: https://advtechonline-my.sharepoint.com/:u:/g/personal/st10450661_myemeris_edu_za/IQBOT_ttlNjxRZcm__xfRiPzASp9BhzVXXjbveV-9cxir8k?e=0teh5K <br>
+The link can only be opended by My group members and Mr Glynn Rudman- I entered your AdvTech emails to authorize access to those emails.  
+<br>
+
+### Registration Request Flow
+<img width="334" height="461" alt="Image" src="https://github.com/user-attachments/assets/7debcc96-6475-462f-b654-043c43a9d843" /> 
+<br>
+
+### Login Request Flow
+<img width="339" height="458" alt="Image" src="https://github.com/user-attachments/assets/4d4d1a45-bfe2-43d9-8a01-b517cc8f4e6c" />
+<br>
 
 ## References 📖
 Aravind, 2024. How to use env file in backend db. [online] Available at: < https://medium.com/engineeringcreativity/how-to-use-env-file-in-backend-db-e20d5480986f > [Accessed 29 August 2026] <br>
 Dissanayake, 2026. React Router vs. React Router DOM: understanding the differences. [online] Available at: < https://www.syncfusion.com/blogs/post/react-router-vs-react-router-dom > [Accessed 29 August 2026] <br>
+Draw.io, 2026. Security-first diagramming for teams. [online] Available at: < https://www.drawio.com/ > [Accessed 5 September 2026] <br>
 Edmonds, T., 2025. Best Practices for React.js with Vite and TypeScript: What I use and why. [online] Available at: < https://medium.com/@taedmonds/best-practices-for-react-js-with-vite-and-typescript-what-i-use-and-why-f4482558ed89 > [Accessed 29 August 2026] <br>
 GeeksforGeeks, 2025. React JS ReactDOM. [online] Available at: < https://www.geeksforgeeks.org/reactjs/reactjs-reactdom/ > [Accessed 29 August 2026] <br>
 GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://www.geeksforgeeks.org/node-js/use-of-cors-in-node-js/ > [Accessed 29 August 2026] <br>
