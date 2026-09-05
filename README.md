@@ -74,41 +74,75 @@ The `.env` must be added to the `.gitignore` file so that the secret keys are no
 The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate handling of invalid user input. Below are screenshots of the tests done in postman.
 
 #### Register Client Request
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c3948ebb-f4a0-4ed2-89c1-735b197d36bf" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/cf7341d9-3606-4e12-a835-a36d8d70d6fa" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/fb28e656-5367-4552-ac96-c965c9bc120b" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c3948ebb-f4a0-4ed2-89c1-735b197d36bf" /> <br>
+This test displays the error handling that happens when a user tries to regsiter with an email address that already exists in the database. User cannot regsiter if a duplicate email address was already registered with it. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/cf7341d9-3606-4e12-a835-a36d8d70d6fa" /> <br>
+The error message displays when the user clicks the register button without providing a password. All fields need to be filles in for successfull registration. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/fb28e656-5367-4552-ac96-c965c9bc120b" /> <br>
+A client is successfully registered when they provide their email address, password, username and role. The default role is client.<br><br>
 
 
 #### Register Admin Request
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/17523ac5-4911-46d9-be4e-249b6e92006c" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/9f658ad7-73f6-4390-ae98-3de05f22503a" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/34713292-748b-47c8-aefc-a56f3cda8a44" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/17523ac5-4911-46d9-be4e-249b6e92006c" /><br>
+When a user (admin) tries to register with an existing email address. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/9f658ad7-73f6-4390-ae98-3de05f22503a" /><br>
+Error handling for when the user tries to register without providing an email address. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/34713292-748b-47c8-aefc-a56f3cda8a44" /> <br>
+Status Code 200 for a successfully created admin. All successfull registered users get a unique generated token assigned to their account. <br><br>
 
 
 #### Register Freelancer Request
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d1bd8e19-63b1-43ae-bab1-5b3b957f1116" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d718aa4f-4d55-4117-a6ab-89e248cd4d80" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f87ab8e4-9402-4e46-ba98-6f2ec2105159" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d1bd8e19-63b1-43ae-bab1-5b3b957f1116" /> <br>
+A successfully regsitered freelancer provides all the required details.<br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d718aa4f-4d55-4117-a6ab-89e248cd4d80" /> <br>
+If a freelancer tries to register with an existing email address the system informs them.<br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f87ab8e4-9402-4e46-ba98-6f2ec2105159" /> <br>
+Freelancer forgets to fill in their email then the system informs them that all details need to be provided to successfully register. <br><br>
 
 
 #### Login Client Request
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/acc9aaf7-05fe-4839-8345-c90e431ce0b4" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/bc2457db-c801-45fb-81a8-8a5d709a6495" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f5262eb0-9db3-4b66-9563-cb25b4b49887" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/fe4bbcd1-336d-4418-abae-a45c470efbf7" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/acc9aaf7-05fe-4839-8345-c90e431ce0b4" /> <br>
+Client logs in successfully by providing a registered email and password.<br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/bc2457db-c801-45fb-81a8-8a5d709a6495" /><br>
+Error message displays if client forget to enter their password.<br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f5262eb0-9db3-4b66-9563-cb25b4b49887" /><br>
+Clients that enter the wrong credentials are told that one of the two are wrong. The above example has the wrong password. Security is enhanced by not telling the user which one is wrong.<br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/fe4bbcd1-336d-4418-abae-a45c470efbf7" /><br>
+Error message displays when a client provides the wrong credentials.<br><br>
 
 
 #### Login Admin Request
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6a1638ef-fe59-43bf-873c-bec85b0803e8" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/b244e0f4-28a3-4b34-bc77-72b52eace06d" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/e4f130f5-fd7f-4a0a-b4a6-480e03c43b63" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1ada0540-0eea-4cef-be8f-a601d51144fc" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6a1638ef-fe59-43bf-873c-bec85b0803e8" /><br>
+Admin is successfully logged in. The system returns their role and token tied to their account. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/b244e0f4-28a3-4b34-bc77-72b52eace06d" /><br>
+Admin forgot to provide their email address during logging in. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/e4f130f5-fd7f-4a0a-b4a6-480e03c43b63" /><br>
+Testing what what happens when an admin provides the incorrect password. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1ada0540-0eea-4cef-be8f-a601d51144fc" /> <br>
+Testing what what happens when an admin provides the incorrect email address. <br><br>
+
 
 #### Login Freelancer Request
-<img width="1108" height="705" alt="Image" src="https://github.com/user-attachments/assets/e594880c-5090-4920-9a2c-64dc8e91c728" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/095aefa6-3cd5-4ac3-a8f5-d0584899d45a" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/3cebebcf-8384-4d94-aef2-ec2b8e26be3b" />
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" />
+<img width="1108" height="705" alt="Image" src="https://github.com/user-attachments/assets/e594880c-5090-4920-9a2c-64dc8e91c728" /><br>
+Tests shows how successfully log in is handled by the system. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/3cebebcf-8384-4d94-aef2-ec2b8e26be3b" /><br>
+Freelancer enters the wrong password thus the system does not allow them to enter. <br><br>
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" /><br>
+Test proves that the user needs to provide all details to successfully log in the freelancer. <br><br>
 
 
 ## Request Flow
