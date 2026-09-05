@@ -1,5 +1,5 @@
 # HustleHub+ System 🚀
-
+  
 ## How to run the App 💻
 ### Backend 🔙🔚
 To run the backend application, follow the following steps:  
@@ -23,6 +23,7 @@ To successfully run the frontend application, perform the following steps:
 
 The frontend application server will run on `http://localhost:5173`
 
+  
 ## Packages to install 📦
 
 ### Backend Packages 🔙🔚
@@ -70,11 +71,49 @@ The `.env` must be added to the `.gitignore` file so that the secret keys are no
 - `POST /api/auth/login`: Authenticates registered users that want to login by providing their email and password. This returns the users details and JWT token.
 
 ## Testing with Postman 📫
-The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate handling of invalid user input.
+The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate handling of invalid user input. Below are screenshots of the tests done in postman.
+
+#### Register Client Request
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/c3948ebb-f4a0-4ed2-89c1-735b197d36bf" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/cf7341d9-3606-4e12-a835-a36d8d70d6fa" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/fb28e656-5367-4552-ac96-c965c9bc120b" />
+
+
+#### Register Admin Request
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/17523ac5-4911-46d9-be4e-249b6e92006c" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/9f658ad7-73f6-4390-ae98-3de05f22503a" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/34713292-748b-47c8-aefc-a56f3cda8a44" />
+
+
+#### Register Freelancer Request
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d1bd8e19-63b1-43ae-bab1-5b3b957f1116" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/d718aa4f-4d55-4117-a6ab-89e248cd4d80" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f87ab8e4-9402-4e46-ba98-6f2ec2105159" />
+
+
+#### Login Client Request
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/acc9aaf7-05fe-4839-8345-c90e431ce0b4" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/bc2457db-c801-45fb-81a8-8a5d709a6495" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/f5262eb0-9db3-4b66-9563-cb25b4b49887" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/fe4bbcd1-336d-4418-abae-a45c470efbf7" />
+
+
+#### Login Admin Request
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6a1638ef-fe59-43bf-873c-bec85b0803e8" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/b244e0f4-28a3-4b34-bc77-72b52eace06d" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/e4f130f5-fd7f-4a0a-b4a6-480e03c43b63" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1ada0540-0eea-4cef-be8f-a601d51144fc" />
+
+#### Login Freelancer Request
+<img width="1108" height="705" alt="Image" src="https://github.com/user-attachments/assets/e594880c-5090-4920-9a2c-64dc8e91c728" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/095aefa6-3cd5-4ac3-a8f5-d0584899d45a" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/3cebebcf-8384-4d94-aef2-ec2b8e26be3b" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" />
+
 
 ## Request Flow
-We have made request flow diagram through draw.io that explain the how the registration and login works. Here is the draw.io link: https://advtechonline-my.sharepoint.com/:u:/g/personal/st10450661_myemeris_edu_za/IQBOT_ttlNjxRZcm__xfRiPzASp9BhzVXXjbveV-9cxir8k?e=0teh5K <br>
-The link can only be opended by My group members and Mr Glynn Rudman- I entered your AdvTech emails to authorize access to those emails.  
+We have made request flow diagram through draw.io that explain the how the registration and login works. Here is the draw.io link: <br> https://advtechonline-my.sharepoint.com/:u:/g/personal/st10450661_myemeris_edu_za/IQBOT_ttlNjxRZcm__xfRiPzASp9BhzVXXjbveV-9cxir8k?e=0teh5K <br>
+The link can only be opended by My group members and Mr Glynn Rudman- I entered your AdvTech emails to authorize access to those emails. The link directs you to a window that says you should download the filevto view it. Click the blue download button to view it successfully. 
 <br>
 
 ### Registration Request Flow
