@@ -1,10 +1,21 @@
 # HustleHub+ System 🚀
+
+## Overview 📋
+HustleHub+ is a secure freelance marketplace that allows clients and freelancers to connect with each other. Clients can search through different services, choose what they need and book a freelancer. Freelancers can create, advertise and manage the services they offer on the platform.
+
+The system is built using the MERN stack, which includes MongoDB, Express.js, React and Node.js (Medium, 2025). It has features such as user registration and login, JWT authentication, password hashing, input validation and role-based access control. Security is an important part of the system because HustleHub+ handles sensitive information such as user details, login credentials, bookings and financial transactions.
+
+## Intended Users👥
+HustleHub+ is designed for three main users:
+- **Clients:** People who are looking for freelance services. They browse through the available services and book a service that suits their needs.
+- **Freelancers:** People who offer services through the platform. They can advertise their services, manage their bookings and interact with clients.
+- **Administrators:** People who manage and maintain the platform. They have extra access that allows them to manage users and monitor the overall system.
   
 ## How to run the App 💻
 ### Backend 🔙🔚
 To run the backend application, follow the following steps:  
 
-**Step 1:** In the 'backend' folder, craete a new file called `.env`<br>
+**Step 1:** In the 'backend' folder, create a new file called `.env`<br>
 **Step 2:** Add your environment variables to `.env`:<br>
 `CONN_STRING=your_mongodb_connection_string`<br>
 `JWT_SECRET=your_jwt_secret_key`<br>
@@ -200,6 +211,7 @@ Draw.io, 2026. Security-first diagramming for teams. [online] Available at: < ht
 Edmonds, T., 2025. Best Practices for React.js with Vite and TypeScript: What I use and why. [online] Available at: < https://medium.com/@taedmonds/best-practices-for-react-js-with-vite-and-typescript-what-i-use-and-why-f4482558ed89 > [Accessed 29 August 2026] <br>
 GeeksforGeeks, 2025. React JS ReactDOM. [online] Available at: < https://www.geeksforgeeks.org/reactjs/reactjs-reactdom/ > [Accessed 29 August 2026] <br>
 GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://www.geeksforgeeks.org/node-js/use-of-cors-in-node-js/ > [Accessed 29 August 2026] <br>
+Medium. 2025. MERN Stack Architecture. [online] Available at: < https://medium.com/readers-club/mern-stack-architecture-6b7b5be94f78 > [Accessed 6 September 2026] <br> 
 Raj, 2026. Where to store JWT Secret Keys Safely (Do's and Dont's). [online] Available at: < https://jwtsecretkeygenerator.com/blog/where-to-store-jwt-secret-keys > [Accessed 29 August 2026] <br>
 Rangani, T., 2026. Why do we use npm install --save-dev nodemon in Node.js?. [online] Available at: < https://medium.com/@uyanhewagetr/why-do-we-use-npm-install-save-dev-nodemon-in-node-js-c0a1480df03f > [Accessed 29 August 2026] <br>
 Tamang, R., 2025. How to implement Role-Based Access Control (RBAC) in Node.js Applications. [online] Available at: < https://dev.to/rabindratamang/how-to-implement-role-based-access-control-rbac-in-nodejs-applications-1ed2 > [Accessed 29 August 2026] <br>
