@@ -66,9 +66,9 @@ The `.env` must be added to the `.gitignore` file so that the secret keys are no
 
 ## Backend Structure 🔙
 
-HustleHub is developed using the MERN stack, which consits of MongoDB, Express.js, React and Node.js. The  backend uses:
-
--Node.js: the runtime enviroment
+HustleHub is developed using the MERN stack, which consits of MongoDB, Express.js, React and Node.js.</br>
+The  backend uses: </br>
+-Node.js: the runtime enviroment </br>
 -Express.js:Used to create the API and handle HTTP requests. Express.js provides functionality for creating routes that respond to HTTP methods such as GET, POST, PUT, PATCH and DELETE (Postman, 2026).
 
 The backend has been seperated into different folders to keep the application organised and to seperate different responsibilities. This approach makes the code easier to understand and maintain because routes, controllers, models and middleware have different purposes, especially when structuring a REST API (Postman, 2026).
@@ -87,6 +87,16 @@ The models define the structure of the information stired in the MongoDB. The us
 The middleware folder contains funcutions that run during the request and response process. The authMiddleware.js for example checks wheter a user has provided a valid JWT before allowing access to protected routes. Middleware can also be used for authentication, authorisatiom and validation befor the request reaches the controller (Alamin,2026)
 
 The app.js file acts as the main application file. It loads Express, middleware and routes, connects the application to MongoDB and starts the HTTPS server.
+
+## Security Decisions 🔏
+For HustleHubs authentication and user management functionality the following security decisions were implemented: </br>
+- Password hashing
+- Token-based authentication
+- Input validation
+- Role based access control
+- HTTPS
+
+## Password Hashing 🔐
 
 ## API Endpoints 🎯
 
