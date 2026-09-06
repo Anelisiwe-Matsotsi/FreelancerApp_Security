@@ -64,6 +64,30 @@ The backend need a `.env` file created in the backend folder with the following 
 
 The `.env` must be added to the `.gitignore` file so that the secret keys are not publicly exposed (Raj, 2026)
 
+## Backend Structure 🔙
+
+HustleHub is developed using the MERN stack, which consits of MongoDB, Express.js, React and Node.js. The  backend uses:
+
+-Node.js: the runtime enviroment
+-Express.js:Used to create the API and handle HTTP requests. Express.js provides functionality for creating routes that respond to HTTP methods such as GET, POST, PUT, PATCH and DELETE (Postman, 2026).
+
+The backend has been seperated into different folders to keep the application organised and to seperate different responsibilities. This approach makes the code easier to understand and maintain because routes, controllers, models and middleware have different purposes, especially when structuring a REST API (Postman, 2026).
+The backend structure is: <br>
+ (Medium,2026)
+
+<img width="181" height="238" alt="image" src="https://github.com/user-attachments/assets/c093c40a-6bcb-4034-9fca-c3c7b46c876a" />
+
+
+ The routes folder contains the API endpoints and decides which controller should handle a particular request. For example authRoutes.js contains the registration and login routes. Express Router allows related routes to be grouped into seperate modules and then connected to the main application using app.use() (MDN,2026).
+
+The controllers contain the application logic for processing requests. For example, authController.js contains the registration and login logic. Seperating the controllers from routes means that the route is responsible for directing the request while the controller is responsible for managing what should happen to the request. This keeps the routing logic and request-processing logic organised (MDN,2026).
+
+The models define the structure of the information stired in the MongoDB. The userModel.js file for example defines the username, email, password and role fiels. Mongoose schemas provide  structure and validation rules for documents stored in MongoDB (Alamin,2026).
+
+The middleware folder contains funcutions that run during the request and response process. The authMiddleware.js for example checks wheter a user has provided a valid JWT before allowing access to protected routes. Middleware can also be used for authentication, authorisatiom and validation befor the request reaches the controller (Alamin,2026)
+
+The app.js file acts as the main application file. It loads Express, middleware and routes, connects the application to MongoDB and starts the HTTPS server.
+
 ## API Endpoints 🎯
 
 ### Auth Routes (`/api/auth`) 🔑
@@ -159,6 +183,7 @@ The link can only be opended by My group members and Mr Glynn Rudman- I entered 
 <br>
 
 ## References 📖
+Alamin-Coding, 2026. Building a Scalable E-Commerce Backend: The Complete Guide to Node.js, Express & MongoDB. [online] Available at: <https://medium.com/@md.alamin.coding/building-a-scalable-e-commerce-backend-the-complete-guide-to-node-js-express-mongodb-7134e9da049b>[Accessed 6 September 2026].<br>
 Aravind, 2024. How to use env file in backend db. [online] Available at: < https://medium.com/engineeringcreativity/how-to-use-env-file-in-backend-db-e20d5480986f > [Accessed 29 August 2026] <br>
 Dissanayake, 2026. React Router vs. React Router DOM: understanding the differences. [online] Available at: < https://www.syncfusion.com/blogs/post/react-router-vs-react-router-dom > [Accessed 29 August 2026] <br>
 Draw.io, 2026. Security-first diagramming for teams. [online] Available at: < https://www.drawio.com/ > [Accessed 5 September 2026] <br>
@@ -168,3 +193,4 @@ GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://ww
 Raj, 2026. Where to store JWT Secret Keys Safely (Do's and Dont's). [online] Available at: < https://jwtsecretkeygenerator.com/blog/where-to-store-jwt-secret-keys > [Accessed 29 August 2026] <br>
 Rangani, T., 2026. Why do we use npm install --save-dev nodemon in Node.js?. [online] Available at: < https://medium.com/@uyanhewagetr/why-do-we-use-npm-install-save-dev-nodemon-in-node-js-c0a1480df03f > [Accessed 29 August 2026] <br>
 Tamang, R., 2025. How to implement Role-Based Access Control (RBAC) in Node.js Applications. [online] Available at: < https://dev.to/rabindratamang/how-to-implement-role-based-access-control-rbac-in-nodejs-applications-1ed2 > [Accessed 29 August 2026] <br>
+Thavachelvan, S., 2026. Implementing JWT-Based Authentication Using Node.js and MongoDB. [online] Available at: < https://medium.com/@saruatwork/implementing-jwt-based-authentication-using-node-js-and-mongodb-2d6994e8811d > [Accessed 6 September 2026].
