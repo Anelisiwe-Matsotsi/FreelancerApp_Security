@@ -108,6 +108,15 @@ For HustleHubs authentication and user management functionality the following se
 - HTTPS
 
 ## Password Hashing 🔐
+HustleHub does not store the users passwords as plain text. Instead the bcrypt.js package is used to hash passwords before they are stored in MongoDB.</br>
+Password hashing turn a plaintext password into a fixed length scrambled string, a hashed value (Devinda,2026). This means that the original password will not be recoverable from the stored hash. Bycrypt has been particularly designed for password security and uses salting and adjustable computational cost to make cracking passwords more difficult (Devinda, 2026).</br>
+
+In the userModel.js, a Mongoose pre("save") function is used to hash the password before a user is saved:
+
+Plain-text password ➡️ bycrypt.genSalt(10) ➡️ bcrypt.hash()➡️ Hashed password➡️Stored in MongoDB
+
+
+
 
 ## API Endpoints 🎯
 
