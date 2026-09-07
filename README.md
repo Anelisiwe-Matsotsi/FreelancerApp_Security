@@ -12,8 +12,10 @@ HustleHub+ is designed for three main users:
 - **Administrators:** People who manage and maintain the platform. They have extra access that allows them to manage users and monitor the overall system.
 
 ## System Architecture 🏗️
+
 <img width="451" height="688" alt="Image" src="https://github.com/user-attachments/assets/cde4d856-0966-4bb6-9eb7-43b8d34b805d" />
 <br>
+(Draw.io,2026a)
 <br>
 The architecture shows how the different parts of the system communicate with each other. Clients, Freelancers and Administrators interact with the React frontend, which communicates securely with the Node.js and Express.js backend using HTTPS.The backend processes requests using routes, controllers, middleware and Mongoose models. It then communicates with MongoDB to store and retrieve information.The system boundary represents the components that are part of the HustleHub+ application, while the Client, Freelancer and Administrator are external users who interact with the system.
   
@@ -249,7 +251,8 @@ The above diagram explains how the login logic flows with details on how the sys
 Alamin, 2026. Building a Scalable E-Commerce Backend: The Complete Guide to Node.js, Express & MongoDB. [online] Available at: <https://medium.com/@md.alamin.coding/building-a-scalable-e-commerce-backend-the-complete-guide-to-node-js-express-mongodb-7134e9da049b>[Accessed 6 September 2026].<br>
 Aravind, 2024. How to use env file in backend db. [online] Available at: < https://medium.com/engineeringcreativity/how-to-use-env-file-in-backend-db-e20d5480986f > [Accessed 29 August 2026] <br>
 Devinda, 2026. Password Hashing Explained: How to Secure Passwords with bcrypt in Node.js. [online] Available at: < https://medium.com/@rusirud49/password-hashing-explained-how-to-secure-passwords-with-bcrypt-in-node-js-7ac49d2c41d9 > [Accessed 5 September 2026] <br>
-Draw.io, 2026. Security-first diagramming for teams. [online] Available at: < https://www.drawio.com/ > [Accessed 5 September 2026] <br>
+Draw.io, 2026a. System Architecture. [online] Available at:<https://drive.google.com/file/d/1LSyYCuEcQzpAkHAzH4uZHbpoJ3T8QGhv/view?usp=sharing> [Accessed 6 September 2026]. <br>
+Draw.io, 2026b. Security-first diagramming for teams. [online] Available at: < https://www.drawio.com/ > [Accessed 5 September 2026] <br>
 GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://www.geeksforgeeks.org/node-js/use-of-cors-in-node-js/ > [Accessed 29 August 2026] <br>
 MDN, 2026. Express Tutorial Part 4: Routes and controllers. [online] Available at: < https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes> [Accessed 5 September 2026]. <br>
 Medium. 2025. MERN Stack Architecture. [online] Available at: < https://medium.com/readers-club/mern-stack-architecture-6b7b5be94f78 > [Accessed 6 September 2026] <br> 
