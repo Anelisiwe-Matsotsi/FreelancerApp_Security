@@ -231,6 +231,10 @@ Freelancer enters the wrong password thus the system does not allow them to ente
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" /><br>
 Test proves that the user needs to provide all details to successfully log in the freelancer. <br><br>
 
+## YouTube Video Link
+
+https://youtu.be/cdZXZ4eMTco
+
 
 ## Request Flow
 We have made request flow diagram through draw.io that explain the how the registration and login works. Here is the draw.io link: <br> https://advtechonline-my.sharepoint.com/:u:/g/personal/st10450661_myemeris_edu_za/IQBOT_ttlNjxRZcm__xfRiPzASp9BhzVXXjbveV-9cxir8k?e=0teh5K <br>
