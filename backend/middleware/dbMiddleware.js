@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 // dotenv allows us to call in sensitive information from a .env file, rather than hard-coding it (think appsettings.json)
 require("dotenv").config();
-
+/*rudderz243, 2026*/
 // here we create a database object
 const database = {
   // that includes a start method (that accepts 0 parameters)
@@ -15,9 +15,8 @@ const database = {
       // if it connection succeeds, we print an appropriate message
       console.log("The database connection has connected");
     } catch (error) {
-      // otherwise, if the connection fails (lets say they forgot their connection string, or there is a network error), we print an error out
-      console.log("Cannot connect to database, " + error);
-      // and exit the application (it makes no sense to continue running when the app relies on the database connection)
+      // if the connection fails 
+      // and exit the application 
       process.exit(1);
     }
   },
