@@ -29,7 +29,7 @@ To run the backend application, follow the following steps:
 **Step 4:** Install the required packages: `npm i`<br>
 **Step 5:** Start the backend development server: `npm run dev` 
 
-The backend server will run on `http://localhost:3000`
+The backend server will run on `https://localhost:3000`
 
 ### Frontend 🚪
 To successfully run the frontend application, perform the following steps:  
