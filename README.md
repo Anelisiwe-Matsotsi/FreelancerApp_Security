@@ -101,7 +101,7 @@ The controllers contain the application logic for processing requests. For examp
 
 The models define the structure of the information stired in the MongoDB. The userModel.js file for example defines the username, email, password and role fiels. Mongoose schemas provide  structure and validation rules for documents stored in MongoDB (Alamin,2026).
 
-The middleware folder contains funcutions that run during the request and response process. The authMiddleware.js for example checks wheter a user has provided a valid JWT before allowing access to protected routes. Middleware can also be used for authentication, authorisatiom and validation befor the request reaches the controller (Alamin,2026)
+The middleware folder contains functions that run during the request and response process. The authMiddleware.js for example checks if a user has provided a valid JWT before allowing access to protected routes. Middleware can also be used for authentication, authorization and validation before the request reaches the controller (Alamin,2026)
 
 The app.js file acts as the main application file. It loads Express, middleware and routes, connects the application to MongoDB and starts the HTTPS server.
 
@@ -128,11 +128,11 @@ During login, the password given by the user is compared to the stored password 
 This security decision decreases the risk of exposing HustleHubs users original passwords if an unauthirised person were to gain access to the database. 
 
 ## Token-Based Authentication 🎟️
-HustleHub uses JSON Web Tokens (JWT) for token-based authentication. JWTs allow the backend to create a signed token after successfful authentication (Thavachelvan 2026). The token can then be used by the client when making requests to protected API endpoints.
+HustleHub uses JSON Web Tokens (JWT) for token-based authentication. JWTs allow the backend to create a signed token after successfful authentication (Thavachelvan, 2026). The token can then be used by the client when making requests to protected API endpoints.
 
 JSON Web Token is a package that can generate and verify JWTs for authentication (Postman,2026). In HustleHub a token is generated afer the user has successfully registered or loged in. The token has the user's ID and role and is signed using the JWT_SECRET stored in the .env file. When a user tries to access an endpoint that is protected, the authMiddleware.js middleware checks the Authorization header for a Bearer token. The token is extracted and verified using jwt.verify(token,process.env.JWT_SECRET). If the token is valid, the middleware retreives the user from MongoDB and stores the user information in req.user. 
 
-The password is not included in the retrieved user information. If the token is missing, invalid or cannot be verified, the request is rejected with a 401 Unauthorized response. The validateRole() middleware compares the user's role with the roles that are allowed for the route. If the user is authenticated but does not have the required role, the system returns a 403 Forbidden response (Thavachelvan 2026).  Thavachelvan (2026) uses a similar authentication process that is summarised as: </br>
+The password is not included in the retrieved user information. If the token is missing, invalid or cannot be verified, the request is rejected with a 401 Unauthorized response. The validateRole() middleware compares the user's role with the roles that are allowed for the route. If the user is authenticated but does not have the required role, the system returns a 403 Forbidden response (Thavachelvan, 2026).  Thavachelvan (2026) uses a similar authentication process that is summarised as: </br>
 User logs in ⇾ Email and password are checked ⇾ Password compared using bycrpt⇾ Credentials valid? ⇾ JWT generated ⇾  Client sends JWT with protected request ⇾ authMiddleware verifies JWT ⇾ User is identified ⇾ Request is allowed to proceed </br>
 
 This security decision allows protected endpoints to identify the user making a request and checks what the authenticated user is allowed to do before providing access to resricted functionality.
@@ -167,7 +167,7 @@ The application then uses these settings when starting the server: </br>
   
   https://localhost:3000</br>
   
-HTTPS is important because normal HTTP does not provide the same protection for information travelling between the client and server. HTTPS uses TLS/SSL to help encrypt this communication, authenticate the server and protect the information from being changed while it is being transferred. This is important for HustleHub because authentication information nedds to be protected while users interact with the system (W3Schools,2026). </br>
+HTTPS is important because normal HTTP does not provide the same protection for information travelling between the client and server. HTTPS uses TLS/SSL to help encrypt this communication, authenticate the server and protect the information from being changed while it is being transferred. This is important for HustleHub because authentication information needs to be protected while users interact with the system (W3Schools,2026). </br>
   
 The certificate files are being used for the project's local develepment enviroment. A self-signed certificate can be useful when developing and testing HTTPS locally, although it is not automatically trusted by web browsers in the same way as a certificate issued by a recognises certificate authority (W3Schools,2026).
   
