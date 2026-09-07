@@ -113,9 +113,23 @@ Password hashing turn a plaintext password into a fixed length scrambled string,
 
 In the userModel.js, a Mongoose pre("save") function is used to hash the password before a user is saved:
 
-Plain-text password ➡️ bycrypt.genSalt(10) ➡️ bcrypt.hash()➡️ Hashed password➡️Stored in MongoDB
+Plain-text password ⇾ bycrypt.genSalt(10) ⇾ bcrypt.hash()⇾ Hashed password ⇾ Stored in MongoDB.
 
+The password is only hashed when it has been modified. This prevents an already hashed password from being hashed again when other user information is changed.
+During login, the password given by the user is compared to thr stored password hash using btcrypt.compare(). Bycrypt does this comparison without the need of the original plaintext password to be stored in the database (Devinda,2026).</br>
+This security decision decreases the risk of exposing HustleHubs users original passwords if an unauthirised person were to gain access to the database.
 
+## Token-Based Authentication 🎟️
+HustleHub uses JSON Web Tokens (JWT) for token-based authentication. JWTs allow the backend to create a signed token after successfful authentication (Thavachelvan 2026). The token can then be used by the client when making requests to protected API endpoints.
+
+JSON Web Token is a package that can generate and verify JWTs for authentication (Postman,2026). In HustleHub a token is generated afer the user has successfully registered or loged in. The token has the user's ID and role and is signed using the JWT_SECRET stored in the .env file. When a user tries to access an endpoint that is protected, the authMiddleware.js middleware checks the Authorization header for a Bearer token. The token is extracted and verified using jwt.verify(token,process.env.JWT_SECRET). If the token is valid, the middleware retreives the user from MongoDB and stores the user information in req.user. 
+
+The password is not included in the retrieved user information. If the token is missing, invalid or cannot be verified, the request is rejected with a 401 Unauthorized response. Thavachelvan (2026) uses a similar authentication process that is summarised as: </br>
+User logs in ⇾ Email and password are checked ⇾ Password compared using bycrpt⇾ Credentials valid? ⇾ JWT generated ⇾  Client sends JWT with protected request ⇾ authMiddleware verifies JWT ⇾ User is identified ⇾ Request is allowed to proceed </br>
+
+This security decision allows protected endpoints to identify the user making a request before providing access to resricted functionality.
+
+## Role-Based Authentication 👥🔑
 
 
 ## API Endpoints 🎯
