@@ -108,29 +108,63 @@ For HustleHubs authentication and user management functionality the following se
 - HTTPS
 
 ## Password Hashing 🔐
-HustleHub does not store the users passwords as plain text. Instead the bcrypt.js package is used to hash passwords before they are stored in MongoDB.</br>
+HustleHub does not store the users passwords as plain text. We used token- based authentication but simple hashing is not enough, hackers can use brute-force to gain unauthorized access. Instead the bcrypt.js package is used to hash passwords before they are stored as secure hashes in MongoDB that can be safely compared during authentication (Devinda,2026.</br>
 Password hashing turn a plaintext password into a fixed length scrambled string, a hashed value (Devinda,2026). This means that the original password will not be recoverable from the stored hash. Bycrypt has been particularly designed for password security and uses salting and adjustable computational cost to make cracking passwords more difficult (Devinda, 2026).</br>
 
 In the userModel.js, a Mongoose pre("save") function is used to hash the password before a user is saved:
+- Retrieve the hashed password from the database using the users email. 
+- Salt extraction and comparison are handled internally by brypt making verification simple and safe. According to Devinda (2026) "A randomly generated value added to the password before hashing". To make sure that even matching passwords produce different hashes every password recieves its own unique salt (Devinda, 2026).
 
 Plain-text password ⇾ bycrypt.genSalt(10) ⇾ bcrypt.hash()⇾ Hashed password ⇾ Stored in MongoDB.
 
 The password is only hashed when it has been modified. This prevents an already hashed password from being hashed again when other user information is changed.
-During login, the password given by the user is compared to thr stored password hash using btcrypt.compare(). Bycrypt does this comparison without the need of the original plaintext password to be stored in the database (Devinda,2026).</br>
-This security decision decreases the risk of exposing HustleHubs users original passwords if an unauthirised person were to gain access to the database.
+During login, the password given by the user is compared to the stored password hash using btcrypt.compare(). Bycrypt does this comparison without the need of the original plaintext password to be stored in the database (Devinda,2026).</br>
+This security decision decreases the risk of exposing HustleHubs users original passwords if an unauthirised person were to gain access to the database. 
 
 ## Token-Based Authentication 🎟️
 HustleHub uses JSON Web Tokens (JWT) for token-based authentication. JWTs allow the backend to create a signed token after successfful authentication (Thavachelvan 2026). The token can then be used by the client when making requests to protected API endpoints.
 
 JSON Web Token is a package that can generate and verify JWTs for authentication (Postman,2026). In HustleHub a token is generated afer the user has successfully registered or loged in. The token has the user's ID and role and is signed using the JWT_SECRET stored in the .env file. When a user tries to access an endpoint that is protected, the authMiddleware.js middleware checks the Authorization header for a Bearer token. The token is extracted and verified using jwt.verify(token,process.env.JWT_SECRET). If the token is valid, the middleware retreives the user from MongoDB and stores the user information in req.user. 
 
-The password is not included in the retrieved user information. If the token is missing, invalid or cannot be verified, the request is rejected with a 401 Unauthorized response. Thavachelvan (2026) uses a similar authentication process that is summarised as: </br>
+The password is not included in the retrieved user information. If the token is missing, invalid or cannot be verified, the request is rejected with a 401 Unauthorized response. The validateRole() middleware compares the user's role with the roles that are allowed for the route. If the user is authenticated but does not have the required role, the system returns a 403 Forbidden response (Thavachelvan 2026).  Thavachelvan (2026) uses a similar authentication process that is summarised as: </br>
 User logs in ⇾ Email and password are checked ⇾ Password compared using bycrpt⇾ Credentials valid? ⇾ JWT generated ⇾  Client sends JWT with protected request ⇾ authMiddleware verifies JWT ⇾ User is identified ⇾ Request is allowed to proceed </br>
 
-This security decision allows protected endpoints to identify the user making a request before providing access to resricted functionality.
+This security decision allows protected endpoints to identify the user making a request and checks what the authenticated user is allowed to do before providing access to resricted functionality.
 
 ## Role-Based Authentication 👥🔑
+Authentication and authorisation are seperately handled in HustleHub. Authentication sees whether the user is a valid user in the HustleHub database, while autherisation sees to what the specific user is allowed to see and do on the system dependeding on their role. 
 
+The validateRole() middleware checks the authenticated user's role against the roles permitted to access a route.The system currently supports the roles client, freelancer and admin. For example, a route can use validateAuth </br> validateRole("freelancer") </br> The first veriefirs that the user is authenticated, while the second checks whether the authenticated user has the required role.  </br> This means that successfully logging in does not automatically give user access to every endpoint. Access is instead restricted according to the user's role.
+
+## Input Validation 🔣
+
+HustleHub validates the information received from the users before processing it. During registeration, the backend checks that the username, email and password fields required have been provided. It also checks if an email address already exists before creating a new account, if it does the system returns a 400 "Please ensure all required information is present" response </br>
+
+The user model provides additional validation rules that include required fields, username length restrictions and an allowed list of user roles. Mongoose-based validation helps ensure that invalid data does not get stored in the database (Alamin,2026). </br>
+
+Validating incoming request data against defined rules is important because information received from a client should not be trusted automatically (Postman,2026). </br>
+
+During login, the backend checks that both the email and password have been provided. Incorrect login credentials lead to a 401 Invalid email or password response. This avoids informing an attacker whether the email address entered exists or whether only the password was incorrect. 
+
+
+## HTTPS 🔐
+HustleHub uses HTTPS (Hypertext Transfer Protocol Secure) to protect information sent between a user and a backend server. This is an important security feature because the application will handle information such as usernames, passwords and authentication tokens.</br> At the moment, HTTPS is configured in app.js using Node.js's built in https module and the project's certificate files. The fs module is used to read the certificates files from the server's file system. These files are then placed into the sslOptions object: </br>
+
+<img width="689" height="80" alt="image" src="https://github.com/user-attachments/assets/7c24589a-26a9-4bdd-bc4e-ef87cfa23280" /> </br>
+
+The application then uses these settings when starting the server: </br>
+
+ <img width="672" height="64" alt="image" src="https://github.com/user-attachments/assets/f2844b44-777a-4000-a99b-54d089a096ba" />
+ 
+  </br>
+  This means that HustleHubs backend is currently accessed through: </br>
+  
+  https://localhost:3000</br>
+  
+HTTPS is important because normal HTTP does not provide the same protection for information travelling between the client and server. HTTPS uses TLS/SSL to help encrypt this communication, authenticate the server and protect the information from being changed while it is being transferred. This is important for HustleHub because authentication information nedds to be protected while users interact with the system (W3Schools,2026). </br>
+  
+The certificate files are being used for the project's local develepment enviroment. A self-signed certificate can be useful when developing and testing HTTPS locally, although it is not automatically trusted by web browsers in the same way as a certificate issued by a recognises certificate authority (W3Schools,2026).
+  
 
 ## API Endpoints 🎯
 
@@ -227,15 +261,19 @@ The link can only be opended by My group members and Mr Glynn Rudman- I entered 
 <br>
 
 ## References 📖
-Alamin-Coding, 2026. Building a Scalable E-Commerce Backend: The Complete Guide to Node.js, Express & MongoDB. [online] Available at: <https://medium.com/@md.alamin.coding/building-a-scalable-e-commerce-backend-the-complete-guide-to-node-js-express-mongodb-7134e9da049b>[Accessed 6 September 2026].<br>
+Alamin, 2026. Building a Scalable E-Commerce Backend: The Complete Guide to Node.js, Express & MongoDB. [online] Available at: <https://medium.com/@md.alamin.coding/building-a-scalable-e-commerce-backend-the-complete-guide-to-node-js-express-mongodb-7134e9da049b>[Accessed 6 September 2026].<br>
 Aravind, 2024. How to use env file in backend db. [online] Available at: < https://medium.com/engineeringcreativity/how-to-use-env-file-in-backend-db-e20d5480986f > [Accessed 29 August 2026] <br>
+Devinda, 2026. Password Hashing Explained: How to Secure Passwords with bcrypt in Node.js. [online] Available at: < https://medium.com/@rusirud49/password-hashing-explained-how-to-secure-passwords-with-bcrypt-in-node-js-7ac49d2c41d9 > [Accessed 5 September 2026] <br>
 Dissanayake, 2026. React Router vs. React Router DOM: understanding the differences. [online] Available at: < https://www.syncfusion.com/blogs/post/react-router-vs-react-router-dom > [Accessed 29 August 2026] <br>
 Draw.io, 2026. Security-first diagramming for teams. [online] Available at: < https://www.drawio.com/ > [Accessed 5 September 2026] <br>
 Edmonds, T., 2025. Best Practices for React.js with Vite and TypeScript: What I use and why. [online] Available at: < https://medium.com/@taedmonds/best-practices-for-react-js-with-vite-and-typescript-what-i-use-and-why-f4482558ed89 > [Accessed 29 August 2026] <br>
 GeeksforGeeks, 2025. React JS ReactDOM. [online] Available at: < https://www.geeksforgeeks.org/reactjs/reactjs-reactdom/ > [Accessed 29 August 2026] <br>
 GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://www.geeksforgeeks.org/node-js/use-of-cors-in-node-js/ > [Accessed 29 August 2026] <br>
+MDN, 2026. Express Tutorial Part 4: Routes and controllers. [online] Available at: < https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes> [Accessed 5 September 2026]. <br>
 Medium. 2025. MERN Stack Architecture. [online] Available at: < https://medium.com/readers-club/mern-stack-architecture-6b7b5be94f78 > [Accessed 6 September 2026] <br> 
+Postman, 2026.How to create a REST API with Node.js and Express. [online].Available at: <https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/ >  [Accessed 6 September 2026] <br> 
 Raj, 2026. Where to store JWT Secret Keys Safely (Do's and Dont's). [online] Available at: < https://jwtsecretkeygenerator.com/blog/where-to-store-jwt-secret-keys > [Accessed 29 August 2026] <br>
 Rangani, T., 2026. Why do we use npm install --save-dev nodemon in Node.js?. [online] Available at: < https://medium.com/@uyanhewagetr/why-do-we-use-npm-install-save-dev-nodemon-in-node-js-c0a1480df03f > [Accessed 29 August 2026] <br>
 Tamang, R., 2025. How to implement Role-Based Access Control (RBAC) in Node.js Applications. [online] Available at: < https://dev.to/rabindratamang/how-to-implement-role-based-access-control-rbac-in-nodejs-applications-1ed2 > [Accessed 29 August 2026] <br>
-Thavachelvan, S., 2026. Implementing JWT-Based Authentication Using Node.js and MongoDB. [online] Available at: < https://medium.com/@saruatwork/implementing-jwt-based-authentication-using-node-js-and-mongodb-2d6994e8811d > [Accessed 6 September 2026].
+Thavachelvan, S., 2026. Implementing JWT-Based Authentication Using Node.js and MongoDB. [online] Available at: < https://medium.com/@saruatwork/implementing-jwt-based-authentication-using-node-js-and-mongodb-2d6994e8811d > [Accessed 6 September 2026]. <br>
+W3Schools, 2026. Node.js HTTPS Module (Version 1.0) [Source Code] Available at: < https://www.w3schools.com/nodejs/nodejs_https.asp > [Accessed 29 August 2026]
