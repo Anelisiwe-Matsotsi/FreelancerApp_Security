@@ -10,6 +10,12 @@ HustleHub+ is designed for three main users:
 - **Clients:** People who are looking for freelance services. They browse through the available services and book a service that suits their needs.
 - **Freelancers:** People who offer services through the platform. They can advertise their services, manage their bookings and interact with clients.
 - **Administrators:** People who manage and maintain the platform. They have extra access that allows them to manage users and monitor the overall system.
+
+## System Architecture 🏗️
+<img width="451" height="688" alt="Image" src="https://github.com/user-attachments/assets/cde4d856-0966-4bb6-9eb7-43b8d34b805d" />
+<br>
+<br>
+The architecture shows how the different parts of the system communicate with each other. Clients, Freelancers and Administrators interact with the React frontend, which communicates securely with the Node.js and Express.js backend using HTTPS.The backend processes requests using routes, controllers, middleware and Mongoose models. It then communicates with MongoDB to store and retrieve information.The system boundary represents the components that are part of the HustleHub+ application, while the Client, Freelancer and Administrator are external users who interact with the system.
   
 ## How to run the App 💻
 ### Backend 🔙🔚
