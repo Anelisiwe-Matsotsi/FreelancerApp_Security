@@ -26,8 +26,7 @@ const validateAuth = async (req, res, next) => {
       return next();
     } catch (error) {
       // if we fail to decode their token, we return a 401
-      // this is called a FAIL-CLOSE state. if something fails, we want to prevent auth, rather than just
-      // let them through
+      // this is called a FAIL-CLOSE state. we use this to prevent authorization if something fails
       return res
         .status(401)
         .json({ message: "Not authorized, failed to validate token." });
