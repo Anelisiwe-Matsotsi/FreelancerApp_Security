@@ -54,7 +54,6 @@ database.start().then(() => { //server starts by connecting to the mongo DB
 
 /*
 References
-
 GeeksforGeeks, 2025. Routing in Express.js. (Version 1.0) [Source Code] Available at: < https://www.geeksforgeeks.org/node-js/what-is-routing-in-express/ > [Accessed 2 September 2026]
 Rudman, G., 2026. insy7314-library. (Version 1.0) [Source Code] Available at: < https://github.com/rudderz243/insy7314-library > [Accessed 29 August 2026]
 StackOverflow, 2018. Socket.io connects but never listens to any events when HTTPS. (Version 1.0) [Source Code] Available at: < https://stackoverflow.com/questions/49600670/socket-io-connects-but-never-listens-to-any-event-when-https > [Accessed 2 September 2026]
