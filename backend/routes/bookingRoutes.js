@@ -20,8 +20,8 @@ const router = express.Router();
 
 router.post("/", validateAuth, validateRole("client"), createBooking);
 
-router.get("/", getAllBookings);
-router.get("/:id", getBooking);
+router.get("/", validateAuth, getAllBookings);
+router.get("/:id", validateAuth, getBooking);
 
 router.patch("/:id", validateAuth, validateRole("client"), updateBooking);
 
