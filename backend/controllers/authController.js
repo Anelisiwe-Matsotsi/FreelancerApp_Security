@@ -58,7 +58,7 @@ const loginUser = async (req, res) => {
         const user = await User.findOne({email});
 
         if (!user) {
-            logger.warn(`Login attempted for email not in the database: ${email}, "AUTH`);
+            logger.warn(`Login attempted for email not in the database: ${email}`, "AUTH");
             return res.status(401).json({message: "Invalid email or password."});
         }
     
@@ -82,7 +82,17 @@ const loginUser = async (req, res) => {
     };
 };
 
-module.exports = { registerUser, loginUser };
+const getCurrentUser = async (req, res) => {
+  // The validateAuth middleware attaches the authenticated user
+  res.status(200).json({
+    _id: req.user._id,
+    username: req.user.username,
+    email: req.user.email,
+    role: req.user.role,
+  });
+};
+
+module.exports = { registerUser, loginUser, getCurrentUser };
 
 /*Reference List:
 Medium. 2025. JWT Authentication in MERN Apps: A Beginner-Friendly Guide. (Version 1.0) [Source Code] Available at: <https://medium.com/@adityamohiteakm/jwt-authentication-in-mern-apps-a-beginner-friendly-guide-00ed6b6405fc> [Accessed 2 September 2026].

@@ -1,6 +1,8 @@
 // mongoose is a library we use to handle connections to a MongoDB database
 const mongoose = require("mongoose");
-// dotenv allows us to call in sensitive information from a .env file,
+// dotenv allows us to call in sensitive information from a .env file, rather than hard-coding it (think appsettings.json)
+require("dotenv").config();
+const logger = require("../utils/logger.js");
 
 // set up lifecycle monitoring (listening for major events in mongoose)
 mongoose.connection.on("disconnected", () => {
@@ -14,8 +16,8 @@ mongoose.connection.on("reconnected", () => {
 mongoose.connection.on("error", (err) => {
   logger.error(`MongoDB connection error: ${err.message}`, "DATABASE", err);
 });
-/*rudderz243, 2026*/
-// creating database object
+
+// here we create a database object
 const database = {
   // that includes a start method (that accepts 0 parameters)
   start: async () => {
@@ -42,8 +44,3 @@ const database = {
 
 // export all the methods to make them "public" (accessible in other files)
 module.exports = database;
-/*Reference List:
-
-rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
-
-*/

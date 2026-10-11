@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
 const { rateLimit } = require("express-rate-limit");
-const mongoSanitize = require("express-mongo-sanitize");
+const mongoSanitize = require("@exortek/express-mongo-sanitize");
 const logger = require("../utils/logger.js");
 
 // cors -> limits WHO and WHAT can communicate with our backend
@@ -85,7 +85,7 @@ const generalLimiter = rateLimit({
 // this helps against brute-forcing attacks, and credential stuffing attacks
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  limit: 10, // lower limit compared to the general purpose limiter
+  limit: 80, // lower limit compared to the general purpose limiter
   standardHeaders: "draft-8",
   legacyHeaders: false,
   message: {
@@ -103,12 +103,12 @@ const authLimiter = rateLimit({
 // mongo sanitize -> runs sanitization on any inputs passed through from the user to prevent NoSQL injection
 const mongoSanitizer = mongoSanitize({
   replaceWith: "_", // replace any bad characters, like $, with this
-  onSanitize: ({ req, key }) => {
-    logger.warn(
-      `NoSQL escape attempted using key ${key} from ${req.ip}`,
-      "SECURITY",
-    );
-  },
+ onSanitize: ({ key, path }) => {
+  logger.warn(
+    `NoSQL escape attempted using key ${key} at ${path}`,
+    "SECURITY",
+  );
+},
 });
 
 // this function will handle enabling all security middleware for our app

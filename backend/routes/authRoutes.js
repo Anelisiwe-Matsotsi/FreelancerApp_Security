@@ -1,13 +1,20 @@
 /*rudderz243, 2026 */
 /*Medium, 2025 */
 const express = require("express");
-const { registerUser, loginUser } = require("../controllers/authController.js");
+const {
+registerUser,
+loginUser,
+getCurrentUser
+} = require("../controllers/authController.js");
+const { validateAuth } = require("../middleware/authMiddleware.js");
 
 const router = express.Router();
 //Handles the POST request to register a new user
 router.post("/register", registerUser);
 //Handles the POST request to login a user
 router.post("/login", loginUser);
+
+router.get("/me", validateAuth, getCurrentUser);
 
 module.exports = router;
 /*Reference List:

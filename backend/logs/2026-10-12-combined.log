@@ -1,0 +1,66 @@
+[2026-10-12 00:00:25] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 00:00:26] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 00:01:19] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 00:01:20] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 00:01:50] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 00:01:50] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 00:02:46] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (24ms) - IP: ::1
+[2026-10-12 00:02:46] [INFO] [HTTP]: POST /api/auth/register 201 (198ms) - IP: ::1
+[2026-10-12 00:02:46] [INFO] [HTTP]: OPTIONS /api/books 200 (1ms) - IP: ::1
+[2026-10-12 00:02:47] [INFO] [HTTP]: OPTIONS /api/books 200 (2ms) - IP: ::1
+[2026-10-12 00:02:47] [WARN] [HTTP]: GET /api/books 404 (2ms) - IP: ::1
+[2026-10-12 00:02:47] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:03:00] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (0ms) - IP: ::1
+[2026-10-12 00:03:00] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (0ms) - IP: ::1
+[2026-10-12 00:03:00] [INFO] [HTTP]: GET /api/auth/me 200 (93ms) - IP: ::1 [User: natty]
+[2026-10-12 00:03:00] [INFO] [HTTP]: OPTIONS /api/books 200 (6ms) - IP: ::1
+[2026-10-12 00:03:00] [INFO] [HTTP]: OPTIONS /api/books 200 (2ms) - IP: ::1
+[2026-10-12 00:03:00] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:03:00] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:03:00] [INFO] [HTTP]: GET /api/auth/me 200 (96ms) - IP: ::1 [User: natty]
+[2026-10-12 00:03:01] [INFO] [HTTP]: GET /api/auth/me 200 (79ms) - IP: ::1 [User: natty]
+[2026-10-12 00:03:01] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:03:01] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:03:01] [INFO] [HTTP]: GET /api/auth/me 200 (91ms) - IP: ::1 [User: natty]
+[2026-10-12 00:04:03] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (0ms) - IP: ::1
+[2026-10-12 00:04:03] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (1ms) - IP: ::1
+[2026-10-12 00:04:04] [INFO] [HTTP]: GET /api/auth/me 200 (146ms) - IP: ::1 [User: natty]
+[2026-10-12 00:04:04] [INFO] [HTTP]: OPTIONS /api/books 200 (1ms) - IP: ::1
+[2026-10-12 00:04:04] [INFO] [HTTP]: OPTIONS /api/books 200 (0ms) - IP: ::1
+[2026-10-12 00:04:04] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:04:04] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:04:04] [INFO] [HTTP]: GET /api/auth/me 200 (111ms) - IP: ::1 [User: natty]
+[2026-10-12 00:04:13] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (0ms) - IP: ::1
+[2026-10-12 00:04:13] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (0ms) - IP: ::1
+[2026-10-12 00:04:13] [INFO] [HTTP]: GET /api/auth/me 200 (80ms) - IP: ::1 [User: natty]
+[2026-10-12 00:04:13] [INFO] [HTTP]: OPTIONS /api/books 200 (0ms) - IP: ::1
+[2026-10-12 00:04:13] [INFO] [HTTP]: OPTIONS /api/books 200 (1ms) - IP: ::1
+[2026-10-12 00:04:13] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:04:13] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:04:13] [INFO] [HTTP]: GET /api/auth/me 200 (79ms) - IP: ::1 [User: natty]
+[2026-10-12 00:04:23] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (0ms) - IP: ::1
+[2026-10-12 00:04:23] [INFO] [HTTP]: OPTIONS /api/auth/me 200 (1ms) - IP: ::1
+[2026-10-12 00:04:23] [INFO] [HTTP]: GET /api/auth/me 200 (96ms) - IP: ::1 [User: natty]
+[2026-10-12 00:04:23] [WARN] [RATE_LIMIT]: Rate limit (auth) exceeded by ::1
+[2026-10-12 00:04:23] [WARN] [HTTP]: GET /api/auth/me 429 (1ms) - IP: ::1
+[2026-10-12 00:04:23] [INFO] [HTTP]: OPTIONS /api/books 200 (0ms) - IP: ::1
+[2026-10-12 00:04:23] [INFO] [HTTP]: OPTIONS /api/books 200 (0ms) - IP: ::1
+[2026-10-12 00:04:23] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:04:23] [WARN] [HTTP]: GET /api/books 404 (1ms) - IP: ::1
+[2026-10-12 00:04:54] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (1ms) - IP: ::1
+[2026-10-12 00:04:54] [WARN] [RATE_LIMIT]: Rate limit (auth) exceeded by ::1
+[2026-10-12 00:04:54] [WARN] [HTTP]: POST /api/auth/login 429 (1ms) - IP: ::1
+[2026-10-12 00:05:06] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (0ms) - IP: ::1
+[2026-10-12 00:05:06] [WARN] [RATE_LIMIT]: Rate limit (auth) exceeded by ::1
+[2026-10-12 00:05:06] [WARN] [HTTP]: POST /api/auth/login 429 (2ms) - IP: ::1
+[2026-10-12 00:05:54] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (0ms) - IP: ::1
+[2026-10-12 00:05:54] [WARN] [RATE_LIMIT]: Rate limit (auth) exceeded by ::1
+[2026-10-12 00:05:54] [WARN] [HTTP]: POST /api/auth/login 429 (0ms) - IP: ::1
+[2026-10-12 00:08:36] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 00:08:37] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 00:08:42] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (12ms) - IP: ::1
+[2026-10-12 00:08:43] [INFO] [HTTP]: POST /api/auth/login 200 (146ms) - IP: ::1
+[2026-10-12 00:08:43] [INFO] [HTTP]: OPTIONS /api/books 200 (1ms) - IP: ::1
+[2026-10-12 00:08:43] [INFO] [HTTP]: OPTIONS /api/books 200 (1ms) - IP: ::1
+[2026-10-12 00:08:43] [WARN] [HTTP]: GET /api/books 404 (3ms) - IP: ::1
+[2026-10-12 00:08:43] [WARN] [HTTP]: GET /api/books 404 (5ms) - IP: ::1

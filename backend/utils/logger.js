@@ -70,17 +70,23 @@ const log = (level, message, context = "APP", meta = null) => {
   // get time and date from our helper methods
   const timestamp = getTimestamp();
   const dateStr = getDateString();
-  let metaStr = "";
 
+  let metaStr = "";
+  // if there IS additional metadata from a 3rd party library -> format it correctly
   if (meta) {
+    // if the metadata is an instance of the "Error" class
     if (meta instanceof Error) {
+      // extract its content
       metaStr = `\n${meta.stack || meta.message}`;
-    } else if (typeof meta === "object") {
+      // else if the metadata is in the format of a custom object
+    } else if (typeof meta === object) {
+      // try get its info
       try {
         metaStr = ` ${JSON.stringify(meta)}`;
       } catch (e) {
         metaStr = ` [Unextractable Error]`;
       }
+      // if nothing matches -> just gooi the metadata into the string
     } else {
       metaStr = ` ${meta}`;
     }

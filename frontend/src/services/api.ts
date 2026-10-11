@@ -6,6 +6,7 @@ import type {
   AuthResponse,
   LoginCredentials,
   RegisterCredentials,
+  User,
 } from "../models/user.ts";
 
 const API_URL = "https://localhost:3000/api";
@@ -317,4 +318,14 @@ export async function getMyIncome(): Promise<IncomeSummary> {
   });
 
   return handleResponse<IncomeSummary>(response);
+}
+
+// Get the currently logged-in user
+export async function getCurrentUser(): Promise<User> {
+  const response = await fetch(`${API_URL}/auth/me`, {
+    method: "GET",
+    headers: getHeaders(),
+  });
+
+  return handleResponse<User>(response);
 }
