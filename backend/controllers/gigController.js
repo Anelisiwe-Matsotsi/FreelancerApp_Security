@@ -9,6 +9,7 @@ const User = require("../models/userModel.js");
 //any logged in user can view the available gigs
 const getGigs = async (req, res) => {
   try {
+    /*Stack Overflow, 2021 */
     // Only return gigs that are currently active.
     const gigs = await Gig.find({ isActive: true })
       .populate("freelancer", "username")
@@ -24,15 +25,38 @@ const getGigs = async (req, res) => {
   }
 };
 
+//GET: get the logged in freelancer's own gigs
+const getMyGigs = async (req, res) => {
+  try {
+     /*Stack Overflow, 2021 */
+    const gigs = await Gig.find({ freelancer: req.user._id }).sort({ createdAt: -1 });
+    return res.status(200).json(gigs);
+  } catch (error) {
+    console.error("Error retrieving your gigs:", error.message);
+    return res.status(500).json({
+      message: "Server error while retrieving your gigs.",
+    });
+  }
+};
+
 //GET: using id
 const getGigById = async (req, res) => {
   try {
+     /*Stack Overflow, 2021 */
     // Find the gig and include the freelancer's username
     const gig = await Gig.findById(req.params.id)
       .populate("freelancer", "username");
 
     // Return 404 if the gig does not exist
-    if (!gig || !gig.isActive) {
+    if (!gig) {
+      return res.status(404).json({
+        message: "Gig not found.",
+      });
+    }
+
+    const isOwner = String(gig.freelancer._id) === String(req.user._id);
+
+    if (!gig.isActive && !isOwner && req.user.role !== "admin") {
       return res.status(404).json({
         message: "Gig not found.",
       });
@@ -63,7 +87,7 @@ const createGig = async (req, res) => {
       category,
       price,
       deliveryDays,
-    } = req.body;
+    } = req.body || {};
 
     // Ensure all required gig information has been supplied
     if (
@@ -224,5 +248,9 @@ const deleteGig = async (req, res) => {
   }
 };
 
-module.exports = { getGigs, getGigById, createGig, updateGig,deleteGig,
+module.exports = { getGigs, getGigById, createGig, updateGig, deleteGig, getMyGigs
 };
+/*Reference list:
+Stack Overflow. 2021. How to sort a populated document in find request? (Version 1.0) [Source code] Available at:<https://stackoverflow.com/questions/16352768/how-to-sort-a-populated-document-in-find-request> [Accessed 10 October 2026].
+ * 
+ */
