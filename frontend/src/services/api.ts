@@ -1,5 +1,7 @@
 import type { Book } from "../models/book.ts";
+import type { Booking } from "../models/booking.ts";
 import type { Gig } from "../models/gig.ts";
+import type { Transaction, IncomeSummary } from "../models/transaction.ts";
 import type {
   AuthResponse,
   LoginCredentials,
@@ -223,4 +225,96 @@ export async function deleteGig(
   });
 
   return handleResponse<{ message: string }>(response);
+}
+
+// Create a booking
+export async function createBooking(
+  gigId: string
+): Promise<Booking> {
+  const response = await fetch(`${API_URL}/bookings`, {
+    method: "POST",
+    headers: getHeaders(),
+    body: JSON.stringify({ gigId }),
+  });
+
+  return handleResponse<Booking>(response);
+}
+
+// Get all bookings belonging to the logged-in user
+export async function getBookings(
+  status?: Booking["status"]
+): Promise<Booking[]> {
+  const query = status ? `?status=${status}` : "";
+
+  const response = await fetch(`${API_URL}/bookings${query}`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Booking[]>(response);
+}
+
+// Get one booking by ID
+export async function getBooking(
+  id: string
+): Promise<Booking> {
+  const response = await fetch(`${API_URL}/bookings/${id}`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Booking>(response);
+}
+
+// Update a booking (cancel a booking)
+export async function updateBooking(
+  id: string,
+  status: "cancelled"
+): Promise<Booking> {
+  const response = await fetch(`${API_URL}/bookings/${id}`, {
+    method: "PATCH",
+    headers: getHeaders(),
+    body: JSON.stringify({ status }),
+  });
+
+  return handleResponse<Booking>(response);
+}
+
+// Delete a booking
+export async function deleteBooking(
+  id: string
+): Promise<Booking> {
+  const response = await fetch(`${API_URL}/bookings/${id}`, {
+    method: "DELETE",
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Booking>(response);
+}
+
+// Get all transactions belonging to the logged-in user
+export async function getTransactions(): Promise<Transaction[]> {
+  const response = await fetch(`${API_URL}/transactions`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Transaction[]>(response);
+}
+
+// Get one transaction by ID
+export async function getTransaction(
+  id: string
+): Promise<Transaction> {
+  const response = await fetch(`${API_URL}/transactions/${id}`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Transaction>(response);
+}
+
+// Get the logged-in freelancer's income summary
+export async function getMyIncome(): Promise<IncomeSummary> {
+  const response = await fetch(`${API_URL}/transactions/income`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<IncomeSummary>(response);
 }

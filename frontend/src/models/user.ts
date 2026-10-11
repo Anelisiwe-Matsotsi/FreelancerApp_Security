@@ -1,5 +1,5 @@
-// set the enum for what a users role can be
-export type UserRole = "patron" | "librarian";
+// Set the enum for what a user's role can be
+export type UserRole = "client" | "freelancer" | "admin";
 
 export interface User {
   _id: string;
@@ -8,18 +8,18 @@ export interface User {
   role: UserRole;
 }
 
-// when authenticating, a token becomes part of the reponse, so we extend
-// our main user class to incorporate a token
+// When authenticating, a token becomes part of the response
 export interface AuthResponse extends User {
   token: string;
 }
 
-// DTO -> encapsulates what data we will use for logging in
+// DTO for logging in
 export interface LoginCredentials {
   email: string;
   password: string;
 }
 
+// DTO for registering
 export interface RegisterCredentials {
   username: string;
   email: string;
