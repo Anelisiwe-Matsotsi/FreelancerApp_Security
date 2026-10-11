@@ -1,4 +1,5 @@
 import type { Book } from "../models/book.ts";
+import type { Gig } from "../models/gig.ts";
 import type {
   AuthResponse,
   LoginCredentials,
@@ -8,122 +9,218 @@ import type {
 const API_URL = "https://localhost:3000/api";
 const TOKEN_KEY = "auth_token";
 
-// helper functions to do with auth
+// Get the authentication token
 export function getAuthToken(): string | null {
   return localStorage.getItem(TOKEN_KEY);
 }
+
+// Save the authentication token
 export function setAuthToken(token: string): void {
   localStorage.setItem(TOKEN_KEY, token);
 }
+
+// Remove the authentication token
 export function removeAuthToken(): void {
   localStorage.removeItem(TOKEN_KEY);
 }
-// this helper function adds the auth token into the request headers, so that we can auth ourselves
-function getHeaders(customHeaders: Record<string, string> = {}): HeadersInit {
+
+// Set request headers
+function getHeaders(
+  customHeaders: Record<string, string> = {}
+): HeadersInit {
   const token = getAuthToken();
+
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
     ...customHeaders,
   };
+
   if (token) {
-    headers["Authorization"] = `Bearer: ${token}`;
+    headers["Authorization"] = `Bearer ${token}`;
   }
+
   return headers;
 }
-// helper function to deal with server errors
+
+// Handle API responses
 async function handleResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
-    let errorMessage = `HTTP Error ${response.status}`; // this will pull the status code, e.g., 500
+    let errorMessage = `HTTP Error ${response.status}`;
+
     try {
       const data = await response.json();
+
       if (data && data.message) {
         errorMessage = data.message;
       }
     } catch {
-      // this block is empty, if we're not able to read the error message from the response, we leave it as
-      // the default "HTTP ERROR" we defined earlier
+      // Keep the default error message if the response is not JSON
     }
+
     throw new Error(errorMessage);
   }
+
   return response.json();
 }
 
-// create the functions to actually handle authenticating with the API
+
+// Login
 export async function loginUser(
-  credentials: LoginCredentials,
+  credentials: LoginCredentials
 ): Promise<AuthResponse> {
   const response = await fetch(`${API_URL}/auth/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(credentials),
   });
+
   return handleResponse<AuthResponse>(response);
 }
 
+// Register
 export async function registerUser(
-  credentials: RegisterCredentials,
+  credentials: RegisterCredentials
 ): Promise<AuthResponse> {
   const response = await fetch(`${API_URL}/auth/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(credentials),
   });
+
   return handleResponse<AuthResponse>(response);
 }
 
-// this function will get ALL books from the API
+
+
+// Get all books
 export async function getBooks(): Promise<Book[]> {
-  // fetch(http://localhost:3000/api/books)
   const response = await fetch(`${API_URL}/books`, {
     headers: getHeaders(),
   });
+
   return handleResponse<Book[]>(response);
 }
 
-// this function will get a SINGLE book based on ID
+// Get a book by ID
 export async function getBook(id: string): Promise<Book> {
-  // fetch(http://localhost:3000/api/books/abc123)
   const response = await fetch(`${API_URL}/books/${id}`, {
     headers: getHeaders(),
   });
+
   return handleResponse<Book>(response);
 }
 
-// this function will CREATE a new book using a POST request
+// Create a book
 export async function createBook(book: Book): Promise<Book> {
   const response = await fetch(`${API_URL}/books`, {
     method: "POST",
     headers: getHeaders(),
     body: JSON.stringify(book),
   });
+
   return handleResponse<Book>(response);
 }
 
-// this function will update sections of an existing Book in the database using PATCH
-export async function updateBook(book: Book, id: string): Promise<Book> {
+// Update a book
+export async function updateBook(
+  book: Book,
+  id: string
+): Promise<Book> {
   const response = await fetch(`${API_URL}/books/${id}`, {
     method: "PATCH",
     headers: getHeaders(),
     body: JSON.stringify(book),
   });
+
   return handleResponse<Book>(response);
 }
 
-// this function will replace an entire book in the database using PUT
-export async function replaceBook(book: Book, id: string): Promise<Book> {
+// Replace a book
+export async function replaceBook(
+  book: Book,
+  id: string
+): Promise<Book> {
   const response = await fetch(`${API_URL}/books/${id}`, {
     method: "PUT",
     headers: getHeaders(),
     body: JSON.stringify(book),
   });
+
   return handleResponse<Book>(response);
 }
 
-// this function will delete a book from the database using a DELETE request
-export async function deleteBook(id: string): Promise<Book> {
+// Delete a book
+export async function deleteBook(id: string): Promise<void> {
   const response = await fetch(`${API_URL}/books/${id}`, {
     method: "DELETE",
     headers: getHeaders(),
   });
-  return handleResponse<Book>(response);
+
+  return handleResponse<void>(response);
+}
+
+// Get all active gigs
+export async function getGigs(): Promise<Gig[]> {
+  const response = await fetch(`${API_URL}/gigs`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Gig[]>(response);
+}
+
+// Get a gig by ID
+export async function getGigById(id: string): Promise<Gig> {
+  const response = await fetch(`${API_URL}/gigs/${id}`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Gig>(response);
+}
+
+// Get gigs belonging to the logged-in freelancer
+export async function getMyGigs(): Promise<Gig[]> {
+  const response = await fetch(`${API_URL}/gigs/mine`, {
+    headers: getHeaders(),
+  });
+
+  return handleResponse<Gig[]>(response);
+}
+
+// Create a gig
+export async function createGig(
+  gig: Gig
+): Promise<{ message: string; gig: Gig }> {
+  const response = await fetch(`${API_URL}/gigs`, {
+    method: "POST",
+    headers: getHeaders(),
+    body: JSON.stringify(gig),
+  });
+
+  return handleResponse<{ message: string; gig: Gig }>(response);
+}
+
+// Update a gig
+export async function updateGig(
+  id: string,
+  gig: Partial<Gig>
+): Promise<{ message: string; gig: Gig }> {
+  const response = await fetch(`${API_URL}/gigs/${id}`, {
+    method: "PUT",
+    headers: getHeaders(),
+    body: JSON.stringify(gig),
+  });
+
+  return handleResponse<{ message: string; gig: Gig }>(response);
+}
+
+// Deactivate a gig
+export async function deleteGig(
+  id: string
+): Promise<{ message: string }> {
+  const response = await fetch(`${API_URL}/gigs/${id}`, {
+    method: "DELETE",
+    headers: getHeaders(),
+  });
+
+  return handleResponse<{ message: string }>(response);
 }
