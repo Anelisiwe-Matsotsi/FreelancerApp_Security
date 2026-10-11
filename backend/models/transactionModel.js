@@ -3,6 +3,7 @@
 const mongoose = require("mongoose");
 
 const transactionSchema = new mongoose.Schema({
+    //stores the reference number that identifies each transaction
   reference: { /*Stack Overflow, 2019 */
     type: String,
     required: true,

@@ -2,6 +2,7 @@
 //Imports moongoose 
 const mongoose = require("mongoose");
 
+//Gives all the categories that a freelancer can assignto a gig
 /*Geeksforgeeks, 2025 */
 const gigCategories = [
     "Design",
