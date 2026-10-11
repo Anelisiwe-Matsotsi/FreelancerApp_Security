@@ -4,6 +4,7 @@
 const User = require("../models/userModel.js");
 //Used to create a token for the user to use when they log in, and to validate their token when they make requests
 const jwt = require("jsonwebtoken");
+const logger = require("../utils/logger.js");
 
 /*Medium, 2025 */
 //This function is used to generate a token for the user when they log in or register
@@ -24,6 +25,7 @@ const registerUser = async(req, res) => {
         //This is to check if the user already exists in the database based on their email address
         const userExists = await User.findOne({email});
         if (userExists) {
+            logger.warn(`Registration attempted with duplicate email: ${email}`, "AUTH");
             return res.status(400).json({message: "A user with that email address already exists."});
         }
         
@@ -39,7 +41,7 @@ const registerUser = async(req, res) => {
             token: generateToken(user._id, user.role)
         });
     } catch (error) {
-        console.log(error.message);
+        logger.error(`Registration error: ${error.message}`, "AUTH", error);
         return res.status(500).json({message: "Server error during registration."});
     };
 };
@@ -56,12 +58,14 @@ const loginUser = async (req, res) => {
         const user = await User.findOne({email});
 
         if (!user) {
+            logger.warn(`Login attempted for email not in the database: ${email}, "AUTH`);
             return res.status(401).json({message: "Invalid email or password."});
         }
     
         const isMatch = await user.matchPassword(password);
     
         if (!isMatch) {
+            logger.warn(`Incorrect password attempt for ${email}`, "AUTH");
             return res.status(401).json({message: "Invalid email or password."});
         }
         //Return user information and generate a token for the
@@ -73,7 +77,7 @@ const loginUser = async (req, res) => {
             token: generateToken(user._id, user.role),
         });
     } catch (error) {
-        console.log(error.message);
+        logger.error(`Login error: ${error.message}`, "AUTH");
         return res.status(500).json({message: "Internal server error during login."});
     };
 };
