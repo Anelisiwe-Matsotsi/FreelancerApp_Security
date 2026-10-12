@@ -149,8 +149,8 @@ React.useEffect(() => {
                   setRole(event.target.value as "client" | "freelancer")
                 }
               >
-                <option value="client">Client</option>
-                <option value="freelancer">Freelancer</option>
+                <option value="client">I want to shop and browse for gigs</option>
+                <option value="freelancer">I want to sell and manage my gigs</option>
               </select>
             </div>
           )}

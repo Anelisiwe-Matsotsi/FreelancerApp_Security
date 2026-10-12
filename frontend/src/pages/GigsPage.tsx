@@ -12,8 +12,7 @@ const MARQUEE_ITEMS = [
   "SEO Writing",
   "Video Editing",
   "Vetted Freelancers",
-  "Fast Delivery",
-  "Free Revisions",
+  
 ];
 
 // the small tick used in the "how it works" lists
@@ -268,7 +267,7 @@ export const GigsPage: React.FC = () => {
           viewBox='0 0 1440 80'
           xmlns='http://www.w3.org/2000/svg'
           preserveAspectRatio='none'
-          style={{ height: 80, background: "#1D9E75" }}
+          style={{ height: 80, background: "#ca8e0c" }}
         >
           <path
             d='M0,80 L0,30 C180,70 360,0 540,30 C720,60 900,0 1080,30 C1260,60 1360,20 1440,40 L1440,80 Z'
