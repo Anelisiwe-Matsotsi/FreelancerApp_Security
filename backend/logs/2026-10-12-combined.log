@@ -1013,3 +1013,474 @@
 [2026-10-12 09:39:31] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
 [2026-10-12 09:39:31] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: natty]
 [2026-10-12 09:39:31] [INFO] [HTTP]: GET /api/gig 200 (58ms) - IP: ::1 [User: natty]
+[2026-10-12 11:43:41] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 11:43:51] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 11:43:51] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 12:49:54] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 14:29:52] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 14:30:01] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 14:58:04] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 14:58:27] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 14:58:24] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 14:59:24] [INFO] [HTTP]: OPTIONS /api/booking 200 (248ms) - IP: ::1
+[2026-10-12 14:59:27] [INFO] [HTTP]: POST /api/booking 201 (2345ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:35] [INFO] [HTTP]: OPTIONS /api/booking 200 (213ms) - IP: ::1
+[2026-10-12 14:59:36] [INFO] [HTTP]: OPTIONS /api/gig 200 (63ms) - IP: ::1
+[2026-10-12 14:59:36] [INFO] [HTTP]: OPTIONS /api/gig 200 (439ms) - IP: ::1
+[2026-10-12 14:59:36] [INFO] [HTTP]: OPTIONS /api/booking 200 (250ms) - IP: ::1
+[2026-10-12 14:59:37] [INFO] [HTTP]: GET /api/booking 200 (929ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:37] [INFO] [HTTP]: GET /api/booking 200 (89ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:37] [INFO] [HTTP]: GET /api/gig 200 (440ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:37] [INFO] [HTTP]: GET /api/gig 200 (57ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:50] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (2ms) - IP: ::1
+[2026-10-12 14:59:50] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (137ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:53] [INFO] [HTTP]: OPTIONS /api/transaction 200 (14ms) - IP: ::1
+[2026-10-12 14:59:53] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 14:59:54] [INFO] [HTTP]: GET /api/transaction 200 (202ms) - IP: ::1 [User: natty]
+[2026-10-12 14:59:54] [INFO] [HTTP]: GET /api/transaction 200 (69ms) - IP: ::1 [User: natty]
+[2026-10-12 15:00:14] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 15:00:14] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 15:00:14] [INFO] [HTTP]: GET /api/gig 200 (93ms) - IP: ::1 [User: natty]
+[2026-10-12 15:00:14] [INFO] [HTTP]: GET /api/gig 200 (87ms) - IP: ::1 [User: natty]
+[2026-10-12 15:00:33] [INFO] [HTTP]: OPTIONS /api/booking 200 (5ms) - IP: ::1
+[2026-10-12 15:00:33] [INFO] [HTTP]: POST /api/booking 201 (706ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:03] [INFO] [HTTP]: OPTIONS /api/booking 200 (31ms) - IP: ::1
+[2026-10-12 15:01:03] [INFO] [HTTP]: OPTIONS /api/booking 200 (23ms) - IP: ::1
+[2026-10-12 15:01:03] [INFO] [HTTP]: OPTIONS /api/gig 200 (32ms) - IP: ::1
+[2026-10-12 15:01:03] [INFO] [HTTP]: OPTIONS /api/gig 200 (26ms) - IP: ::1
+[2026-10-12 15:01:06] [INFO] [HTTP]: GET /api/booking 200 (127ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:06] [INFO] [HTTP]: GET /api/gig 200 (101ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:06] [INFO] [HTTP]: GET /api/booking 200 (60ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:06] [INFO] [HTTP]: GET /api/gig 200 (73ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:32] [INFO] [HTTP]: OPTIONS /api/gig 200 (12ms) - IP: ::1
+[2026-10-12 15:01:32] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 15:01:33] [INFO] [HTTP]: GET /api/gig 200 (159ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:33] [INFO] [HTTP]: GET /api/gig 200 (69ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:57] [INFO] [HTTP]: OPTIONS /api/transaction 200 (9ms) - IP: ::1
+[2026-10-12 15:01:57] [INFO] [HTTP]: OPTIONS /api/transaction 200 (4ms) - IP: ::1
+[2026-10-12 15:01:58] [INFO] [HTTP]: GET /api/transaction 200 (466ms) - IP: ::1 [User: natty]
+[2026-10-12 15:01:58] [INFO] [HTTP]: GET /api/transaction 200 (116ms) - IP: ::1 [User: natty]
+[2026-10-12 15:02:02] [INFO] [HTTP]: OPTIONS /api/booking 200 (37ms) - IP: ::1
+[2026-10-12 15:02:02] [INFO] [HTTP]: OPTIONS /api/gig 200 (756ms) - IP: ::1
+[2026-10-12 15:02:03] [INFO] [HTTP]: OPTIONS /api/booking 200 (56ms) - IP: ::1
+[2026-10-12 15:02:03] [INFO] [HTTP]: OPTIONS /api/gig 200 (56ms) - IP: ::1
+[2026-10-12 15:02:03] [INFO] [HTTP]: GET /api/gig 200 (441ms) - IP: ::1 [User: natty]
+[2026-10-12 15:02:03] [INFO] [HTTP]: GET /api/booking 200 (256ms) - IP: ::1 [User: natty]
+[2026-10-12 15:02:04] [INFO] [HTTP]: GET /api/booking 200 (485ms) - IP: ::1 [User: natty]
+[2026-10-12 15:02:04] [INFO] [HTTP]: GET /api/gig 200 (431ms) - IP: ::1 [User: natty]
+[2026-10-12 17:30:42] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 17:30:55] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 17:30:56] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 17:31:32] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 17:32:46] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 17:44:16] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (8ms) - IP: ::1
+[2026-10-12 17:44:17] [INFO] [HTTP]: POST /api/auth/register 201 (827ms) - IP: ::1
+[2026-10-12 17:44:17] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 17:44:17] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 17:44:18] [INFO] [HTTP]: GET /api/gig/mine 200 (163ms) - IP: ::1 [User: Nats]
+[2026-10-12 17:44:18] [INFO] [HTTP]: GET /api/gig/mine 200 (158ms) - IP: ::1 [User: Nats]
+[2026-10-12 17:59:51] [INFO] [HTTP]: OPTIONS /api/gig 200 (32ms) - IP: ::1
+[2026-10-12 17:59:51] [INFO] [HTTP]: POST /api/gig 201 (308ms) - IP: ::1 [User: Nats]
+[2026-10-12 17:59:51] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 17:59:51] [INFO] [HTTP]: GET /api/gig/mine 200 (120ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:26] [INFO] [HTTP]: OPTIONS /api/gig 200 (5ms) - IP: ::1
+[2026-10-12 18:02:26] [INFO] [HTTP]: POST /api/gig 201 (240ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:26] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 18:02:26] [INFO] [HTTP]: GET /api/gig/mine 200 (89ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:55] [INFO] [HTTP]: OPTIONS /api/booking 200 (14ms) - IP: ::1
+[2026-10-12 18:02:55] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (7ms) - IP: ::1
+[2026-10-12 18:02:56] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (58ms) - IP: ::1
+[2026-10-12 18:02:56] [INFO] [HTTP]: OPTIONS /api/booking 200 (58ms) - IP: ::1
+[2026-10-12 18:02:56] [INFO] [HTTP]: GET /api/booking 200 (143ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:56] [INFO] [HTTP]: GET /api/booking 200 (158ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:56] [INFO] [HTTP]: GET /api/gig/mine 200 (417ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:56] [INFO] [HTTP]: GET /api/gig/mine 200 (76ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:57] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:02:57] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:02:57] [INFO] [HTTP]: GET /api/transaction 200 (90ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:57] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (2ms) - IP: ::1
+[2026-10-12 18:02:57] [INFO] [HTTP]: GET /api/transaction 200 (124ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:57] [INFO] [HTTP]: GET /api/transaction/income 200 (153ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:57] [INFO] [HTTP]: GET /api/transaction/income 200 (139ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:58] [INFO] [HTTP]: GET /api/gig/mine 200 (167ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:02:58] [INFO] [HTTP]: GET /api/gig/mine 200 (100ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:03:02] [INFO] [HTTP]: GET /api/transaction 200 (169ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:03:02] [INFO] [HTTP]: GET /api/transaction 200 (155ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:03:02] [INFO] [HTTP]: GET /api/transaction/income 200 (151ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:03:02] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (0ms) - IP: ::1
+[2026-10-12 18:03:02] [INFO] [HTTP]: GET /api/transaction/income 200 (127ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:03:02] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:03:02] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:03:03] [INFO] [HTTP]: GET /api/gig/mine 200 (182ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:03:03] [INFO] [HTTP]: GET /api/gig/mine 200 (194ms) - IP: ::1 [User: Nats]
+[2026-10-12 18:05:05] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (2ms) - IP: ::1
+[2026-10-12 18:05:05] [INFO] [HTTP]: POST /api/auth/register 201 (259ms) - IP: ::1
+[2026-10-12 18:05:05] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:05:05] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (4ms) - IP: ::1
+[2026-10-12 18:05:05] [INFO] [HTTP]: GET /api/gig/mine 200 (104ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:05:05] [INFO] [HTTP]: GET /api/gig/mine 200 (125ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:07:41] [INFO] [HTTP]: OPTIONS /api/gig 200 (15ms) - IP: ::1
+[2026-10-12 18:07:41] [INFO] [HTTP]: POST /api/gig 201 (300ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:07:41] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 18:07:41] [INFO] [HTTP]: GET /api/gig/mine 200 (123ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:10:09] [INFO] [HTTP]: OPTIONS /api/gig 200 (5ms) - IP: ::1
+[2026-10-12 18:10:09] [INFO] [HTTP]: POST /api/gig 201 (699ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:10:09] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 18:10:10] [INFO] [HTTP]: GET /api/gig/mine 200 (422ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:12:10] [INFO] [HTTP]: OPTIONS /api/gig 200 (13ms) - IP: ::1
+[2026-10-12 18:12:10] [INFO] [HTTP]: POST /api/gig 201 (358ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:12:10] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 18:12:10] [INFO] [HTTP]: GET /api/gig/mine 200 (76ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:12:54] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (2ms) - IP: ::1
+[2026-10-12 18:12:54] [INFO] [HTTP]: POST /api/auth/register 201 (195ms) - IP: ::1
+[2026-10-12 18:12:54] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:12:54] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (6ms) - IP: ::1
+[2026-10-12 18:12:55] [INFO] [HTTP]: GET /api/gig/mine 200 (131ms) - IP: ::1 [User: Meghan]
+[2026-10-12 18:12:55] [INFO] [HTTP]: GET /api/gig/mine 200 (119ms) - IP: ::1 [User: Meghan]
+[2026-10-12 18:13:40] [INFO] [HTTP]: OPTIONS /api/gig 200 (6ms) - IP: ::1
+[2026-10-12 18:13:41] [WARN] [HTTP]: POST /api/gig 400 (310ms) - IP: ::1 [User: Meghan]
+[2026-10-12 18:14:43] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 18:14:44] [INFO] [HTTP]: POST /api/gig 201 (559ms) - IP: ::1 [User: Meghan]
+[2026-10-12 18:14:44] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 18:14:44] [INFO] [HTTP]: GET /api/gig/mine 200 (363ms) - IP: ::1 [User: Meghan]
+[2026-10-12 18:15:17] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (1ms) - IP: ::1
+[2026-10-12 18:15:18] [INFO] [HTTP]: POST /api/auth/register 201 (578ms) - IP: ::1
+[2026-10-12 18:15:18] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:15:19] [INFO] [HTTP]: GET /api/gig 200 (779ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:15:19] [INFO] [HTTP]: GET /api/gig 200 (636ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:18] [INFO] [HTTP]: OPTIONS /api/gig 200 (9ms) - IP: ::1
+[2026-10-12 18:21:18] [INFO] [HTTP]: OPTIONS /api/booking 200 (11ms) - IP: ::1
+[2026-10-12 18:21:18] [INFO] [HTTP]: OPTIONS /api/booking 200 (10ms) - IP: ::1
+[2026-10-12 18:21:18] [INFO] [HTTP]: OPTIONS /api/gig 200 (36ms) - IP: ::1
+[2026-10-12 18:21:18] [INFO] [HTTP]: GET /api/booking 200 (184ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:18] [INFO] [HTTP]: GET /api/booking 200 (128ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:18] [INFO] [HTTP]: GET /api/gig 200 (370ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:19] [INFO] [HTTP]: GET /api/gig 200 (281ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:20] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:21:20] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:21:20] [INFO] [HTTP]: GET /api/transaction 200 (198ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:20] [INFO] [HTTP]: GET /api/transaction 200 (422ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:28] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 18:21:29] [INFO] [HTTP]: GET /api/gig 200 (294ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:21:29] [INFO] [HTTP]: GET /api/gig 200 (261ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:22:18] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:22:20] [INFO] [HTTP]: POST /api/booking 201 (565ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:22:39] [INFO] [HTTP]: OPTIONS /api/gig 200 (21ms) - IP: ::1
+[2026-10-12 18:22:39] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 18:22:39] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 18:22:39] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 18:22:39] [INFO] [HTTP]: GET /api/gig 200 (256ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:22:39] [INFO] [HTTP]: GET /api/booking 200 (292ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:22:39] [INFO] [HTTP]: GET /api/gig 200 (271ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:22:39] [INFO] [HTTP]: GET /api/booking 200 (267ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:22] [INFO] [HTTP]: OPTIONS /api/transaction 200 (4ms) - IP: ::1
+[2026-10-12 18:23:22] [INFO] [HTTP]: OPTIONS /api/transaction 200 (12ms) - IP: ::1
+[2026-10-12 18:23:23] [INFO] [HTTP]: GET /api/transaction 200 (1271ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:23] [INFO] [HTTP]: GET /api/transaction 200 (197ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:47] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 18:23:47] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 18:23:47] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 18:23:47] [INFO] [HTTP]: OPTIONS /api/booking 200 (6ms) - IP: ::1
+[2026-10-12 18:23:47] [INFO] [HTTP]: GET /api/booking 200 (224ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:47] [INFO] [HTTP]: GET /api/gig 200 (251ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:47] [INFO] [HTTP]: GET /api/booking 200 (187ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:47] [INFO] [HTTP]: GET /api/gig 200 (247ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:49] [INFO] [HTTP]: GET /api/gig 200 (224ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:23:49] [INFO] [HTTP]: GET /api/gig 200 (209ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:01] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:24:01] [INFO] [HTTP]: POST /api/booking 201 (232ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:04] [INFO] [HTTP]: OPTIONS /api/transaction 200 (19ms) - IP: ::1
+[2026-10-12 18:24:04] [INFO] [HTTP]: OPTIONS /api/transaction 200 (8ms) - IP: ::1
+[2026-10-12 18:24:05] [INFO] [HTTP]: GET /api/transaction 200 (789ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:05] [INFO] [HTTP]: GET /api/transaction 200 (186ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:27] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 18:24:27] [INFO] [HTTP]: OPTIONS /api/gig 200 (22ms) - IP: ::1
+[2026-10-12 18:24:27] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 18:24:27] [INFO] [HTTP]: OPTIONS /api/gig 200 (23ms) - IP: ::1
+[2026-10-12 18:24:27] [INFO] [HTTP]: GET /api/booking 200 (206ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:27] [INFO] [HTTP]: GET /api/gig 200 (199ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:27] [INFO] [HTTP]: GET /api/booking 200 (150ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:28] [INFO] [HTTP]: GET /api/gig 200 (181ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:30] [INFO] [HTTP]: GET /api/gig 200 (737ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:24:30] [INFO] [HTTP]: GET /api/gig 200 (574ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:25:33] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (1ms) - IP: ::1
+[2026-10-12 18:25:33] [INFO] [HTTP]: POST /api/auth/login 200 (146ms) - IP: ::1
+[2026-10-12 18:25:33] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:25:33] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 18:25:34] [INFO] [HTTP]: GET /api/gig 200 (179ms) - IP: ::1 [User: natty]
+[2026-10-12 18:25:34] [INFO] [HTTP]: GET /api/gig 200 (172ms) - IP: ::1 [User: natty]
+[2026-10-12 18:25:44] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:25:45] [INFO] [HTTP]: POST /api/booking 201 (880ms) - IP: ::1 [User: natty]
+[2026-10-12 18:25:53] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 18:25:53] [INFO] [HTTP]: POST /api/booking 201 (210ms) - IP: ::1 [User: natty]
+[2026-10-12 18:25:59] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:25:59] [INFO] [HTTP]: POST /api/booking 201 (213ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:07] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 18:26:07] [INFO] [HTTP]: OPTIONS /api/gig 200 (5ms) - IP: ::1
+[2026-10-12 18:26:07] [INFO] [HTTP]: OPTIONS /api/booking 200 (5ms) - IP: ::1
+[2026-10-12 18:26:07] [INFO] [HTTP]: OPTIONS /api/gig 200 (7ms) - IP: ::1
+[2026-10-12 18:26:08] [INFO] [HTTP]: GET /api/booking 200 (188ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:08] [INFO] [HTTP]: GET /api/gig 200 (204ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:08] [INFO] [HTTP]: GET /api/booking 200 (166ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:08] [INFO] [HTTP]: GET /api/gig 200 (154ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:16] [INFO] [HTTP]: OPTIONS /api/booking/6acc10cffab041b851ca069a 200 (0ms) - IP: ::1
+[2026-10-12 18:26:17] [INFO] [HTTP]: DELETE /api/booking/6acc10cffab041b851ca069a 200 (674ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:17] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 18:26:17] [INFO] [HTTP]: GET /api/booking 200 (556ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:33] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:26:33] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 18:26:33] [INFO] [HTTP]: GET /api/transaction 200 (189ms) - IP: ::1 [User: natty]
+[2026-10-12 18:26:33] [INFO] [HTTP]: GET /api/transaction 200 (184ms) - IP: ::1 [User: natty]
+[2026-10-12 18:27:32] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (4ms) - IP: ::1
+[2026-10-12 18:27:32] [INFO] [HTTP]: POST /api/auth/login 200 (128ms) - IP: ::1
+[2026-10-12 18:27:32] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 18:27:32] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 18:27:32] [INFO] [HTTP]: GET /api/gig/mine 200 (121ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:27:33] [INFO] [HTTP]: GET /api/gig/mine 200 (102ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:27:37] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 18:27:37] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:27:37] [INFO] [HTTP]: GET /api/gig/mine 200 (107ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:27:37] [INFO] [HTTP]: GET /api/booking 200 (148ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:27:37] [INFO] [HTTP]: GET /api/gig/mine 200 (107ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:27:37] [INFO] [HTTP]: GET /api/booking 200 (161ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:28:04] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (1ms) - IP: ::1
+[2026-10-12 18:28:04] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (115ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:28:06] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 18:28:06] [INFO] [HTTP]: GET /api/booking 200 (151ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:28:11] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:28:11] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 18:28:11] [INFO] [HTTP]: GET /api/transaction 200 (165ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:28:11] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (1ms) - IP: ::1
+[2026-10-12 18:28:11] [INFO] [HTTP]: GET /api/transaction/income 200 (119ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:28:12] [INFO] [HTTP]: GET /api/transaction 200 (385ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:28:12] [INFO] [HTTP]: GET /api/transaction/income 200 (67ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:32:53] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (7ms) - IP: ::1
+[2026-10-12 18:32:53] [WARN] [AUTH]: Incorrect password attempt for zoey@yahoo.com
+[2026-10-12 18:32:53] [WARN] [HTTP]: POST /api/auth/login 401 (173ms) - IP: ::1
+[2026-10-12 18:32:56] [INFO] [HTTP]: POST /api/auth/login 200 (110ms) - IP: ::1
+[2026-10-12 18:32:56] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:32:56] [INFO] [HTTP]: OPTIONS /api/booking 200 (10ms) - IP: ::1
+[2026-10-12 18:32:56] [INFO] [HTTP]: OPTIONS /api/transaction 200 (8ms) - IP: ::1
+[2026-10-12 18:32:56] [INFO] [HTTP]: OPTIONS /api/booking 200 (8ms) - IP: ::1
+[2026-10-12 18:32:56] [INFO] [HTTP]: OPTIONS /api/transaction 200 (7ms) - IP: ::1
+[2026-10-12 18:32:57] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 18:32:57] [INFO] [HTTP]: GET /api/gig 200 (134ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:32:57] [INFO] [HTTP]: GET /api/booking 200 (204ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:32:57] [INFO] [HTTP]: GET /api/gig 200 (193ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:32:57] [INFO] [HTTP]: GET /api/booking 200 (194ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:32:57] [INFO] [HTTP]: GET /api/transaction 200 (463ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:32:57] [INFO] [HTTP]: GET /api/transaction 200 (157ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:34:59] [INFO] [HTTP]: OPTIONS /api/gig 200 (13ms) - IP: ::1
+[2026-10-12 18:34:59] [INFO] [HTTP]: OPTIONS /api/gig 200 (108ms) - IP: ::1
+[2026-10-12 18:35:00] [INFO] [HTTP]: GET /api/gig 200 (380ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:00] [INFO] [HTTP]: GET /api/gig 200 (189ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:10] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 18:35:10] [INFO] [HTTP]: OPTIONS /api/gig 200 (10ms) - IP: ::1
+[2026-10-12 18:35:10] [INFO] [HTTP]: OPTIONS /api/booking 200 (9ms) - IP: ::1
+[2026-10-12 18:35:10] [INFO] [HTTP]: OPTIONS /api/gig 200 (9ms) - IP: ::1
+[2026-10-12 18:35:10] [INFO] [HTTP]: GET /api/gig 200 (193ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:10] [INFO] [HTTP]: GET /api/booking 200 (207ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:11] [INFO] [HTTP]: GET /api/booking 200 (172ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:11] [INFO] [HTTP]: GET /api/gig 200 (763ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:21] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:35:21] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:35:21] [INFO] [HTTP]: GET /api/transaction 200 (237ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:35:21] [INFO] [HTTP]: GET /api/transaction 200 (230ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:41:47] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (20ms) - IP: ::1
+[2026-10-12 18:41:48] [WARN] [AUTH]: Login attempted for email not in the database: j@gmail.com
+[2026-10-12 18:41:48] [WARN] [HTTP]: POST /api/auth/login 401 (480ms) - IP: ::1
+[2026-10-12 18:41:59] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (1ms) - IP: ::1
+[2026-10-12 18:41:59] [INFO] [HTTP]: POST /api/auth/login 200 (202ms) - IP: ::1
+[2026-10-12 18:41:59] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:41:59] [INFO] [HTTP]: GET /api/gig 200 (208ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:41:59] [INFO] [HTTP]: GET /api/gig 200 (180ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:43:38] [INFO] [HTTP]: OPTIONS /api/booking 200 (13ms) - IP: ::1
+[2026-10-12 18:43:38] [INFO] [HTTP]: POST /api/booking 201 (440ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:43:43] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 18:43:43] [INFO] [HTTP]: OPTIONS /api/gig 200 (12ms) - IP: ::1
+[2026-10-12 18:43:43] [INFO] [HTTP]: OPTIONS /api/booking 200 (16ms) - IP: ::1
+[2026-10-12 18:43:43] [INFO] [HTTP]: OPTIONS /api/gig 200 (10ms) - IP: ::1
+[2026-10-12 18:43:44] [INFO] [HTTP]: GET /api/gig 200 (173ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:43:44] [INFO] [HTTP]: GET /api/booking 200 (177ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:43:44] [INFO] [HTTP]: GET /api/booking 200 (164ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:43:44] [INFO] [HTTP]: GET /api/gig 200 (182ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:09] [INFO] [HTTP]: OPTIONS /api/booking/6acd0e3a14d127408a033235 200 (4ms) - IP: ::1
+[2026-10-12 18:44:09] [INFO] [HTTP]: PATCH /api/booking/6acd0e3a14d127408a033235 200 (350ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:09] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:44:10] [INFO] [HTTP]: GET /api/booking 200 (172ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:13] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (0ms) - IP: ::1
+[2026-10-12 18:44:13] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (205ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:15] [INFO] [HTTP]: OPTIONS /api/booking?status=completed 200 (0ms) - IP: ::1
+[2026-10-12 18:44:16] [INFO] [HTTP]: GET /api/booking?status=completed 200 (136ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:17] [INFO] [HTTP]: OPTIONS /api/booking?status=pending 200 (1ms) - IP: ::1
+[2026-10-12 18:44:18] [INFO] [HTTP]: GET /api/booking?status=pending 200 (149ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:20] [INFO] [HTTP]: GET /api/booking?status=completed 200 (184ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:22] [INFO] [HTTP]: OPTIONS /api/booking?status=confirmed 200 (2ms) - IP: ::1
+[2026-10-12 18:44:22] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (178ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:23] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:44:23] [INFO] [HTTP]: GET /api/booking 200 (252ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:26] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 18:44:26] [INFO] [HTTP]: OPTIONS /api/transaction 200 (3ms) - IP: ::1
+[2026-10-12 18:44:26] [INFO] [HTTP]: GET /api/transaction 200 (184ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:26] [INFO] [HTTP]: GET /api/transaction 200 (206ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:40] [INFO] [HTTP]: OPTIONS /api/gig 200 (6ms) - IP: ::1
+[2026-10-12 18:44:40] [INFO] [HTTP]: OPTIONS /api/booking 200 (29ms) - IP: ::1
+[2026-10-12 18:44:40] [INFO] [HTTP]: OPTIONS /api/booking 200 (14ms) - IP: ::1
+[2026-10-12 18:44:40] [INFO] [HTTP]: OPTIONS /api/gig 200 (12ms) - IP: ::1
+[2026-10-12 18:44:41] [INFO] [HTTP]: GET /api/booking 200 (199ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:41] [INFO] [HTTP]: GET /api/gig 200 (280ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:41] [INFO] [HTTP]: GET /api/booking 200 (158ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:41] [INFO] [HTTP]: GET /api/gig 200 (214ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:48] [INFO] [HTTP]: OPTIONS /api/booking/6acd09a114d127408a03322d 200 (0ms) - IP: ::1
+[2026-10-12 18:44:48] [INFO] [HTTP]: PATCH /api/booking/6acd09a114d127408a03322d 200 (254ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:48] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 18:44:48] [INFO] [HTTP]: GET /api/booking 200 (142ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:51] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:44:51] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:44:51] [INFO] [HTTP]: GET /api/transaction 200 (204ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:44:52] [INFO] [HTTP]: GET /api/transaction 200 (166ms) - IP: ::1 [User: Jeff]
+[2026-10-12 18:45:23] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (2ms) - IP: ::1
+[2026-10-12 18:45:23] [WARN] [AUTH]: Incorrect password attempt for taylor@gmail.com
+[2026-10-12 18:45:23] [WARN] [HTTP]: POST /api/auth/login 401 (203ms) - IP: ::1
+[2026-10-12 18:45:33] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (0ms) - IP: ::1
+[2026-10-12 18:45:33] [INFO] [HTTP]: POST /api/auth/login 200 (130ms) - IP: ::1
+[2026-10-12 18:45:33] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:45:33] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (6ms) - IP: ::1
+[2026-10-12 18:45:33] [INFO] [HTTP]: GET /api/gig/mine 200 (248ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:45:33] [INFO] [HTTP]: GET /api/gig/mine 200 (125ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:45:52] [INFO] [HTTP]: OPTIONS /api/booking 200 (7ms) - IP: ::1
+[2026-10-12 18:45:52] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (13ms) - IP: ::1
+[2026-10-12 18:45:52] [INFO] [HTTP]: OPTIONS /api/booking 200 (42ms) - IP: ::1
+[2026-10-12 18:45:52] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (10ms) - IP: ::1
+[2026-10-12 18:45:52] [INFO] [HTTP]: GET /api/gig/mine 200 (131ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:45:52] [INFO] [HTTP]: GET /api/booking 200 (229ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:45:52] [INFO] [HTTP]: GET /api/gig/mine 200 (130ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:45:52] [INFO] [HTTP]: GET /api/booking 200 (171ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:00] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 18:46:00] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:46:00] [INFO] [HTTP]: GET /api/gig/mine 200 (120ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:01] [INFO] [HTTP]: GET /api/gig/mine 200 (105ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:04] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 18:46:04] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 18:46:04] [INFO] [HTTP]: GET /api/gig/mine 200 (131ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:04] [INFO] [HTTP]: GET /api/booking 200 (216ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:04] [INFO] [HTTP]: GET /api/gig/mine 200 (136ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:04] [INFO] [HTTP]: GET /api/booking 200 (181ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:06] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:46:06] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 18:46:06] [INFO] [HTTP]: GET /api/gig/mine 200 (116ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:06] [INFO] [HTTP]: GET /api/gig/mine 200 (94ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:09] [INFO] [HTTP]: OPTIONS /api/gig/6acd05cd14d127408a033224 200 (1ms) - IP: ::1
+[2026-10-12 18:46:09] [INFO] [HTTP]: DELETE /api/gig/6acd05cd14d127408a033224 200 (198ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:46:09] [INFO] [HTTP]: GET /api/gig/mine 200 (134ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:47:22] [INFO] [HTTP]: OPTIONS /api/gig 200 (10ms) - IP: ::1
+[2026-10-12 18:47:23] [INFO] [HTTP]: POST /api/gig 201 (203ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:47:23] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:47:23] [INFO] [HTTP]: GET /api/gig/mine 200 (157ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:47:50] [INFO] [HTTP]: OPTIONS /api/gig/6acd0f1b14d127408a033237 200 (22ms) - IP: ::1
+[2026-10-12 18:47:51] [INFO] [HTTP]: PUT /api/gig/6acd0f1b14d127408a033237 200 (255ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:47:51] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 18:47:51] [INFO] [HTTP]: GET /api/gig/mine 200 (131ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:47:59] [INFO] [HTTP]: OPTIONS /api/gig/6acd05cd14d127408a033224 200 (1ms) - IP: ::1
+[2026-10-12 18:47:59] [INFO] [HTTP]: PUT /api/gig/6acd05cd14d127408a033224 200 (200ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:47:59] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 18:47:59] [INFO] [HTTP]: GET /api/gig/mine 200 (111ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:03] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 18:48:03] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 18:48:04] [INFO] [HTTP]: GET /api/gig/mine 200 (578ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:04] [INFO] [HTTP]: GET /api/booking 200 (779ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:04] [INFO] [HTTP]: GET /api/gig/mine 200 (398ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:05] [INFO] [HTTP]: GET /api/booking 200 (541ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:08] [INFO] [HTTP]: OPTIONS /api/booking/6acd093b14d127408a03322b 200 (1ms) - IP: ::1
+[2026-10-12 18:48:09] [INFO] [HTTP]: PATCH /api/booking/6acd093b14d127408a03322b 200 (415ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:09] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 18:48:09] [INFO] [HTTP]: GET /api/booking 200 (210ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:15] [INFO] [HTTP]: OPTIONS /api/booking?status=completed 200 (1ms) - IP: ::1
+[2026-10-12 18:48:16] [INFO] [HTTP]: GET /api/booking?status=completed 200 (192ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:18] [INFO] [HTTP]: OPTIONS /api/booking?status=confirmed 200 (0ms) - IP: ::1
+[2026-10-12 18:48:18] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (181ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:23] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (3ms) - IP: ::1
+[2026-10-12 18:48:23] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (186ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:26] [INFO] [HTTP]: OPTIONS /api/booking?status=pending 200 (0ms) - IP: ::1
+[2026-10-12 18:48:26] [INFO] [HTTP]: GET /api/booking?status=pending 200 (119ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:27] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 18:48:27] [INFO] [HTTP]: GET /api/booking 200 (172ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:29] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 18:48:29] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:48:29] [INFO] [HTTP]: GET /api/transaction 200 (211ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:29] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (0ms) - IP: ::1
+[2026-10-12 18:48:29] [INFO] [HTTP]: GET /api/transaction/income 200 (134ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:29] [INFO] [HTTP]: GET /api/transaction 200 (203ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:48:29] [INFO] [HTTP]: GET /api/transaction/income 200 (116ms) - IP: ::1 [User: Talor]
+[2026-10-12 18:49:32] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (2ms) - IP: ::1
+[2026-10-12 18:49:32] [WARN] [AUTH]: Login attempted for email not in the database: zoey@gmail.com
+[2026-10-12 18:49:32] [WARN] [HTTP]: POST /api/auth/login 401 (85ms) - IP: ::1
+[2026-10-12 18:50:33] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (2ms) - IP: ::1
+[2026-10-12 18:50:34] [WARN] [AUTH]: Incorrect password attempt for zoey@yahoo.com
+[2026-10-12 18:50:34] [WARN] [HTTP]: POST /api/auth/login 401 (135ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: POST /api/auth/login 200 (240ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: OPTIONS /api/booking 200 (9ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: OPTIONS /api/booking 200 (21ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: OPTIONS /api/transaction 200 (20ms) - IP: ::1
+[2026-10-12 18:50:36] [INFO] [HTTP]: OPTIONS /api/gig 200 (24ms) - IP: ::1
+[2026-10-12 18:50:37] [INFO] [HTTP]: GET /api/transaction 200 (266ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:50:37] [INFO] [HTTP]: GET /api/booking 200 (348ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:50:37] [INFO] [HTTP]: GET /api/gig 200 (378ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:50:37] [INFO] [HTTP]: GET /api/booking 200 (211ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:50:37] [INFO] [HTTP]: GET /api/gig 200 (224ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:50:37] [INFO] [HTTP]: GET /api/transaction 200 (311ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:02] [INFO] [HTTP]: OPTIONS /api/gig/6acd077314d127408a033229 200 (12ms) - IP: ::1
+[2026-10-12 18:51:02] [INFO] [HTTP]: DELETE /api/gig/6acd077314d127408a033229 200 (337ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:02] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:51:02] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 18:51:02] [INFO] [HTTP]: OPTIONS /api/transaction 200 (6ms) - IP: ::1
+[2026-10-12 18:51:02] [INFO] [HTTP]: GET /api/booking 200 (191ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:02] [INFO] [HTTP]: GET /api/gig 200 (231ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:02] [INFO] [HTTP]: GET /api/transaction 200 (265ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:14] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 18:51:14] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 18:51:14] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 18:51:14] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 18:51:14] [INFO] [HTTP]: GET /api/gig 200 (226ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:14] [INFO] [HTTP]: GET /api/booking 200 (254ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:15] [INFO] [HTTP]: GET /api/gig 200 (197ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:15] [INFO] [HTTP]: GET /api/booking 200 (250ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:22] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (1ms) - IP: ::1
+[2026-10-12 18:51:22] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (213ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:25] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 18:51:25] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 18:51:26] [INFO] [HTTP]: GET /api/transaction 200 (294ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:26] [INFO] [HTTP]: GET /api/transaction 200 (254ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:36] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:51:36] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 18:51:36] [INFO] [HTTP]: GET /api/gig 200 (278ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:36] [INFO] [HTTP]: GET /api/gig 200 (264ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:46] [INFO] [HTTP]: OPTIONS /api/booking 200 (15ms) - IP: ::1
+[2026-10-12 18:51:46] [INFO] [HTTP]: OPTIONS /api/gig 200 (14ms) - IP: ::1
+[2026-10-12 18:51:46] [INFO] [HTTP]: OPTIONS /api/transaction 200 (9ms) - IP: ::1
+[2026-10-12 18:51:46] [INFO] [HTTP]: OPTIONS /api/gig 200 (8ms) - IP: ::1
+[2026-10-12 18:51:46] [INFO] [HTTP]: OPTIONS /api/booking 200 (7ms) - IP: ::1
+[2026-10-12 18:51:46] [INFO] [HTTP]: OPTIONS /api/transaction 200 (8ms) - IP: ::1
+[2026-10-12 18:51:46] [INFO] [HTTP]: GET /api/booking 200 (221ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:46] [INFO] [HTTP]: GET /api/gig 200 (220ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:46] [INFO] [HTTP]: GET /api/transaction 200 (311ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:46] [INFO] [HTTP]: GET /api/gig 200 (190ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:46] [INFO] [HTTP]: GET /api/booking 200 (227ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:51:46] [INFO] [HTTP]: GET /api/transaction 200 (288ms) - IP: ::1 [User: Zoey]
+[2026-10-12 18:53:16] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (18ms) - IP: ::1
+[2026-10-12 18:53:16] [INFO] [HTTP]: POST /api/auth/register 201 (383ms) - IP: ::1
+[2026-10-12 18:53:16] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 18:53:16] [INFO] [HTTP]: GET /api/gig 200 (283ms) - IP: ::1 [User: buudy]
+[2026-10-12 18:53:17] [INFO] [HTTP]: GET /api/gig 200 (465ms) - IP: ::1 [User: buudy]
+[2026-10-12 18:53:24] [INFO] [HTTP]: OPTIONS /api/booking 200 (7ms) - IP: ::1
+[2026-10-12 18:53:24] [INFO] [HTTP]: OPTIONS /api/gig 200 (10ms) - IP: ::1
+[2026-10-12 18:53:24] [INFO] [HTTP]: OPTIONS /api/booking 200 (17ms) - IP: ::1
+[2026-10-12 18:53:25] [INFO] [HTTP]: OPTIONS /api/gig 200 (21ms) - IP: ::1
+[2026-10-12 18:53:25] [INFO] [HTTP]: GET /api/booking 200 (236ms) - IP: ::1 [User: buudy]
+[2026-10-12 18:53:25] [INFO] [HTTP]: GET /api/booking 200 (270ms) - IP: ::1 [User: buudy]
+[2026-10-12 18:53:25] [INFO] [HTTP]: GET /api/gig 200 (843ms) - IP: ::1 [User: buudy]
+[2026-10-12 18:53:29] [INFO] [HTTP]: GET /api/gig 200 (2323ms) - IP: ::1 [User: buudy]
+[2026-10-12 20:36:21] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 20:36:23] [INFO] [DATABASE]: MongoDB reconnected
