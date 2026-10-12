@@ -528,3 +528,488 @@
 [2026-10-12 08:08:53] [INFO] [HTTP]: GET /api/gig 200 (126ms) - IP: ::1 [User: natty]
 [2026-10-12 08:08:54] [INFO] [HTTP]: GET /api/gig 200 (54ms) - IP: ::1 [User: natty]
 [2026-10-12 08:08:55] [INFO] [HTTP]: GET /api/gig 200 (53ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:10] [INFO] [HTTP]: OPTIONS /api/booking 200 (9ms) - IP: ::1
+[2026-10-12 08:17:10] [INFO] [HTTP]: OPTIONS /api/gig 200 (14ms) - IP: ::1
+[2026-10-12 08:17:10] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 08:17:10] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 08:17:10] [INFO] [HTTP]: GET /api/booking 200 (107ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:10] [INFO] [HTTP]: GET /api/gig 200 (78ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:10] [INFO] [HTTP]: GET /api/booking 200 (63ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:10] [INFO] [HTTP]: GET /api/gig 200 (71ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:14] [INFO] [HTTP]: GET /api/gig 200 (397ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:14] [INFO] [HTTP]: GET /api/gig 200 (206ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:44] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 08:17:45] [INFO] [HTTP]: POST /api/booking 201 (495ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:49] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:17:49] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 08:17:49] [INFO] [HTTP]: OPTIONS /api/booking 200 (5ms) - IP: ::1
+[2026-10-12 08:17:49] [INFO] [HTTP]: OPTIONS /api/gig 200 (6ms) - IP: ::1
+[2026-10-12 08:17:50] [INFO] [HTTP]: GET /api/booking 200 (236ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:50] [INFO] [HTTP]: GET /api/gig 200 (259ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:50] [INFO] [HTTP]: GET /api/booking 200 (71ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:50] [INFO] [HTTP]: GET /api/gig 200 (63ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:56] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 08:17:56] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 08:17:56] [INFO] [HTTP]: GET /api/transaction 200 (331ms) - IP: ::1 [User: natty]
+[2026-10-12 08:17:56] [INFO] [HTTP]: GET /api/transaction 200 (172ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:05] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 08:18:05] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 08:18:05] [INFO] [HTTP]: OPTIONS /api/booking 200 (93ms) - IP: ::1
+[2026-10-12 08:18:05] [INFO] [HTTP]: OPTIONS /api/gig 200 (93ms) - IP: ::1
+[2026-10-12 08:18:05] [INFO] [HTTP]: GET /api/gig 200 (201ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:06] [INFO] [HTTP]: GET /api/gig 200 (168ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:06] [INFO] [HTTP]: GET /api/booking 200 (699ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:06] [INFO] [HTTP]: GET /api/booking 200 (58ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:10] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 08:18:10] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 08:18:10] [INFO] [HTTP]: GET /api/transaction 200 (305ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:10] [INFO] [HTTP]: GET /api/transaction 200 (222ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:13] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:18:13] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 08:18:13] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:18:13] [INFO] [HTTP]: OPTIONS /api/gig 200 (5ms) - IP: ::1
+[2026-10-12 08:18:13] [INFO] [HTTP]: GET /api/booking 200 (166ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:13] [INFO] [HTTP]: GET /api/gig 200 (166ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:14] [INFO] [HTTP]: GET /api/booking 200 (55ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:14] [INFO] [HTTP]: GET /api/gig 200 (52ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:14] [INFO] [HTTP]: GET /api/gig 200 (65ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:14] [INFO] [HTTP]: GET /api/gig 200 (246ms) - IP: ::1 [User: natty]
+[2026-10-12 08:18:43] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (0ms) - IP: ::1
+[2026-10-12 08:18:43] [INFO] [HTTP]: POST /api/auth/login 200 (279ms) - IP: ::1
+[2026-10-12 08:18:43] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 08:18:43] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 08:18:43] [INFO] [HTTP]: GET /api/gig/mine 200 (234ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:44] [INFO] [HTTP]: GET /api/gig/mine 200 (204ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:47] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 08:18:48] [INFO] [HTTP]: OPTIONS /api/booking 200 (7ms) - IP: ::1
+[2026-10-12 08:18:48] [INFO] [HTTP]: GET /api/gig/mine 200 (224ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:48] [INFO] [HTTP]: GET /api/booking 200 (223ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:48] [INFO] [HTTP]: GET /api/gig/mine 200 (41ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:48] [INFO] [HTTP]: GET /api/booking 200 (172ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:50] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 08:18:50] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (7ms) - IP: ::1
+[2026-10-12 08:18:50] [INFO] [HTTP]: GET /api/gig/mine 200 (186ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:51] [INFO] [HTTP]: GET /api/gig/mine 200 (100ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:54] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:18:54] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 08:18:54] [INFO] [HTTP]: GET /api/gig/mine 200 (99ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:54] [INFO] [HTTP]: GET /api/booking 200 (123ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:54] [INFO] [HTTP]: GET /api/gig/mine 200 (44ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:18:54] [INFO] [HTTP]: GET /api/booking 200 (56ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:00] [INFO] [HTTP]: OPTIONS /api/booking/6acc7b8814d127408a033217 200 (2ms) - IP: ::1
+[2026-10-12 08:19:00] [INFO] [HTTP]: PATCH /api/booking/6acc7b8814d127408a033217 200 (158ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:00] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:19:00] [INFO] [HTTP]: GET /api/booking 200 (66ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:04] [INFO] [HTTP]: OPTIONS /api/booking?status=completed 200 (0ms) - IP: ::1
+[2026-10-12 08:19:05] [INFO] [HTTP]: GET /api/booking?status=completed 200 (167ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:06] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (0ms) - IP: ::1
+[2026-10-12 08:19:06] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (107ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:09] [INFO] [HTTP]: OPTIONS /api/booking?status=confirmed 200 (0ms) - IP: ::1
+[2026-10-12 08:19:09] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (171ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:10] [INFO] [HTTP]: OPTIONS /api/booking?status=pending 200 (1ms) - IP: ::1
+[2026-10-12 08:19:11] [INFO] [HTTP]: GET /api/booking?status=pending 200 (487ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:11] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:19:12] [INFO] [HTTP]: GET /api/booking 200 (242ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:18] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 08:19:18] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 08:19:19] [INFO] [HTTP]: GET /api/transaction 200 (306ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:19] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (1ms) - IP: ::1
+[2026-10-12 08:19:19] [INFO] [HTTP]: GET /api/transaction/income 200 (107ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:20] [INFO] [HTTP]: GET /api/transaction 200 (1200ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:20] [INFO] [HTTP]: GET /api/transaction/income 200 (98ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:45] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 08:19:45] [INFO] [HTTP]: GET /api/transaction 200 (247ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:45] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (1ms) - IP: ::1
+[2026-10-12 08:19:45] [INFO] [HTTP]: GET /api/transaction/income 200 (171ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:52] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 08:19:52] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (3ms) - IP: ::1
+[2026-10-12 08:19:52] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 08:19:52] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 08:19:52] [INFO] [HTTP]: GET /api/gig/mine 200 (64ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:52] [INFO] [HTTP]: GET /api/booking 200 (145ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:52] [INFO] [HTTP]: GET /api/gig/mine 200 (153ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:52] [INFO] [HTTP]: GET /api/booking 200 (201ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:54] [INFO] [HTTP]: GET /api/gig/mine 200 (254ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:19:54] [INFO] [HTTP]: GET /api/gig/mine 200 (194ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:51] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 08:20:51] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (15ms) - IP: ::1
+[2026-10-12 08:20:51] [INFO] [HTTP]: OPTIONS /api/booking 200 (13ms) - IP: ::1
+[2026-10-12 08:20:51] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (13ms) - IP: ::1
+[2026-10-12 08:20:51] [INFO] [HTTP]: GET /api/gig/mine 200 (39ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:51] [INFO] [HTTP]: GET /api/booking 200 (68ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:51] [INFO] [HTTP]: GET /api/gig/mine 200 (40ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:51] [INFO] [HTTP]: GET /api/booking 200 (62ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:52] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 08:20:52] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 08:20:53] [INFO] [HTTP]: GET /api/transaction 200 (236ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:53] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (1ms) - IP: ::1
+[2026-10-12 08:20:53] [INFO] [HTTP]: GET /api/transaction/income 200 (51ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:53] [INFO] [HTTP]: GET /api/transaction 200 (64ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:53] [INFO] [HTTP]: GET /api/transaction/income 200 (123ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:54] [INFO] [HTTP]: GET /api/gig/mine 200 (95ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:54] [INFO] [HTTP]: GET /api/gig/mine 200 (68ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:58] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 08:20:58] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 08:20:58] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 08:20:58] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (3ms) - IP: ::1
+[2026-10-12 08:20:58] [INFO] [HTTP]: GET /api/gig/mine 200 (354ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:58] [INFO] [HTTP]: GET /api/gig/mine 200 (45ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:58] [INFO] [HTTP]: GET /api/booking 200 (405ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:58] [INFO] [HTTP]: GET /api/booking 200 (62ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:59] [INFO] [HTTP]: GET /api/gig/mine 200 (139ms) - IP: ::1 [User: Natash]
+[2026-10-12 08:20:59] [INFO] [HTTP]: GET /api/gig/mine 200 (35ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:08:31] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (31ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: POST /api/auth/login 200 (370ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: OPTIONS /api/transaction 200 (32ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: OPTIONS /api/transaction 200 (32ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: OPTIONS /api/booking 200 (32ms) - IP: ::1
+[2026-10-12 09:08:32] [INFO] [HTTP]: GET /api/booking 200 (276ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:32] [INFO] [HTTP]: GET /api/gig 200 (348ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:32] [INFO] [HTTP]: GET /api/booking 200 (126ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:32] [INFO] [HTTP]: GET /api/gig 200 (73ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:33] [INFO] [HTTP]: GET /api/transaction 200 (806ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:33] [INFO] [HTTP]: GET /api/transaction 200 (54ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:46] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:08:46] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:08:46] [INFO] [HTTP]: GET /api/gig 200 (110ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:46] [INFO] [HTTP]: GET /api/gig 200 (250ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:52] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 09:08:52] [INFO] [HTTP]: OPTIONS /api/gig 200 (5ms) - IP: ::1
+[2026-10-12 09:08:52] [INFO] [HTTP]: OPTIONS /api/gig 200 (9ms) - IP: ::1
+[2026-10-12 09:08:52] [INFO] [HTTP]: OPTIONS /api/booking 200 (14ms) - IP: ::1
+[2026-10-12 09:08:52] [INFO] [HTTP]: GET /api/booking 200 (72ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:52] [INFO] [HTTP]: GET /api/gig 200 (67ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:52] [INFO] [HTTP]: GET /api/booking 200 (67ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:52] [INFO] [HTTP]: GET /api/gig 200 (66ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:55] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:08:55] [INFO] [HTTP]: OPTIONS /api/transaction 200 (6ms) - IP: ::1
+[2026-10-12 09:08:55] [INFO] [HTTP]: GET /api/transaction 200 (68ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:08:55] [INFO] [HTTP]: GET /api/transaction 200 (66ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:04] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 09:09:04] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:09:04] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 09:09:04] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 09:09:04] [INFO] [HTTP]: OPTIONS /api/booking 200 (8ms) - IP: ::1
+[2026-10-12 09:09:04] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:09:04] [INFO] [HTTP]: GET /api/gig 200 (96ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:04] [INFO] [HTTP]: GET /api/booking 200 (108ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:04] [INFO] [HTTP]: GET /api/transaction 200 (105ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:04] [INFO] [HTTP]: GET /api/gig 200 (60ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:04] [INFO] [HTTP]: GET /api/booking 200 (132ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:04] [INFO] [HTTP]: GET /api/transaction 200 (130ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:06] [INFO] [HTTP]: GET /api/gig 200 (208ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:06] [INFO] [HTTP]: GET /api/gig 200 (105ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:13] [INFO] [HTTP]: OPTIONS /api/gig 200 (7ms) - IP: ::1
+[2026-10-12 09:09:13] [INFO] [HTTP]: OPTIONS /api/booking 200 (8ms) - IP: ::1
+[2026-10-12 09:09:13] [INFO] [HTTP]: OPTIONS /api/booking 200 (8ms) - IP: ::1
+[2026-10-12 09:09:13] [INFO] [HTTP]: OPTIONS /api/gig 200 (12ms) - IP: ::1
+[2026-10-12 09:09:13] [INFO] [HTTP]: GET /api/booking 200 (201ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:13] [INFO] [HTTP]: GET /api/gig 200 (205ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:13] [INFO] [HTTP]: GET /api/booking 200 (61ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:13] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:14] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 09:09:14] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 09:09:14] [INFO] [HTTP]: GET /api/transaction 200 (75ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:14] [INFO] [HTTP]: GET /api/transaction 200 (90ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:20] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:09:20] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 09:09:20] [INFO] [HTTP]: OPTIONS /api/transaction 200 (3ms) - IP: ::1
+[2026-10-12 09:09:20] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:09:20] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 09:09:20] [INFO] [HTTP]: OPTIONS /api/transaction 200 (5ms) - IP: ::1
+[2026-10-12 09:09:20] [INFO] [HTTP]: GET /api/booking 200 (74ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:20] [INFO] [HTTP]: GET /api/gig 200 (77ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:20] [INFO] [HTTP]: GET /api/transaction 200 (94ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:20] [INFO] [HTTP]: GET /api/booking 200 (53ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:20] [INFO] [HTTP]: GET /api/gig 200 (55ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:09:20] [INFO] [HTTP]: GET /api/transaction 200 (62ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:08] [INFO] [HTTP]: OPTIONS /api/transaction 200 (10ms) - IP: ::1
+[2026-10-12 09:15:08] [INFO] [HTTP]: OPTIONS /api/transaction 200 (38ms) - IP: ::1
+[2026-10-12 09:15:08] [INFO] [HTTP]: GET /api/transaction 200 (211ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:08] [INFO] [HTTP]: GET /api/transaction 200 (59ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:19] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:15:19] [INFO] [HTTP]: OPTIONS /api/booking 200 (5ms) - IP: ::1
+[2026-10-12 09:15:19] [INFO] [HTTP]: OPTIONS /api/transaction 200 (4ms) - IP: ::1
+[2026-10-12 09:15:19] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:15:19] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 09:15:19] [INFO] [HTTP]: OPTIONS /api/transaction 200 (8ms) - IP: ::1
+[2026-10-12 09:15:19] [INFO] [HTTP]: GET /api/transaction 200 (184ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:19] [INFO] [HTTP]: GET /api/booking 200 (190ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:19] [INFO] [HTTP]: GET /api/gig 200 (201ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:19] [INFO] [HTTP]: GET /api/transaction 200 (65ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:19] [INFO] [HTTP]: GET /api/gig 200 (61ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:19] [INFO] [HTTP]: GET /api/booking 200 (63ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:26] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:15:26] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:15:26] [INFO] [HTTP]: GET /api/gig 200 (233ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:26] [INFO] [HTTP]: GET /api/gig 200 (129ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:37] [INFO] [HTTP]: OPTIONS /api/booking 200 (10ms) - IP: ::1
+[2026-10-12 09:15:37] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 09:15:37] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:15:37] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:15:37] [INFO] [HTTP]: GET /api/booking 200 (126ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:37] [INFO] [HTTP]: GET /api/gig 200 (125ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:37] [INFO] [HTTP]: GET /api/booking 200 (63ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:37] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:42] [INFO] [HTTP]: OPTIONS /api/booking?status=cancelled 200 (1ms) - IP: ::1
+[2026-10-12 09:15:42] [INFO] [HTTP]: GET /api/booking?status=cancelled 200 (280ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:44] [INFO] [HTTP]: OPTIONS /api/booking?status=completed 200 (3ms) - IP: ::1
+[2026-10-12 09:15:45] [INFO] [HTTP]: GET /api/booking?status=completed 200 (288ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:46] [INFO] [HTTP]: OPTIONS /api/booking?status=confirmed 200 (0ms) - IP: ::1
+[2026-10-12 09:15:46] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (90ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:47] [INFO] [HTTP]: OPTIONS /api/booking?status=pending 200 (0ms) - IP: ::1
+[2026-10-12 09:15:47] [INFO] [HTTP]: GET /api/booking?status=pending 200 (221ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:47] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:15:48] [INFO] [HTTP]: GET /api/booking 200 (353ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:52] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:15:52] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:15:53] [INFO] [HTTP]: GET /api/gig 200 (199ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:53] [INFO] [HTTP]: GET /api/gig 200 (100ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:54] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:15:54] [INFO] [HTTP]: OPTIONS /api/booking 200 (5ms) - IP: ::1
+[2026-10-12 09:15:54] [INFO] [HTTP]: OPTIONS /api/transaction 200 (3ms) - IP: ::1
+[2026-10-12 09:15:54] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:15:54] [INFO] [HTTP]: GET /api/gig 200 (75ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:54] [INFO] [HTTP]: GET /api/booking 200 (57ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:54] [INFO] [HTTP]: GET /api/transaction 200 (72ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:54] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:54] [INFO] [HTTP]: GET /api/booking 200 (73ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:15:54] [INFO] [HTTP]: GET /api/transaction 200 (64ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:16:00] [INFO] [HTTP]: OPTIONS /api/gig/6acc1015fab041b851ca0699 200 (1ms) - IP: ::1
+[2026-10-12 09:16:00] [INFO] [HTTP]: DELETE /api/gig/6acc1015fab041b851ca0699 200 (202ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:16:00] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:16:00] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:16:00] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:16:00] [INFO] [HTTP]: GET /api/gig 200 (41ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:16:00] [INFO] [HTTP]: GET /api/booking 200 (62ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:16:00] [INFO] [HTTP]: GET /api/transaction 200 (68ms) - IP: ::1 [User: Amber]
+[2026-10-12 09:16:47] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (4ms) - IP: ::1
+[2026-10-12 09:16:47] [WARN] [AUTH]: Login attempted for email not in the database: natty.yo@gmail.com
+[2026-10-12 09:16:47] [WARN] [HTTP]: POST /api/auth/login 401 (78ms) - IP: ::1
+[2026-10-12 09:16:53] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (1ms) - IP: ::1
+[2026-10-12 09:16:53] [INFO] [HTTP]: POST /api/auth/login 200 (304ms) - IP: ::1
+[2026-10-12 09:16:53] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:16:53] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 09:16:53] [INFO] [HTTP]: GET /api/gig 200 (42ms) - IP: ::1 [User: natty]
+[2026-10-12 09:16:53] [INFO] [HTTP]: GET /api/gig 200 (36ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:08] [INFO] [HTTP]: OPTIONS /api/booking 200 (6ms) - IP: ::1
+[2026-10-12 09:17:08] [INFO] [HTTP]: OPTIONS /api/booking 200 (9ms) - IP: ::1
+[2026-10-12 09:17:08] [INFO] [HTTP]: OPTIONS /api/gig 200 (6ms) - IP: ::1
+[2026-10-12 09:17:08] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:17:08] [INFO] [HTTP]: GET /api/gig 200 (96ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:08] [INFO] [HTTP]: GET /api/booking 200 (115ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:08] [INFO] [HTTP]: GET /api/gig 200 (39ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:08] [INFO] [HTTP]: GET /api/booking 200 (69ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:14] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:17:14] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:17:14] [INFO] [HTTP]: GET /api/transaction 200 (87ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:15] [INFO] [HTTP]: GET /api/transaction 200 (149ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:16] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 09:17:16] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:17:16] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 09:17:16] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:17:16] [INFO] [HTTP]: GET /api/gig 200 (52ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:16] [INFO] [HTTP]: GET /api/booking 200 (76ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:16] [INFO] [HTTP]: GET /api/gig 200 (37ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:16] [INFO] [HTTP]: GET /api/booking 200 (143ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:19] [INFO] [HTTP]: GET /api/gig 200 (206ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:19] [INFO] [HTTP]: GET /api/gig 200 (38ms) - IP: ::1 [User: natty]
+[2026-10-12 09:17:56] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (1ms) - IP: ::1
+[2026-10-12 09:17:57] [INFO] [HTTP]: POST /api/auth/login 200 (239ms) - IP: ::1
+[2026-10-12 09:17:57] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 09:17:57] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 09:17:57] [INFO] [HTTP]: GET /api/gig/mine 200 (40ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:17:57] [INFO] [HTTP]: GET /api/gig/mine 200 (41ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:05] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:19:06] [INFO] [HTTP]: POST /api/gig 201 (411ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:06] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 09:19:06] [INFO] [HTTP]: GET /api/gig/mine 200 (195ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:26] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 09:19:26] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 09:19:26] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 09:19:26] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 09:19:27] [INFO] [HTTP]: GET /api/gig/mine 200 (259ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:27] [INFO] [HTTP]: GET /api/booking 200 (472ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:27] [INFO] [HTTP]: GET /api/gig/mine 200 (299ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:27] [INFO] [HTTP]: GET /api/booking 200 (287ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:31] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 09:19:31] [INFO] [HTTP]: OPTIONS /api/transaction 200 (4ms) - IP: ::1
+[2026-10-12 09:19:31] [INFO] [HTTP]: GET /api/transaction 200 (404ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:31] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (1ms) - IP: ::1
+[2026-10-12 09:19:31] [INFO] [HTTP]: GET /api/transaction/income 200 (65ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:31] [INFO] [HTTP]: GET /api/transaction 200 (89ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:19:31] [INFO] [HTTP]: GET /api/transaction/income 200 (86ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:20:13] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (2ms) - IP: ::1
+[2026-10-12 09:20:13] [INFO] [HTTP]: POST /api/auth/login 200 (295ms) - IP: ::1
+[2026-10-12 09:20:13] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:20:13] [INFO] [HTTP]: OPTIONS /api/gig 200 (10ms) - IP: ::1
+[2026-10-12 09:20:13] [INFO] [HTTP]: GET /api/gig 200 (291ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:14] [INFO] [HTTP]: GET /api/gig 200 (396ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:35] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 09:20:35] [INFO] [HTTP]: POST /api/booking 201 (179ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:40] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:20:40] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:20:40] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:20:41] [INFO] [HTTP]: GET /api/booking 200 (91ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:41] [INFO] [HTTP]: GET /api/gig 200 (122ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:41] [INFO] [HTTP]: GET /api/gig 200 (66ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:41] [INFO] [HTTP]: GET /api/booking 200 (96ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:49] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:20:49] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:20:49] [INFO] [HTTP]: GET /api/transaction 200 (327ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:49] [INFO] [HTTP]: GET /api/transaction 200 (221ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:53] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:20:53] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:20:53] [INFO] [HTTP]: OPTIONS /api/booking 200 (5ms) - IP: ::1
+[2026-10-12 09:20:53] [INFO] [HTTP]: OPTIONS /api/gig 200 (7ms) - IP: ::1
+[2026-10-12 09:20:54] [INFO] [HTTP]: GET /api/booking 200 (159ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:54] [INFO] [HTTP]: GET /api/gig 200 (176ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:54] [INFO] [HTTP]: GET /api/booking 200 (69ms) - IP: ::1 [User: natty]
+[2026-10-12 09:20:54] [INFO] [HTTP]: GET /api/gig 200 (73ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:05] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:21:05] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:21:06] [INFO] [HTTP]: GET /api/transaction 200 (198ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:06] [INFO] [HTTP]: GET /api/transaction 200 (68ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:18] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:21:18] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:21:18] [INFO] [HTTP]: OPTIONS /api/booking 200 (6ms) - IP: ::1
+[2026-10-12 09:21:18] [INFO] [HTTP]: OPTIONS /api/gig 200 (7ms) - IP: ::1
+[2026-10-12 09:21:18] [INFO] [HTTP]: GET /api/gig 200 (74ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:18] [INFO] [HTTP]: GET /api/booking 200 (84ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:18] [INFO] [HTTP]: GET /api/gig 200 (65ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:18] [INFO] [HTTP]: GET /api/booking 200 (62ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:20] [INFO] [HTTP]: GET /api/gig 200 (203ms) - IP: ::1 [User: natty]
+[2026-10-12 09:21:20] [INFO] [HTTP]: GET /api/gig 200 (201ms) - IP: ::1 [User: natty]
+[2026-10-12 09:22:23] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (3ms) - IP: ::1
+[2026-10-12 09:22:23] [INFO] [HTTP]: POST /api/auth/login 200 (258ms) - IP: ::1
+[2026-10-12 09:22:23] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (0ms) - IP: ::1
+[2026-10-12 09:22:23] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (2ms) - IP: ::1
+[2026-10-12 09:22:24] [INFO] [HTTP]: GET /api/gig/mine 200 (365ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:24] [INFO] [HTTP]: GET /api/gig/mine 200 (371ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:29] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:22:29] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (6ms) - IP: ::1
+[2026-10-12 09:22:29] [INFO] [HTTP]: OPTIONS /api/booking 200 (8ms) - IP: ::1
+[2026-10-12 09:22:29] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (32ms) - IP: ::1
+[2026-10-12 09:22:29] [INFO] [HTTP]: GET /api/gig/mine 200 (197ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:29] [INFO] [HTTP]: GET /api/booking 200 (392ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:29] [INFO] [HTTP]: GET /api/gig/mine 200 (209ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:29] [INFO] [HTTP]: GET /api/booking 200 (87ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:37] [INFO] [HTTP]: OPTIONS /api/booking/6acc8a4314d127408a03321a 200 (0ms) - IP: ::1
+[2026-10-12 09:22:38] [INFO] [HTTP]: PATCH /api/booking/6acc8a4314d127408a03321a 200 (304ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:22:38] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 09:22:38] [INFO] [HTTP]: GET /api/booking 200 (201ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:23:01] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 09:23:01] [INFO] [HTTP]: OPTIONS /api/gig/mine 200 (1ms) - IP: ::1
+[2026-10-12 09:23:01] [INFO] [HTTP]: GET /api/gig/mine 200 (76ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:23:01] [INFO] [HTTP]: GET /api/gig/mine 200 (50ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:23:04] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:23:04] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:23:04] [INFO] [HTTP]: GET /api/transaction 200 (229ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:23:04] [INFO] [HTTP]: OPTIONS /api/transaction/income 200 (1ms) - IP: ::1
+[2026-10-12 09:23:04] [INFO] [HTTP]: GET /api/transaction/income 200 (209ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:23:04] [INFO] [HTTP]: GET /api/transaction 200 (231ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:23:04] [INFO] [HTTP]: GET /api/transaction/income 200 (172ms) - IP: ::1 [User: Natash]
+[2026-10-12 09:31:05] [INFO] [HTTP]: OPTIONS /api/auth/login 200 (3ms) - IP: ::1
+[2026-10-12 09:31:05] [INFO] [HTTP]: POST /api/auth/login 200 (133ms) - IP: ::1
+[2026-10-12 09:31:05] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:31:05] [INFO] [HTTP]: OPTIONS /api/gig 200 (7ms) - IP: ::1
+[2026-10-12 09:31:05] [INFO] [HTTP]: GET /api/gig 200 (103ms) - IP: ::1 [User: natty]
+[2026-10-12 09:31:05] [INFO] [HTTP]: GET /api/gig 200 (61ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:23] [INFO] [HTTP]: OPTIONS /api/booking 200 (4ms) - IP: ::1
+[2026-10-12 09:32:23] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:32:23] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 09:32:23] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 09:32:23] [INFO] [HTTP]: GET /api/booking 200 (81ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:23] [INFO] [HTTP]: GET /api/gig 200 (67ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:23] [INFO] [HTTP]: GET /api/booking 200 (52ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:23] [INFO] [HTTP]: GET /api/gig 200 (58ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:45] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:32:45] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:32:45] [INFO] [HTTP]: GET /api/transaction 200 (84ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:45] [INFO] [HTTP]: GET /api/transaction 200 (103ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:51] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:32:51] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:32:52] [INFO] [HTTP]: GET /api/gig 200 (89ms) - IP: ::1 [User: natty]
+[2026-10-12 09:32:52] [INFO] [HTTP]: GET /api/gig 200 (55ms) - IP: ::1 [User: natty]
+[2026-10-12 09:33:47] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 09:33:47] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 09:33:47] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:33:47] [INFO] [HTTP]: OPTIONS /api/gig 200 (23ms) - IP: ::1
+[2026-10-12 09:33:47] [INFO] [HTTP]: GET /api/gig 200 (57ms) - IP: ::1 [User: natty]
+[2026-10-12 09:33:47] [INFO] [HTTP]: GET /api/booking 200 (75ms) - IP: ::1 [User: natty]
+[2026-10-12 09:33:47] [INFO] [HTTP]: GET /api/gig 200 (59ms) - IP: ::1 [User: natty]
+[2026-10-12 09:33:47] [INFO] [HTTP]: GET /api/booking 200 (55ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:10] [INFO] [HTTP]: OPTIONS /api/transaction 200 (2ms) - IP: ::1
+[2026-10-12 09:36:10] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:36:10] [INFO] [HTTP]: GET /api/transaction 200 (87ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:10] [INFO] [HTTP]: GET /api/transaction 200 (70ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:11] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:36:11] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:36:11] [INFO] [HTTP]: GET /api/gig 200 (55ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:11] [INFO] [HTTP]: GET /api/gig 200 (57ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:19] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 09:36:19] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 09:36:19] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:36:19] [INFO] [HTTP]: OPTIONS /api/booking 200 (3ms) - IP: ::1
+[2026-10-12 09:36:19] [INFO] [HTTP]: GET /api/booking 200 (60ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:19] [INFO] [HTTP]: GET /api/gig 200 (65ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:19] [INFO] [HTTP]: GET /api/booking 200 (57ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:19] [INFO] [HTTP]: GET /api/gig 200 (56ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:21] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:36:21] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:36:21] [INFO] [HTTP]: GET /api/transaction 200 (61ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:21] [INFO] [HTTP]: GET /api/transaction 200 (75ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:23] [INFO] [HTTP]: GET /api/transaction 200 (89ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:25] [INFO] [HTTP]: GET /api/transaction 200 (61ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:27] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:36:27] [INFO] [HTTP]: OPTIONS /api/gig 200 (4ms) - IP: ::1
+[2026-10-12 09:36:27] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 09:36:27] [INFO] [HTTP]: OPTIONS /api/gig 200 (2ms) - IP: ::1
+[2026-10-12 09:36:27] [INFO] [HTTP]: GET /api/booking 200 (75ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:27] [INFO] [HTTP]: GET /api/gig 200 (83ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:27] [INFO] [HTTP]: GET /api/booking 200 (76ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:27] [INFO] [HTTP]: GET /api/gig 200 (84ms) - IP: ::1 [User: natty]
+[2026-10-12 09:36:29] [INFO] [HTTP]: GET /api/booking 200 (50ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:00] [INFO] [HTTP]: OPTIONS /api/transaction 200 (1ms) - IP: ::1
+[2026-10-12 09:39:00] [INFO] [HTTP]: OPTIONS /api/transaction 200 (8ms) - IP: ::1
+[2026-10-12 09:39:00] [INFO] [HTTP]: GET /api/transaction 200 (80ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:00] [INFO] [HTTP]: GET /api/transaction 200 (72ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:06] [INFO] [HTTP]: OPTIONS /api/booking 200 (1ms) - IP: ::1
+[2026-10-12 09:39:06] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:39:06] [INFO] [HTTP]: OPTIONS /api/booking 200 (2ms) - IP: ::1
+[2026-10-12 09:39:06] [INFO] [HTTP]: OPTIONS /api/gig 200 (3ms) - IP: ::1
+[2026-10-12 09:39:06] [INFO] [HTTP]: GET /api/booking 200 (59ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:06] [INFO] [HTTP]: GET /api/gig 200 (75ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:06] [INFO] [HTTP]: GET /api/booking 200 (63ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:06] [INFO] [HTTP]: GET /api/gig 200 (54ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:17] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:39:17] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:39:17] [INFO] [HTTP]: GET /api/gig 200 (63ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:18] [INFO] [HTTP]: GET /api/gig 200 (56ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:20] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 09:39:20] [INFO] [HTTP]: OPTIONS /api/booking 200 (0ms) - IP: ::1
+[2026-10-12 09:39:20] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:20] [INFO] [HTTP]: GET /api/booking 200 (65ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:20] [INFO] [HTTP]: GET /api/booking 200 (51ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:20] [INFO] [HTTP]: GET /api/gig 200 (55ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:21] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 09:39:21] [INFO] [HTTP]: OPTIONS /api/transaction 200 (0ms) - IP: ::1
+[2026-10-12 09:39:21] [INFO] [HTTP]: GET /api/transaction 200 (64ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:21] [INFO] [HTTP]: GET /api/transaction 200 (78ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:23] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:39:23] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:39:23] [INFO] [HTTP]: GET /api/gig 200 (73ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:23] [INFO] [HTTP]: GET /api/gig 200 (87ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:24] [INFO] [HTTP]: GET /api/booking 200 (80ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:24] [INFO] [HTTP]: GET /api/gig 200 (121ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:24] [INFO] [HTTP]: GET /api/booking 200 (121ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:24] [INFO] [HTTP]: GET /api/gig 200 (85ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:26] [INFO] [HTTP]: GET /api/transaction 200 (70ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:26] [INFO] [HTTP]: GET /api/transaction 200 (72ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:31] [INFO] [HTTP]: OPTIONS /api/gig 200 (0ms) - IP: ::1
+[2026-10-12 09:39:31] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
+[2026-10-12 09:39:31] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: natty]
+[2026-10-12 09:39:31] [INFO] [HTTP]: GET /api/gig 200 (58ms) - IP: ::1 [User: natty]

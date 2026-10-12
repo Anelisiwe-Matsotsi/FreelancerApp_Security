@@ -14,6 +14,7 @@ export const TransactionsPage: React.FC = () => {
   const [error, setError] = useState("");
 
   const isFreelancer = user?.role === "freelancer";
+  const isAdmin = user?.role === "admin";
 
   // create a helper function to use our API service and update the page
   const loadTransactions = async () => {
@@ -63,12 +64,15 @@ export const TransactionsPage: React.FC = () => {
               {isFreelancer ? "Income" : "Transactions"}
             </div>
             <h1 className='page-title'>
-              Your <em>{isFreelancer ? "income" : "transactions"}</em>
+              {isAdmin ? "All " : "Your "}
+              <em>{isFreelancer ? "income" : "transactions"}</em>
             </h1>
             <p className='page-sub'>
               {isFreelancer
                 ? "What you have earned from your gigs."
-                : "Every payment made for your bookings."}
+                : isAdmin
+                  ? "Every payment made on the platform."
+                  : "Every payment made for your bookings."}
             </p>
           </div>
           <button className='btn btn-outline' onClick={loadTransactions}>
@@ -138,10 +142,10 @@ export const TransactionsPage: React.FC = () => {
           )}
 
           {transactions.map((tx, i) => {
-            // show the other person in the deal
-            const other = isFreelancer
-              ? personName(tx.client)
-              : personName(tx.freelancer);
+            // show the other person in the deal (an admin sees both)
+            const clientName = personName(tx.client);
+            const freelancerName = personName(tx.freelancer);
+            const other = isFreelancer ? clientName : freelancerName;
 
             return (
               <div key={tx._id ?? tx.reference ?? i} className='row-item'>
@@ -149,7 +153,11 @@ export const TransactionsPage: React.FC = () => {
                   <div className='row-title'>{tx.gigTitle}</div>
                   <div className='row-meta'>
                     Ref {tx.reference}
-                    {other && ` · ${isFreelancer ? "from" : "to"} ${other}`}
+                    {isAdmin
+                      ? clientName &&
+                        freelancerName &&
+                        ` · ${clientName} → ${freelancerName}`
+                      : other && ` · ${isFreelancer ? "from" : "to"} ${other}`}
                     {tx.createdAt &&
                       ` · ${new Date(tx.createdAt).toLocaleDateString()}`}
                   </div>
