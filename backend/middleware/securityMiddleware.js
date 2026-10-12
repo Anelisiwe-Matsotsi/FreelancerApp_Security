@@ -1,3 +1,5 @@
+
+/*rudderz243, 2026*/
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -129,6 +131,6 @@ const setupSecurity = (app) => {
 module.exports = setupSecurity;
 
 /*Reference List:
-rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+rudderz243. 2026. securityMiddleware.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
 
 */

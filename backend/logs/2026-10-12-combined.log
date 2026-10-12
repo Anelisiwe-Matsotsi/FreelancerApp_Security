@@ -1484,3 +1484,30 @@
 [2026-10-12 18:53:29] [INFO] [HTTP]: GET /api/gig 200 (2323ms) - IP: ::1 [User: buudy]
 [2026-10-12 20:36:21] [WARN] [DATABASE]: MongoDB lost connection
 [2026-10-12 20:36:23] [INFO] [DATABASE]: MongoDB reconnected
+[2026-10-12 21:20:53] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:20:56] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:21:19] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:21:20] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:21:27] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:21:28] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:21:30] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:21:38] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:21:40] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:21:50] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:21:51] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:21:58] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:21:59] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:22:05] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:22:07] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:22:12] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:22:13] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:22:27] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:22:28] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:22:43] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:22:44] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:23:06] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:23:07] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:23:14] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:23:16] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 21:23:20] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 21:23:21] [INFO] [DATABASE]: The database connection has completed

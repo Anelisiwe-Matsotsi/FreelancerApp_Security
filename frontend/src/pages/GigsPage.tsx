@@ -1,3 +1,4 @@
+//rudderz243, 2026
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import type { Gig } from "../models/gig.ts";
@@ -208,7 +209,7 @@ export const GigsPage: React.FC = () => {
 
   return (
     <>
-      {/* ─── HERO ─── */}
+      {/* banner */}
       <main className='hero'>
         <div className='hero-bg-img' ref={heroBgRef} />
         <div className='hero-content'>
@@ -288,7 +289,7 @@ export const GigsPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ─── FEATURED GIG ─── */}
+      {/* most recent gig */}
       {featured && (
         <section className='special-section' id='special'>
           <div className='special-ribbon'>Newest Gig</div>
