@@ -313,6 +313,48 @@ Freelancer enters the wrong password thus the system does not allow them to ente
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" /><br>
 Test proves that the user needs to provide all details to successfully log in the freelancer. <br><br>
 
+## Create A Gig Request
+<img width="1600" height="1148" alt="image" src="https://github.com/user-attachments/assets/a3e45313-c64c-4c0a-bd37-75c8cba14e62" />
+Tests show how succesfully creating a gig is handled. <br><br>
+
+<img width="1600" height="998" alt="image" src="https://github.com/user-attachments/assets/adfc3c00-e588-4525-bfde-3cd73427cb48" />
+Freelancer does not enter a number of delivery days or writes a number 0 and below, creating a gig fails. <br><br>
+
+<img width="1600" height="1008" alt="image" src="https://github.com/user-attachments/assets/45149e5a-1c7a-4c2d-87cb-f2d35caaca88" />
+Freelancer does not enter a number for the price input or enters a number less than 1, creating a gig fails. <br><br>
+
+## All gigs Request
+<img width="1600" height="994" alt="image" src="https://github.com/user-attachments/assets/c42496ae-b7b8-4fb8-90f6-aefd98096207" />
+This shows the get request for all clients gigs <br> <br>
+
+<img width="1600" height="1092" alt="image" src="https://github.com/user-attachments/assets/7f28c25b-e590-4f59-9399-aaea1f83c5ed" />
+This shows the get request for all freelancer gigs <br> <br>
+
+<img width="1347" height="958" alt="image" src="https://github.com/user-attachments/assets/b3ae0d67-c689-4fe0-8e0c-ffe65befa3d3" />
+This shows the get request for all gigs admins see <br> <br>
+
+## Get gig By ID Request
+<img width="1546" height="1179" alt="image" src="https://github.com/user-attachments/assets/33b85269-cb61-4661-b117-c906c6891f47" />
+
+## Update Gig Request
+<img width="1600" height="1156" alt="image" src="https://github.com/user-attachments/assets/fd741f60-da89-4dd9-9f64-e2d586bf2651" />
+Shows freelancer can update gigs <br> <br>
+
+<img width="1215" height="1179" alt="image" src="https://github.com/user-attachments/assets/429be2f6-400e-4c21-aef0-96abd418efb5" />
+Shows client cannot update gigs <br> <br>
+
+
+
+## Newman Tests
+<img width="1142" height="387" alt="image" src="https://github.com/user-attachments/assets/0c1d2832-80f1-4085-a8f4-588a9cb84739" />
+
+
+
+
+
+
+
+
 ## Application Screenshots 🖼️
 
 ### Authentication
