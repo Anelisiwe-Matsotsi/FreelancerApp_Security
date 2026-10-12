@@ -87,7 +87,7 @@ const generalLimiter = rateLimit({
 // this helps against brute-forcing attacks, and credential stuffing attacks
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  limit: 80, // lower limit compared to the general purpose limiter
+  limit: 10, // lower limit compared to the general purpose limiter
   standardHeaders: "draft-8",
   legacyHeaders: false,
   message: {
