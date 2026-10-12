@@ -1,36 +1,56 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { NavBar } from "./components/NavBar";
-import { BookPage } from "./pages/BookPage";
-import { HealthCheckPage } from "./pages/HealthCheckPage";
-import { LoginPage } from "./pages/LoginPage";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthProvider";
-import { ProtectedRoute } from "./context/ProtectedRoute";
+import { useAuth } from "./context/useAuth";
+import { CustomCursor } from "./components/CustomCursor";
+import { NavBar } from "./components/NavBar";
+import { ProtectedRoute, homePathFor } from "./context/ProtectedRoute";
+import { LoginPage } from "./pages/LoginPage";
+import { GigsPage } from "./pages/GigsPage";
+import { MyBookingsPage } from "./pages/MyBookingsPage";
+import { TransactionsPage } from "./pages/TransactionsPage";
+import { FreelancerPage } from "./pages/FreelancerPage";
+import { AdminPage } from "./pages/AdminPage";
+
+// "/" sends each side (client, freelancer, admin) to its own home page
+const HomeRedirect: React.FC = () => {
+  const { user } = useAuth();
+  return <Navigate to={user ? homePathFor(user.role) : "/login"} replace />;
+};
 
 export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <AuthProvider>
+        {/* your CSS hides the real mouse cursor, so this draws the teal one */}
+        <CustomCursor />
+        {/* the navbar hides itself until someone is logged in */}
         <NavBar />
+        <Routes>
+          <Route path='/login' element={<LoginPage />} />
 
-        <main className="app-container">
-          <Routes>
-            {/* Public routes */}
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/health" element={<HealthCheckPage />} />
+          {/* everything below needs a login */}
+          <Route element={<ProtectedRoute />}>
+            <Route path='/' element={<HomeRedirect />} />
+            <Route path='/gigs' element={<GigsPage />} />
+            <Route path='/bookings' element={<MyBookingsPage />} />
+            <Route path='/transactions' element={<TransactionsPage />} />
 
-            {/* Protected routes */}
-            <Route element={<ProtectedRoute />}>
-              <Route path="/" element={<BookPage />} />
+            {/* freelancer side */}
+            <Route element={<ProtectedRoute allow={["freelancer"]} />}>
+              <Route path='/freelancer' element={<FreelancerPage />} />
             </Route>
 
-            {/* Redirect unknown routes */}
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </main>
+            {/* admin side */}
+            <Route element={<ProtectedRoute allow={["admin"]} />}>
+              <Route path='/admin' element={<AdminPage />} />
+            </Route>
+          </Route>
+
+          <Route path='*' element={<Navigate to='/' replace />} />
+        </Routes>
       </AuthProvider>
     </BrowserRouter>
   );
 };
-
 export default App;

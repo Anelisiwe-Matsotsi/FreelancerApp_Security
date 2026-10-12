@@ -2,6 +2,11 @@
 const Booking = require("../models/bookingModel.js"); //import model to use it in controller
 const Gig = require("../models/gigModel.js"); //import model to use it in controller
 const mongoose = require("mongoose"); //import mongoose to use it in controller
+//the transaction helpers already exist in transactionController, they just were not being called
+const {
+  createTransactionForBooking,
+  refundTransactionForBooking,
+} = require("./transactionController.js");
 
 //Create function for client to book a gig
 const createBooking = async (req, res) => {
@@ -31,6 +36,19 @@ const createBooking = async (req, res) => {
         price: gig.price,
     });
 
+    //payments are simulated, so the transaction record is created as soon as the booking is made
+    try {
+      await createTransactionForBooking({
+        bookingId: booking._id,
+        gig,
+        clientId: req.user.id,
+      });
+    } catch (transactionError) {
+      //no booking without a payment record, so undo the booking if the transaction failed
+      await booking.deleteOne();
+      return res.status(400).json({ message: transactionError.message });
+    }
+
     // return the booking object as json (code 201 - object created)
     return res.status(201).json(booking);
   } catch (error) {
@@ -42,10 +60,10 @@ const createBooking = async (req, res) => {
 const getAllBookings = async (req, res) => {
   try {
     // use th emodel to perform the required operation
-    const filterBookings = 
-     req.user.role === "freelancer"
-        ? { freelancer: req.user.id }
-        : { client: req.user.id };
+    //freelancers see bookings on their gigs, admins see all bookings, clients see their own
+    let filterBookings = { client: req.user.id };
+    if (req.user.role === "freelancer") filterBookings = { freelancer: req.user.id };
+    if (req.user.role === "admin") filterBookings = {};
  
     // only allow known status values to be used as a filter
     const validStatuses = ["pending", "confirmed", "completed", "cancelled"];
@@ -99,6 +117,8 @@ const getBooking = async (req, res) => {
 };
 
 //Update a booking by changing the status
+//client: pending/confirmed -> cancelled
+//freelancer: pending -> confirmed, confirmed -> completed, pending/confirmed -> cancelled (decline)
 const updateBooking = async (req, res) => {
   try {
     // we make use of the parameters again, because the body will be used for the updated booking information
@@ -107,9 +127,8 @@ const updateBooking = async (req, res) => {
         .status(400)
         .json({ message: "An ID is required in order to get a booking." });
     }
-    // here, we check if any updated information is actually present in the body.
-    // the model performs validation for us in this scenario, so we don't have to validate the presence of anything
-    const {status} = req.body;
+
+    const { status } = req.body;
 
     if (status === undefined) {
       return res
@@ -117,16 +136,18 @@ const updateBooking = async (req, res) => {
         .json({ message: "Please provide information to update the booking" });
     }
 
-    //clients can only update the booking status
-    if (status !== undefined && status !== "cancelled") {
+    //which statuses each role is allowed to set
+    const allowedStatuses = {
+      client: ["cancelled"],
+      freelancer: ["confirmed", "completed", "cancelled"],
+    };
+    if (!allowedStatuses[req.user.role]?.includes(status)) {
       return res
         .status(400)
-        .json({ message: "Only clients can update the booking status" });
+        .json({ message: `A ${req.user.role} cannot set a booking to ${status}.` });
     }
 
-    // here, we use the model to perform the required operation
-    // we pass the ID of the booking we want to update, the updated information, and some options
-    const booking = await Booking.findById(req.params.id) ;
+    const booking = await Booking.findById(req.params.id);
     // if the booking we want to update can't be found
     if (!booking) {
       return res
@@ -134,22 +155,36 @@ const updateBooking = async (req, res) => {
         .json({ message: "No booking matching that ID in the collection" });
     }
 
-    // a client may only update their own booking
-    if (booking.client.toString() !== req.user.id) {
+    // a user may only update a booking that belongs to them
+    const owner = req.user.role === "client" ? booking.client : booking.freelancer;
+    if (owner.toString() !== req.user.id) {
       return res
         .status(403)
         .json({ message: "You are not allowed to update this booking." });
     }
 
-    //a completed booking cannot be updated
-    if (booking.status === "completed") {
-        return res
-            .status(400)
-            .json({ message: "A completed booking cannot be changed." });
+    //completed and cancelled bookings are finished
+    if (booking.status === "completed" || booking.status === "cancelled") {
+      return res
+        .status(400)
+        .json({ message: `A ${booking.status} booking cannot be changed.` });
     }
 
-    if (status !== undefined) booking.status = status;
+    //the work must be confirmed before it can be completed
+    if (status === "confirmed" && booking.status !== "pending") {
+      return res.status(400).json({ message: "Only a pending booking can be confirmed." });
+    }
+    if (status === "completed" && booking.status !== "confirmed") {
+      return res.status(400).json({ message: "Confirm the booking before completing it." });
+    }
+
+    booking.status = status;
     await booking.save(); //save updates to schema
+
+    //a cancelled booking is refunded
+    if (status === "cancelled") {
+      await refundTransactionForBooking(booking._id);
+    }
 
     // return the updated booking
     return res.status(200).json(booking);

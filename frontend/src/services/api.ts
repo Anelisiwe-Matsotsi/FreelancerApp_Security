@@ -164,7 +164,7 @@ export async function deleteBook(id: string): Promise<void> {
 
 // Get all active gigs
 export async function getGigs(): Promise<Gig[]> {
-  const response = await fetch(`${API_URL}/gigs`, {
+  const response = await fetch(`${API_URL}/gig`, {
     headers: getHeaders(),
   });
 
@@ -173,7 +173,7 @@ export async function getGigs(): Promise<Gig[]> {
 
 // Get a gig by ID
 export async function getGigById(id: string): Promise<Gig> {
-  const response = await fetch(`${API_URL}/gigs/${id}`, {
+  const response = await fetch(`${API_URL}/gig/${id}`, {
     headers: getHeaders(),
   });
 
@@ -182,7 +182,7 @@ export async function getGigById(id: string): Promise<Gig> {
 
 // Get gigs belonging to the logged-in freelancer
 export async function getMyGigs(): Promise<Gig[]> {
-  const response = await fetch(`${API_URL}/gigs/mine`, {
+  const response = await fetch(`${API_URL}/gig/mine`, {
     headers: getHeaders(),
   });
 
@@ -193,7 +193,7 @@ export async function getMyGigs(): Promise<Gig[]> {
 export async function createGig(
   gig: Gig
 ): Promise<{ message: string; gig: Gig }> {
-  const response = await fetch(`${API_URL}/gigs`, {
+  const response = await fetch(`${API_URL}/gig`, {
     method: "POST",
     headers: getHeaders(),
     body: JSON.stringify(gig),
@@ -207,7 +207,7 @@ export async function updateGig(
   id: string,
   gig: Partial<Gig>
 ): Promise<{ message: string; gig: Gig }> {
-  const response = await fetch(`${API_URL}/gigs/${id}`, {
+  const response = await fetch(`${API_URL}/gig/${id}`, {
     method: "PUT",
     headers: getHeaders(),
     body: JSON.stringify(gig),
@@ -220,7 +220,7 @@ export async function updateGig(
 export async function deleteGig(
   id: string
 ): Promise<{ message: string }> {
-  const response = await fetch(`${API_URL}/gigs/${id}`, {
+  const response = await fetch(`${API_URL}/gig/${id}`, {
     method: "DELETE",
     headers: getHeaders(),
   });
@@ -232,7 +232,7 @@ export async function deleteGig(
 export async function createBooking(
   gigId: string
 ): Promise<Booking> {
-  const response = await fetch(`${API_URL}/bookings`, {
+  const response = await fetch(`${API_URL}/booking`, {
     method: "POST",
     headers: getHeaders(),
     body: JSON.stringify({ gigId }),
@@ -247,7 +247,7 @@ export async function getBookings(
 ): Promise<Booking[]> {
   const query = status ? `?status=${status}` : "";
 
-  const response = await fetch(`${API_URL}/bookings${query}`, {
+  const response = await fetch(`${API_URL}/booking${query}`, {
     headers: getHeaders(),
   });
 
@@ -258,7 +258,7 @@ export async function getBookings(
 export async function getBooking(
   id: string
 ): Promise<Booking> {
-  const response = await fetch(`${API_URL}/bookings/${id}`, {
+  const response = await fetch(`${API_URL}/booking/${id}`, {
     headers: getHeaders(),
   });
 
@@ -268,9 +268,9 @@ export async function getBooking(
 // Update a booking (cancel a booking)
 export async function updateBooking(
   id: string,
-  status: "cancelled"
+  status: Exclude<Booking["status"], "pending">
 ): Promise<Booking> {
-  const response = await fetch(`${API_URL}/bookings/${id}`, {
+  const response = await fetch(`${API_URL}/booking/${id}`, {
     method: "PATCH",
     headers: getHeaders(),
     body: JSON.stringify({ status }),
@@ -283,7 +283,7 @@ export async function updateBooking(
 export async function deleteBooking(
   id: string
 ): Promise<Booking> {
-  const response = await fetch(`${API_URL}/bookings/${id}`, {
+  const response = await fetch(`${API_URL}/booking/${id}`, {
     method: "DELETE",
     headers: getHeaders(),
   });
@@ -293,7 +293,7 @@ export async function deleteBooking(
 
 // Get all transactions belonging to the logged-in user
 export async function getTransactions(): Promise<Transaction[]> {
-  const response = await fetch(`${API_URL}/transactions`, {
+  const response = await fetch(`${API_URL}/transaction`, {
     headers: getHeaders(),
   });
 
@@ -304,7 +304,7 @@ export async function getTransactions(): Promise<Transaction[]> {
 export async function getTransaction(
   id: string
 ): Promise<Transaction> {
-  const response = await fetch(`${API_URL}/transactions/${id}`, {
+  const response = await fetch(`${API_URL}/transaction/${id}`, {
     headers: getHeaders(),
   });
 
@@ -313,7 +313,7 @@ export async function getTransaction(
 
 // Get the logged-in freelancer's income summary
 export async function getMyIncome(): Promise<IncomeSummary> {
-  const response = await fetch(`${API_URL}/transactions/income`, {
+  const response = await fetch(`${API_URL}/transaction/income`, {
     headers: getHeaders(),
   });
 
