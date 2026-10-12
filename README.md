@@ -117,7 +117,8 @@ The backend has been seperated into different folders to keep the application or
 The backend structure is: <br>
  (Medium,2026)
 
-<img width="152" height="324" alt="image" src="https://github.com/user-attachments/assets/ff8e83d8-4e5d-4f3b-ade2-7dec6d1d97a8" />
+<img width="190" height="331" alt="image" src="https://github.com/user-attachments/assets/0fb76198-b1ea-4836-aa0c-e836db53fdee" />
+
 
 
 
