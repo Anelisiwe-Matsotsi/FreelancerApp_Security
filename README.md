@@ -93,11 +93,11 @@ The backend server will run on `https://localhost:3000`
  ### Frontend ➡️➡️
  |Package|Reason|
 |:------|:-----|
-| React | |
-| React Router | |
-| Vite |  |
-| TypeScript |  |
-| ESLint |  |
+| React | React is widely used because it makes it easier for developers to build interactive applications with multiple features and functionality (GeeksforGeeks, 2025a). |
+| React Router DOM  | Manages navigation between different pages. It builds on react-router and provides components and hooks that help developers handle routing within web applications (Boda, 2025).|
+| Vite | Its design allows it to adapt as web technologies develop, giving developers a flexible foundation that can be used to build and maintain applications over time (VITE, 2026). |
+| TypeScript | TypeScript improves a project by providing type checking, helping developers identify errors early, and making the code easier to maintain and expand. It is a useful tool for developing reliable React applications that can grow and adapt to future changes (GeeksforGeeks, 2025b). |
+| ESLint | ESLint helps improve code quality by identifying errors early and encouraging good coding practices. It makes code easier to read, maintain, and understand, especially when working in a team. By automatically checking code, it reduces debugging time and allows developers to focus on building features. ESLint can also be used with Prettier to maintain consistent formatting and coding standards (Lucas, 2025). |
 
 ## Environment Variables 🔐
 The backend need a `.env` file created in the backend folder with the following keys added:  
@@ -366,10 +366,14 @@ The above diagram explains how the login logic flows with details on how the sys
 ## References 📖
 Alamin, 2026. Building a Scalable E-Commerce Backend: The Complete Guide to Node.js, Express & MongoDB. [online] Available at: <https://medium.com/@md.alamin.coding/building-a-scalable-e-commerce-backend-the-complete-guide-to-node-js-express-mongodb-7134e9da049b>[Accessed 6 September 2026].<br>
 Aravind, 2024. How to use env file in backend db. [online] Available at: < https://medium.com/engineeringcreativity/how-to-use-env-file-in-backend-db-e20d5480986f > [Accessed 29 August 2026] <br>
+Boda, P. 2025. React Router vs. React Router DOM: Key Differences Explained. [online]. Available at:<https://dev.to/pramod_boda/what-is-the-difference-between-react-router-and-react-router-dom-2da6> [Accessed 10 October 2026]. <br>
 Devinda, 2026. Password Hashing Explained: How to Secure Passwords with bcrypt in Node.js. [online] Available at: < https://medium.com/@rusirud49/password-hashing-explained-how-to-secure-passwords-with-bcrypt-in-node-js-7ac49d2c41d9 > [Accessed 5 September 2026] <br>
 Draw.io, 2026a. System Architecture. [online] Available at:<https://drive.google.com/file/d/1LSyYCuEcQzpAkHAzH4uZHbpoJ3T8QGhv/view?usp=sharing> [Accessed 6 September 2026]. <br>
 Draw.io, 2026b. Security-first diagramming for teams. [online] Available at: < https://www.drawio.com/ > [Accessed 5 September 2026] <br>
 GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://www.geeksforgeeks.org/node-js/use-of-cors-in-node-js/ > [Accessed 29 August 2026] <br>
+GeeksforGeeks. 2025. Why Choose React For Web Development in 2025a. [online]. Available at:<https://www.geeksforgeeks.org/blogs/why-choose-react-for-web-development/> [Accessed 10 October 2026]. <br>
+GeeksforGeeks. 2025b. 10 Compelling Reasons to Use TypeScript with React in 2025: A Developer's Guide. [onlibe]. Available at:<https://www.geeksforgeeks.org/typescript/compelling-reasons-to-use-typescript-with-react-a-developers-guide/> [Accessed 10 October 2026].<br>
+Lucas, J. 2025. Why Use ESLint in Your Project? [online]. Available at:<https://dev.to/jean_lucas/why-use-eslint-in-your-project-3p83> [Accessed 10 October 2026].<br>
 GeeksforGeeks, 2026b. Rate Limiting in System Design. Available at: < https://www.geeksforgeeks.org/system-design/rate-limiting-in-system-design/ > [Accessed 12 October 2026].
 MDN, 2026. Express Tutorial Part 4: Routes and controllers. [online] Available at: < https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes> [Accessed 5 September 2026]. <br>
 Medium. 2025. MERN Stack Architecture. [online] Available at: < https://medium.com/readers-club/mern-stack-architecture-6b7b5be94f78 > [Accessed 6 September 2026] <br> 
@@ -378,4 +382,5 @@ Raj, 2026. Where to store JWT Secret Keys Safely (Do's and Dont's). [online] Ava
 Rangani, T., 2026. Why do we use npm install --save-dev nodemon in Node.js?. [online] Available at: < https://medium.com/@uyanhewagetr/why-do-we-use-npm-install-save-dev-nodemon-in-node-js-c0a1480df03f > [Accessed 29 August 2026] <br>
 Tamang, R., 2025. How to implement Role-Based Access Control (RBAC) in Node.js Applications. [online] Available at: < https://dev.to/rabindratamang/how-to-implement-role-based-access-control-rbac-in-nodejs-applications-1ed2 > [Accessed 29 August 2026] <br>
 Thavachelvan, S., 2026. Implementing JWT-Based Authentication Using Node.js and MongoDB. [online] Available at: < https://medium.com/@saruatwork/implementing-jwt-based-authentication-using-node-js-and-mongodb-2d6994e8811d > [Accessed 6 September 2026]. <br>
+VITE. 2026. Why Vite. [online]. Available at:<https://vite.dev/guide/why> [Accessed 10 October 2026].<br>
 W3Schools, 2026. Node.js HTTPS Module (Version 1.0) [Source Code] Available at: < https://www.w3schools.com/nodejs/nodejs_https.asp > [Accessed 29 August 2026]
