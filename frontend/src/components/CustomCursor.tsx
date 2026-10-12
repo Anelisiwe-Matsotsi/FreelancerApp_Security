@@ -1,7 +1,6 @@
+//Codepen.io, 2018.
 import React, { useEffect, useRef } from "react";
 
-// the teal dot + trailing ring from your original script
-// (the grow-on-hover effect is already handled by your CSS with body:has(a:hover, button:hover))
 export const CustomCursor: React.FC = () => {
   const dotRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
@@ -52,3 +51,8 @@ export const CustomCursor: React.FC = () => {
     </>
   );
 };
+/*
+References
+Codepen.io. 2018. The shore shack — Beach sandwich bar menu #CodepenChallenge. (Version 1.0) [Source Code] Available at:< https://codepen.io/jerora98/details/KwNNyjg > [Accessed 12 October 2026].
+
+*/

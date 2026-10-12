@@ -1,3 +1,4 @@
+/*rudderz243, 2026*/
 // mongoose is a library we use to handle connections to a MongoDB database
 const mongoose = require("mongoose");
 // dotenv allows us to call in sensitive information from a .env file, rather than hard-coding it (think appsettings.json)
@@ -17,6 +18,7 @@ mongoose.connection.on("error", (err) => {
   logger.error(`MongoDB connection error: ${err.message}`, "DATABASE", err);
 });
 
+/*rudderz243, 2026*/
 // here we create a database object
 const database = {
   // that includes a start method (that accepts 0 parameters)
@@ -42,5 +44,10 @@ const database = {
   },
 };
 
-// export all the methods to make them "public" (accessible in other files)
+// export all the methods to make them accessible in other files
 module.exports = database;
+
+/*Reference List:
+rudderz243. 2026. dbMiddleware.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+
+*/
