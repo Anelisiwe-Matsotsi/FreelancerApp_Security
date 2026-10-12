@@ -1482,3 +1482,5 @@
 [2026-10-12 18:53:25] [INFO] [HTTP]: GET /api/booking 200 (270ms) - IP: ::1 [User: buudy]
 [2026-10-12 18:53:25] [INFO] [HTTP]: GET /api/gig 200 (843ms) - IP: ::1 [User: buudy]
 [2026-10-12 18:53:29] [INFO] [HTTP]: GET /api/gig 200 (2323ms) - IP: ::1 [User: buudy]
+[2026-10-12 20:36:21] [WARN] [DATABASE]: MongoDB lost connection
+[2026-10-12 20:36:23] [INFO] [DATABASE]: MongoDB reconnected
