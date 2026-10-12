@@ -94,7 +94,7 @@ export const MyBookingsPage: React.FC = () => {
 
   // cancel a booking (a client cancels, a freelancer declines)
   const handleCancel = async (id: string) => {
-    // the first click arms the button, the second click does the work
+    // when clicked it asks if user is sure then second click it cancels  the booking
     if (armed?.id !== id || armed.action !== "cancel") {
       setArmed({ id, action: "cancel" });
       return;
@@ -197,7 +197,7 @@ export const MyBookingsPage: React.FC = () => {
                       : "-"}
                   </div>
                 </div>
-                {/* these buttons will appear next to each item in the list */}
+        
                 <div className='row-side'>
                   <span className='row-amount'>R{booking.price.toFixed(2)}</span>
                   <span className={`badge badge-${booking.status}`}>
@@ -251,3 +251,8 @@ export const MyBookingsPage: React.FC = () => {
     </div>
   );
 };
+
+/*
+References
+Codepen.io. 2018. The shore shack — Beach sandwich bar menu #CodepenChallenge. (Version 1.0) [Source Code] Available at:< https://codepen.io/jerora98/details/KwNNyjg > [Accessed 12 October 2026].
+*/

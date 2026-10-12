@@ -204,3 +204,9 @@ React.useEffect(() => {
 };
 
 export default LoginPage;
+
+/*
+References
+Codepen.io. 2021. Login form for fiver. (Version 1.0) [Source Code] Available at:< https://codepen.io/JaidenTheCoder/details/PoGXbRq > [Accessed 12 October 2026].
+TechStack, S. (2022). React context API using TypeScript. (Version 1.0) [Source Code] DEV Community. Available at: < https://dev.to/tndungu/react-context-api-using-typescript-5h40 > [Accessed 12 Oct. 2026].
+*/
