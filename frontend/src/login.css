@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+
+.login-page {
+    min-height: 75vh;
+    padding: 1px 16px 40px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.login-page *,
+.login-page *::before,
+.login-page *::after {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.login-container {
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    margin: 4em auto 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-container button {
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 1em;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-toggle {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.login-toggle button {
+    width: 50%;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: #fff;
+    color: #222;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 0.2s;
+}
+
+.login-toggle button:nth-child(1) {
+    border-bottom-right-radius: 20px;
+}
+
+.login-toggle button:nth-child(2) {
+    border-bottom-left-radius: 20px;
+}
+
+.login-toggle button.active {
+    background: #57b846;
+    color: #fff;
+}
+
+.login-form {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.login-form h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-input {
+    width: 100%;
+}
+
+.login-container input,
+.login-container select {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    padding: 1.2em 1.7em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    border-radius: 20px;
+    border: none;
+    background: #ebebeb;
+    outline: none;
+    font-weight: bold;
+    transition: 0.4s;
+    color: #222;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+    transform: scaleX(1.02);
+}
+
+.login-container input::placeholder {
+    color: #222;
+    opacity: 1;
+}
+
+.login-submit {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #ebebeb;
+    font-weight: bold;
+    font-size: 1.2em !important;
+    padding: 0.8em 1em !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background: #57b846;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.login-submit:hover {
+    background: #222;
+}
+
+.login-container button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.login-form p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.login-error {
+    width: 90%;
+    margin: 0 auto 12px;
+    font-size: 14px !important;
+    color: #c62828;
+}
+
+.login-footer {
+    text-align: center;
+}
+
+.login-footer button {
+    border: none;
+    background: transparent;
+    color: #57b846;
+    font-weight: bold;
+}
+
+.login-footer button:hover {
+    color: #222;
+}
+
+@media only screen and (max-width: 500px) {
+    .login-container {
+        width: 100%;
+    }
+
+    .login-toggle button {
+        padding: 1.2em 0.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .login-container {
+        margin-top: 2em;
+    }
+}

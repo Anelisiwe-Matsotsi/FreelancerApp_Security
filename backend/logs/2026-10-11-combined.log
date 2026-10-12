@@ -1,0 +1,10 @@
+[2026-10-11 22:36:56] [ERROR] [CRASH]: Unhandled Rejection: ReferenceError: logger is not defined
+[2026-10-11 22:37:03] [ERROR] [CRASH]: Unhandled Rejection: ReferenceError: logger is not defined
+[2026-10-11 22:40:54] [ERROR] [CRASH]: Unhandled Rejection: ReferenceError: logger is not defined
+[2026-10-11 22:50:29] [ERROR] [CRASH]: Unhandled Rejection: ReferenceError: logger is not defined
+[2026-10-11 23:36:24] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-11 23:36:25] [INFO] [DATABASE]: The database connection has completed
+[2026-10-11 23:47:41] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (7ms) - IP: ::1
+[2026-10-11 23:47:41] [ERROR] [HTTP]: POST /api/auth/register 500 (5ms) - IP: ::1
+[2026-10-11 23:52:16] [INFO] [HTTP]: OPTIONS /api/auth/register 200 (1ms) - IP: ::1
+[2026-10-11 23:52:16] [ERROR] [HTTP]: POST /api/auth/register 500 (1ms) - IP: ::1

@@ -23,7 +23,8 @@ router.post("/", validateAuth, validateRole("client"), createBooking);
 router.get("/", validateAuth, getAllBookings);
 router.get("/:id", validateAuth, getBooking);
 
-router.patch("/:id", validateAuth, validateRole("client"), updateBooking);
+//clients cancel, freelancers confirm / complete / decline (the controller checks which status each role may set)
+router.patch("/:id", validateAuth, validateRole("client", "freelancer"), updateBooking); 
 
 router.delete("/:id", validateAuth, validateRole("client"), deleteBooking);
 

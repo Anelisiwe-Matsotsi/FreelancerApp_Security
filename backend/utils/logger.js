@@ -1,6 +1,8 @@
-//(Rudman, 2026)
-const fs = require("fs"); //to interact with folders and files on the PC
-const path = require("path"); //determines the file paths
+// fs + path:
+// fs -> filesystem (when we want to interact with files and folders on the computer)
+// path -> this is to determine where files/folders are
+const fs = require("fs");
+const path = require("path");
 
 // declare a constant for where our logs will live
 // this command gets the current directory name we are in, and adds /logs to it
@@ -11,7 +13,6 @@ if (!fs.existsSync(LOGS_DIR)) {
   fs.mkdirSync(LOGS_DIR, { recursive: true });
 }
 
-//(Petersen,2025)
 // ANSII colours for logging / terminal output
 const colours = {
   reset: "\x1b[0m",
@@ -22,18 +23,18 @@ const colours = {
   gray: "\x1b[90m",
 };
 
-//(StackOverflow, 2024)
 // helper method to return the date in a clean format for the file names of the logs
 const getDateString = () => {
   const now = new Date();
-  const year = now.getFullYear(); //gets the year
-  const month = String(now.getMonth() + 1).padStart(2, "0"); //gets month number
-  const day = String(now.getDate()).padStart(2, "0"); //gets the day
+  const year = now.getFullYear();
+  // get the month number (and add 1 as it starts at 0), then add a "0" in front for neatness
+  // e.g., Jan would be "0" -> add 1 to make it "1" -> finally add "0" in front to get "01"
+  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
   // return a combination of the date parts
   return `${year}-${month}-${day}`;
 };
 
-//(StackOverflow, 2024)
 // helper method to generate the TIMESTAMPS for inside of the log file (when a log occured)
 const getTimestamp = () => {
   const now = new Date();
@@ -45,7 +46,6 @@ const getTimestamp = () => {
   return `${date} ${hours}:${mins}:${seconds}`;
 };
 
-//(Rudman, 2026)
 // helper method to add to the end of the log file (rather than overwriting)
 const appendToFile = (fileName, logEntry) => {
   // using the name of the file we want to write to, combine it with the name of the log folder
@@ -61,16 +61,18 @@ const appendToFile = (fileName, logEntry) => {
   });
 };
 
-//(NestJS, 2026)
 // function to generate the appopriate log message
-// level = how dangerous it is; Message=whats get written in the log; context=where the log is from
+// level -> how SEVERE? (error, warning, or just standard?)
+// message -> what we want to write into the log
+// context -> where is the log coming from?
+// meta -> any additional metadata (is it from a 3rd party library like mongoose?)
 const log = (level, message, context = "APP", meta = null) => {
   // get time and date from our helper methods
   const timestamp = getTimestamp();
   const dateStr = getDateString();
 
-  let metaStr = ""; //any additional metadata
-  // if there IS additional metadata from a 3rd party library then it is formatted properly
+  let metaStr = "";
+  // if there IS additional metadata from a 3rd party library -> format it correctly
   if (meta) {
     // if the metadata is an instance of the "Error" class
     if (meta instanceof Error) {
@@ -93,30 +95,26 @@ const log = (level, message, context = "APP", meta = null) => {
   // build the string that will go into the log file
   const fileEntry = `[${timestamp}] [${level}] [${context}]: ${message}${metaStr}\n`;
 
-  // puts it into the file
+  // gooi into the file
   appendToFile(`${dateStr}-combined.log`, fileEntry);
 
-  //(Rudman, 2026)
-  // if the level was an error then add to a seperate file that does not contain general logs
+  // if the level was an error -> add to a seperate file that does not contain general logs
   if (level === "ERROR") {
     appendToFile(`${dateStr}-error.log`, fileEntry);
   }
 
-  //print any errors to the console so that we don't need to call console.log alongside the logger
-  let colour = colours.reset; 
-  //specify logger type (info, earn, error) to print it in appropriate color
+  // finally -> print any errors to the console so that we don't need to call console.log alongside the logger
+  let colour = colours.reset;
   if (level === "INFO") colour = colours.green;
   if (level === "WARN") colour = colours.yellow;
   if (level === "ERROR") colour = colours.red;
 
-  //(Dhandala, 2026)
   console.log(
     `${colours.gray}[${timestamp}]${colours.reset} ${colour}[${level}]${colours.reset} ${colours.cyan}
     [${context}]${colours.reset}: ${message}${metaStr}`,
   );
 };
 
-//specify logger type (info, earn, error) to print it in appropriate color
 const logger = {
   info: (message, context = "APP", meta = null) =>
     log("INFO", message, context, meta),
@@ -127,13 +125,3 @@ const logger = {
 };
 
 module.exports = logger;
-
-/*References
-*
-* Dhandala, N., 2026. How to implement custom logging framework in Node.js. (Version 1.0) [Source Code] Available at: < https://oneuptime.com/blog/post/2026-01-30-nodejs-custom-logging-framework/view > [Accessed 11 October 2026]
-* NestJS, 2026. Logger. (Version 1.0) [Source Code] Available at: < https://docs.nestjs.com/application/logger > [Accessed 11 October 2026]
-* Petersen, C., 2025. ANSI Escape Sequences. (Version 1.0) [Source Code] Available at: < https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797 > [Accessed 11 October 2026]
-* Rudman, G., 2026. insy7314-library. (Version 1.0) [Source Code] Available at: < https://github.com/rudderz243/insy7314-library > [Accessed 29 August 2026]
-* StackOverflow, 2024. Assign javascript date to html5 datetime-local input. (Version 1.0) [Source Code] Available at: < https://stackoverflow.com/questions/28760254/assign-javascript-date-to-html5-datetime-local-input > [Accessed 11 October 2026]
-* 
-*/
