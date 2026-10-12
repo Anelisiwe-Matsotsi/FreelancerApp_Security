@@ -5,6 +5,38 @@ HustleHub+ is a secure freelance marketplace that allows clients and freelancers
 
 The system is built using the MERN stack, which includes MongoDB, Express.js, React and Node.js (Medium, 2025). It has features such as user registration and login, JWT authentication, password hashing, input validation and role-based access control. Security is an important part of the system because HustleHub+ handles sensitive information such as user details, login credentials, bookings and financial transactions.
 
+**Part 2 Update:** The part 1 backend has been updated into a full-stack application. A frontend built with React and TypeScript using Vite has been added and connected to the API. The application now allows freelancers to create and list their gigs, while clients can browse available services and make bookings. Each booking generates a transaction record, which is used to track the income earned by each freelancer.
+
+## Application Features
+The application provides different features depending on the user's role (client, freelancer, or admin).
+### Client Features
+- Register and log in to the application.
+- Browse available gigs.
+- Book gigs using a simulated payment process.
+- View their own bookings.
+- Cancel their own bookings.
+- View their own transaction records.
+  
+### Freelancer Features
+- Register and log in to the application.
+- Browse available gigs.
+- Create new gigs and advertise their services.
+- Update or deactivate their own gigs.
+- View bookings made for their gigs.
+- Cancel bookings associated with their gigs.
+- Confirm and complete bookings.
+- View their own transaction records.
+- View an income summary based on their transactions.
+  
+### Admin Features
+- Register and log in to the application.
+- Browse available gigs.
+- Update or deactivate any gig on the platform.
+- View all bookings.
+- View all transaction records.
+- Access an overview of the platform.
+- Moderate gigs to help manage the marketplace.
+  
 ## Intended Users👥
 HustleHub+ is designed for three main users:
 - **Clients:** People who are looking for freelance services. They browse through the available services and book a service that suits their needs.
@@ -32,12 +64,19 @@ To run the backend application, follow the following steps:
 **Step 5:** Start the backend development server: `npm run dev` 
 
 The backend server will run on `https://localhost:3000`
+
+### Frontend ➡️➡️
+
   
 ## Packages to install 📦
 
 ### Backend Packages 🔙🔚
 **Step 1:** Open a new terminal and navigate into the backend folder: `cd backend`<br>
 **Step 2:** Install the required packages: `npm i express mongoose dotenv cors bcryptjs jsonwebtoken nodemon` <br>
+
+### Frontend Packages ➡️➡️
+**Step 1:** Open a new terminal and navigate into the frontend folder: `cd frontend`<br>
+**Step 2:** Install the required packages: `npm i (installs react, react-dom and react-router-dom, plus the Vite, TypeScript and ESLint development tools listed in frontend/package.json)`<br>
 
 ## Reasoning for Required Packages 📦
 
@@ -51,7 +90,14 @@ The backend server will run on `https://localhost:3000`
 | JsonWebToken | Ensures secure user authentication and authorization by generating each user an unique token (Tamang, 2025) |
 | DotEnv | Manages the environment variables stored in the `.env` file (Tamang, 2025) |
 | BcryptJS | Asissts with hashing passwords before they get stored in the database (Tamang, 2025) |
-
+ ### Frontend ➡️➡️
+ |Package|Reason|
+|:------|:-----|
+| React | |
+| React Router | |
+| Vite |  |
+| TypeScript |  |
+| ESLint |  |
 
 ## Environment Variables 🔐
 The backend need a `.env` file created in the backend folder with the following keys added:  
@@ -83,6 +129,15 @@ The models define the structure of the information stired in the MongoDB. The us
 The middleware folder contains functions that run during the request and response process. The authMiddleware.js for example checks if a user has provided a valid JWT before allowing access to protected routes. Middleware can also be used for authentication, authorization and validation before the request reaches the controller (Alamin,2026)
 
 The app.js file acts as the main application file. It loads Express, middleware and routes, connects the application to MongoDB and starts the HTTPS server.
+
+For part 2 the following was added to the backend: <br>
+
+**Models:** gigModel.js (title, description, category, price, delivery days, owner and active flag), bookingModel.js (gig, client, freelancer, price and status) and transactionModel.js (reference, booking, gig, client, freelancer, amount, currency and status). <br>
+
+**Controllers and routes:** gigController.js, bookingController.js and transactionController.js with their matching route files, mapped in app.js under /api/gig, /api/booking and /api/transaction.<br>
+
+**Middleware:** securityMiddleware.js (Helmet, CORS, NoSQL sanitisation and rate limiting), plus a request logger (loggerMiddleware.js and utils/logger.js) that writes to the logs folder.
+
 
 ## Security Decisions 🔏
 For HustleHubs authentication and user management functionality the following security decisions were implemented: </br>
@@ -156,6 +211,26 @@ The certificate files are being used for the project's local develepment envirom
 ### Auth Routes (`/api/auth`) 🔑
 - `POST /api/auth/register`: Register a new user with username, email and password. The roles include freelancer, client and admin. This method returns the user's details and JWT token.
 - `POST /api/auth/login`: Authenticates registered users that want to login by providing their email and password. This returns the users details and JWT token.
+
+### Gig Routes (`/api/gig`) 🖌️
+- `GET /api/gig`: List all active gigs.
+- `GET /api/gig/mine`: List the logged-in freelancer's own gigs (freelancer only).
+- `GET /api/gig/:id`: Get one gig.
+- `POST /api/gig`: Create a gig with title, description, category, price and deliveryDays (freelancer only).
+- `PUT /api/gig/:id`: Update a gig (freelancer or admin).
+- `DELETE /api/gig/:id`: Deactivate a gig (freelancer or admin).
+
+ ### Booking Routes(`/api/booking`) 📆
+- `POST /api/booking`: Book a gig with "gigId"(client only). Creates the booking and its transaction record.
+- `GET /api/booking`: List the caller's bookings, optionally filtered with ?status=pending|confirmed|completed|cancelled.
+- `GET /api/booking/:id`: Get one booking (client or freelancer on that booking).
+- `PATCH /api/booking/:id`: Change the status with "status". Clients may only set cancelled, freelancers may set confirmed, completed or cancelled.
+- `DELETE /api/booking/:id`: Delete a booking (the booking's own client, not once completed).
+  
+### Transaction Routes (`/api/transaction`) 💰
+- `GET /api/transaction`: List the caller's transactions (admins receive all of them).
+- `GET /api/transaction/:id`: Get one transaction (involved users or admin).
+- `GET /api/transaction/income`: Income summary for the logged-in freelancer: totalIncome, totalTransactions and a per-gig breakdown, in ZAR (freelancer only).
 
 ## Testing with Postman 📫
 The `postman-collection` file has been included in the root folder that includes the tested authentication endpoints. Tests included successful registration and login requests and appropriate handling of invalid user input. Below are screenshots of the tests done in postman.
@@ -231,10 +306,41 @@ Freelancer enters the wrong password thus the system does not allow them to ente
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" /><br>
 Test proves that the user needs to provide all details to successfully log in the freelancer. <br><br>
 
+## Application Screenshots 🖼️
+
+### Authentication
+<img width="1555" height="723" alt="Image" src="https://github.com/user-attachments/assets/5cd857d1-a659-4383-a8d1-96b91d7073ad" /><br>
+The login page. Users enter their email and password. The signup tab goes to registration.<br><br>
+
+<img width="1551" height="831" alt="Image" src="https://github.com/user-attachments/assets/1d5fd19b-eb5d-4ebd-a725-3d3281780231" /><br>Registration page. The user chooses whether they want to shop and browse for gigs (client) or sell and manage their gigs (freelancer). The password is hidden while typing.<br><br>
+
+### Freelancer: creating and managing gigs
+<img width="1546" height="909" alt="Image" src="https://github.com/user-attachments/assets/6bbe3a69-e42c-42ae-adcc-6e088a7602cb" /><br> A freelancer creates a gig by entering a title, description, category, price and delivery days. <br><br>
+<img width="1563" height="913" alt="Image" src="https://github.com/user-attachments/assets/9d2c06f0-5b47-46fa-86af-c42fb39da24f" /><br> The freelancer's "My gigs" page after a gig is created. It shows the freelancer's own gigs only, with Edit and Deactivate actions and live/total gig counts. <br><br>
+
+### Client: browsing and booking gigs
+<img width="1528" height="903" alt="Image" src="https://github.com/user-attachments/assets/8543ee29-f72f-4a0b-8da3-99d711a16736" /><br> The client home page, showing how many gigs are currently available. <br><br>
+<img width="1549" height="924" alt="Image" src="https://github.com/user-attachments/assets/3b34bd9a-5dc2-48b7-9317-5fb1f1d18d0b" /><br> Clients browse the active gigs. <br><br>
+<img width="1543" height="907" alt="Image" src="https://github.com/user-attachments/assets/96595d0c-a14b-40ac-b70b-b290ab316720" /><br> A gig shows its description, price, delivery time and freelancer, with a button to book it. <br><br>
+<img width="1564" height="916" alt="Image" src="https://github.com/user-attachments/assets/9f0c7f6f-3bdc-4348-a0ab-a2c08f0c4deb" /><br> The booking confirmation. The booking summary shows the freelancer, category, delivery time and total. Payment is simulated, so confirming the booking creates the booking and its transaction record. <br><br>
+
+### Bookings
+<img width="1530" height="915" alt="Image" src="https://github.com/user-attachments/assets/9bb7a71d-db97-49fc-b1af-6f58e10e27d5" /><br> The client's "My bookings" page lists only the bookings they made, can be filtered by status, and lets the client cancel a booking. <br><br>
+<img width="1564" height="901" alt="Image" src="https://github.com/user-attachments/assets/506ab1c3-15ee-4290-be2e-13616a9c42f6" /><br> The freelancer sees the bookings made on their own gigs, and can mark them complete or decline them. <br><br>
+
+### Transactions and income
+<img width="1552" height="910" alt="Image" src="https://github.com/user-attachments/assets/b5a7c065-420d-44c9-b10b-de5f434b5d6c" /><br> Every booking creates a transaction record with a unique reference, the gig, the freelancer, the amount and a status. The client sees the total spent and the number of transactions. <br><br>
+<img width="1531" height="864" alt="Image" src="https://github.com/user-attachments/assets/23eca24f-2ef8-446a-812d-1a9c16726896" /><br> Another client's transactions page. Each client only sees their own transactions. <br><br>
+<img width="1560" height="898" alt="Image" src="https://github.com/user-attachments/assets/85d842e2-c305-45ab-bea9-142e3d052ec3" /><br> The freelancer's income page shows total income, the number of transactions and income per gig, calculated from the freelancer's own completed transactions. <br><br>
+
+### Admin
+<img width="1525" height="924" alt="Image" src="https://github.com/user-attachments/assets/7f0ebb52-77c3-4429-8faa-c9bdb476a2d2" /><br> The admin overview shows active gigs, bookings, transactions and total volume, with a Deactivate button for moderating gigs. <br><br>
+<img width="1552" height="903" alt="Image" src="https://github.com/user-attachments/assets/e139fa5a-22a6-43e8-9936-58e90f7d296b" /><br> The admin can also see recent bookings from all users and their statuses. <br><br>
+
 ## YouTube Video Link
 
-https://youtu.be/cdZXZ4eMTco
-
+**Part 1 demonstration:** https://youtu.be/cdZXZ4eMTco
+**Part 2 demonstration:** 
 
 ## Request Flow
 We have made request flow diagram through draw.io that explain the how the registration and login works. Here is the draw.io link: <br> https://advtechonline-my.sharepoint.com/:u:/g/personal/st10450661_myemeris_edu_za/IQBOT_ttlNjxRZcm__xfRiPzASp9BhzVXXjbveV-9cxir8k?e=0teh5K <br>
