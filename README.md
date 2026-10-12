@@ -302,6 +302,9 @@ Testing what what happens when an admin provides the incorrect password. <br><br
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1ada0540-0eea-4cef-be8f-a601d51144fc" /> <br>
 Testing what what happens when an admin provides the incorrect email address. <br><br>
 
+<img width="1600" height="946" alt="image" src="https://github.com/user-attachments/assets/2620f9a9-b132-44ef-83e6-6e81d2af11a3" />
+
+
 
 #### Login Freelancer Request
 <img width="1108" height="705" alt="Image" src="https://github.com/user-attachments/assets/e594880c-5090-4920-9a2c-64dc8e91c728" /><br>
@@ -312,6 +315,9 @@ Freelancer enters the wrong password thus the system does not allow them to ente
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" /><br>
 Test proves that the user needs to provide all details to successfully log in the freelancer. <br><br>
+
+<img width="1600" height="980" alt="image" src="https://github.com/user-attachments/assets/a81f8b82-c2c0-4726-8fcf-b525e230f02f" />
+
 
 ## Create A Gig Request
 <img width="1600" height="1148" alt="image" src="https://github.com/user-attachments/assets/a3e45313-c64c-4c0a-bd37-75c8cba14e62" />
