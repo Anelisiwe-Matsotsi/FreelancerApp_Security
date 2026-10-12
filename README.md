@@ -146,6 +146,7 @@ For HustleHubs authentication and user management functionality the following se
 - Input validation
 - Role based access control
 - HTTPS
+- Rate Limiting
 
 ## Password Hashing 🔐
 HustleHub does not store the users passwords as plain text. We used token- based authentication but simple hashing is not enough, hackers can use brute-force to gain unauthorized access. Instead the bcrypt.js package is used to hash passwords before they are stored as secure hashes in MongoDB that can be safely compared during authentication (Devinda,2026.</br>
@@ -203,8 +204,12 @@ The application then uses these settings when starting the server: </br>
   
 HTTPS is important because normal HTTP does not provide the same protection for information travelling between the client and server. HTTPS uses TLS/SSL to help encrypt this communication, authenticate the server and protect the information from being changed while it is being transferred. This is important for HustleHub because authentication information needs to be protected while users interact with the system (W3Schools,2026). </br>
   
-The certificate files are being used for the project's local develepment enviroment. A self-signed certificate can be useful when developing and testing HTTPS locally, although it is not automatically trusted by web browsers in the same way as a certificate issued by a recognises certificate authority (W3Schools,2026).
-  
+The certificate files are being used for the project's local develepment enviroment. A self-signed certificate can be useful when developing and testing HTTPS locally, although it is not automatically trusted by web browsers in the same way as a certificate issued by a recognises certificate authority (W3Schools,2026).</br>
+
+## Rate-Limiting
+Rate limiting is a security technique that restricts the number of requests a user can make to a system within a specific period. We chose rate limiting for HustleHub+ to reduce the risk of brute-force attacks, excessive requests and denial-of-service (DoS) attacks, which could affect the availability and performance of the application. Our implementation uses a general limit of 150 requests per 15 minutes and a stricter limit of 10 requests per 15 minutes for authentication routes, helping protect login and registration endpoints from repeated attempts while allowing normal users to access the system (GeeksforGeeks, 2026b).
+<img width="1548" height="919" alt="WhatsApp Image 2026-10-12 at 21 39 49" src="https://github.com/user-attachments/assets/2e2f8ca4-b36a-4026-8c0b-6ae72e239c18" />
+
 
 ## API Endpoints 🎯
 
@@ -368,6 +373,7 @@ GeeksforGeeks, 2024. Use of CORS in Node.js. [online] Available at: < https://ww
 GeeksforGeeks. 2025. Why Choose React For Web Development in 2025a. [online]. Available at:<https://www.geeksforgeeks.org/blogs/why-choose-react-for-web-development/> [Accessed 10 October 2026]. <br>
 GeeksforGeeks. 2025b. 10 Compelling Reasons to Use TypeScript with React in 2025: A Developer's Guide. [onlibe]. Available at:<https://www.geeksforgeeks.org/typescript/compelling-reasons-to-use-typescript-with-react-a-developers-guide/> [Accessed 10 October 2026].<br>
 Lucas, J. 2025. Why Use ESLint in Your Project? [online]. Available at:<https://dev.to/jean_lucas/why-use-eslint-in-your-project-3p83> [Accessed 10 October 2026].<br>
+GeeksforGeeks, 2026b. Rate Limiting in System Design. Available at: < https://www.geeksforgeeks.org/system-design/rate-limiting-in-system-design/ > [Accessed 12 October 2026].
 MDN, 2026. Express Tutorial Part 4: Routes and controllers. [online] Available at: < https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/routes> [Accessed 5 September 2026]. <br>
 Medium. 2025. MERN Stack Architecture. [online] Available at: < https://medium.com/readers-club/mern-stack-architecture-6b7b5be94f78 > [Accessed 6 September 2026] <br> 
 Postman, 2026.How to create a REST API with Node.js and Express. [online].Available at: <https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/ >  [Accessed 6 September 2026] <br> 
