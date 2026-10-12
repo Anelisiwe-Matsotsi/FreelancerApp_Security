@@ -18,14 +18,19 @@ const{
 
 const router = express.Router();
 
+//POST : to make a booking
 router.post("/", validateAuth, validateRole("client"), createBooking);
 
+//GET : gets all the bookings
 router.get("/", validateAuth, getAllBookings);
+
+//GET: gets a specific booking by ID
 router.get("/:id", validateAuth, getBooking);
 
-//clients cancel, freelancers confirm / complete / decline (the controller checks which status each role may set)
+//PATCH : clients cancel, freelancers confirm / complete / decline (the controller checks which status each role may set)
 router.patch("/:id", validateAuth, validateRole("client", "freelancer"), updateBooking); 
 
+//DELETE: clients can delete a  Booking
 router.delete("/:id", validateAuth, validateRole("client"), deleteBooking);
 
 module.exports = router;

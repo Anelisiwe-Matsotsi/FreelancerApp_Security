@@ -1,0 +1,3 @@
+[2026-10-12 21:06:15] [ERROR] [HTTP]: POST /api/booking 500 (329ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:20:27] [ERROR] [HTTP]: POST /api/home/greet 500 (56ms) - IP: ::1
+[2026-10-12 21:20:53] [ERROR] [HTTP]: POST /api/home/message 500 (34ms) - IP: ::1

@@ -1013,3 +1013,140 @@
 [2026-10-12 09:39:31] [INFO] [HTTP]: OPTIONS /api/gig 200 (1ms) - IP: ::1
 [2026-10-12 09:39:31] [INFO] [HTTP]: GET /api/gig 200 (62ms) - IP: ::1 [User: natty]
 [2026-10-12 09:39:31] [INFO] [HTTP]: GET /api/gig 200 (58ms) - IP: ::1 [User: natty]
+[2026-10-12 19:39:38] [INFO] [DATABASE]: Starting connection attempt
+[2026-10-12 19:39:39] [INFO] [DATABASE]: The database connection has completed
+[2026-10-12 19:40:24] [INFO] [HTTP]: POST /api/auth/login 200 (3005ms) - IP: ::1
+[2026-10-12 19:41:34] [INFO] [HTTP]: POST /api/auth/login 200 (843ms) - IP: ::1
+[2026-10-12 19:42:59] [INFO] [HTTP]: POST /api/auth/login 200 (910ms) - IP: ::1
+[2026-10-12 20:02:49] [INFO] [HTTP]: POST /api/gig 201 (3422ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:03:24] [WARN] [HTTP]: POST /api/gig 400 (965ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:03:50] [INFO] [HTTP]: POST /api/gig 201 (2630ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:06:13] [WARN] [HTTP]: POST /api/gig/6acd21050014e6dcebb999c9 404 (114ms) - IP: ::1
+[2026-10-12 20:06:31] [WARN] [SECURITY]: Auth rejected: Attemped access of route with no token. (PUT /api/gig/6acd21050014e6dcebb999c9)
+[2026-10-12 20:06:33] [WARN] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 401 (1321ms) - IP: ::1
+[2026-10-12 20:07:00] [WARN] [SECURITY]: Auth failure: Invalid or expired token present. (PUT /api/gig/6acd21050014e6dcebb999c9)
+[2026-10-12 20:07:00] [WARN] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 401 (316ms) - IP: ::1
+[2026-10-12 20:13:19] [WARN] [SECURITY]: Auth failure: Invalid or expired token present. (PUT /api/gig/6acd21050014e6dcebb999c9)
+[2026-10-12 20:13:20] [WARN] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 401 (1001ms) - IP: ::1
+[2026-10-12 20:19:16] [WARN] [SECURITY]: Auth failure: Invalid or expired token present. (PUT /api/gig/6acd21050014e6dcebb999c9)
+[2026-10-12 20:19:16] [WARN] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 401 (48ms) - IP: ::1
+[2026-10-12 20:20:21] [INFO] [HTTP]: POST /api/auth/login 200 (12935ms) - IP: ::1
+[2026-10-12 20:21:19] [INFO] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 200 (7794ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:22:15] [WARN] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 400 (3439ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:22:34] [INFO] [HTTP]: PUT /api/gig/6acd21050014e6dcebb999c9 200 (3111ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:26:17] [WARN] [HTTP]: POST /api/gig/6acd21050014e6dcebb999c9 404 (174ms) - IP: ::1
+[2026-10-12 20:26:27] [WARN] [SECURITY]: Auth rejected: Attemped access of route with no token. (GET /api/gig/6acd21050014e6dcebb999c9)
+[2026-10-12 20:26:27] [WARN] [HTTP]: GET /api/gig/6acd21050014e6dcebb999c9 401 (81ms) - IP: ::1
+[2026-10-12 20:26:50] [INFO] [HTTP]: GET /api/gig/6acd21050014e6dcebb999c9 200 (1449ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:26:55] [INFO] [HTTP]: GET /api/gig/6acd21050014e6dcebb999c9 200 (1345ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:28:21] [INFO] [HTTP]: POST /api/gig 201 (998ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:29:33] [INFO] [HTTP]: POST /api/gig 201 (1131ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:30:00] [WARN] [HTTP]: POST /api/gig/6acd270d0014e6dcebb999cb 404 (407ms) - IP: ::1
+[2026-10-12 20:30:48] [WARN] [HTTP]: POST /api/gig/6acd270d0014e6dcebb999cb 404 (110ms) - IP: ::1
+[2026-10-12 20:30:57] [INFO] [HTTP]: DELETE /api/gig/6acd270d0014e6dcebb999cb 200 (385ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:32:20] [WARN] [HTTP]: POST /api/gig 400 (300ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:32:36] [INFO] [HTTP]: GET /api/gig 200 (863ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:32:48] [INFO] [HTTP]: GET /api/gig 200 (549ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:34:16] [WARN] [HTTP]: POST /api/gig 400 (101ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:34:24] [INFO] [HTTP]: GET /api/gig 200 (817ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:34:55] [WARN] [HTTP]: POST /api/home 404 (10ms) - IP: ::1
+[2026-10-12 20:35:06] [WARN] [HTTP]: GET /api/home 404 (124ms) - IP: ::1
+[2026-10-12 20:36:43] [WARN] [HTTP]: GET /api/healthcheck 404 (63ms) - IP: ::1
+[2026-10-12 20:40:19] [WARN] [HTTP]: POST /api/healthcheck 404 (26ms) - IP: ::1
+[2026-10-12 20:40:28] [WARN] [HTTP]: POST /api/greet 404 (20ms) - IP: ::1
+[2026-10-12 20:42:45] [INFO] [HTTP]: POST /api/booking 201 (909ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:43:13] [INFO] [HTTP]: POST /api/gig 201 (387ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:43:41] [WARN] [HTTP]: POST /api/booking 400 (221ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:43:52] [INFO] [HTTP]: POST /api/booking 201 (632ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:45:31] [WARN] [HTTP]: PATCH /api/gig/null 404 (2ms) - IP: ::1
+[2026-10-12 20:46:43] [WARN] [HTTP]: PATCH /api/booking/null 400 (211ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:47:52] [WARN] [HTTP]: PATCH /api/booking/null 400 (480ms) - IP: ::1 [User: Coddell]
+[2026-10-12 20:48:44] [WARN] [HTTP]: PATCH /api/booking/null 400 (122ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:49:05] [WARN] [HTTP]: PATCH /api/booking/null 400 (129ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:50:06] [INFO] [HTTP]: POST /api/booking 201 (860ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:50:19] [INFO] [HTTP]: POST /api/booking 201 (819ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:50:35] [WARN] [HTTP]: PATCH /api/booking/null 400 (129ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:55:41] [INFO] [HTTP]: POST /api/booking 201 (463ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:55:55] [INFO] [HTTP]: POST /api/booking 201 (401ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:56:14] [INFO] [HTTP]: POST /api/booking 201 (923ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:56:30] [WARN] [HTTP]: PATCH /api/booking/null 400 (550ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:58:26] [INFO] [HTTP]: POST /api/booking 201 (372ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:58:46] [INFO] [HTTP]: POST /api/booking 201 (611ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:59:09] [INFO] [HTTP]: POST /api/booking 201 (675ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 20:59:23] [INFO] [HTTP]: PATCH /api/booking/6acd2dfd0014e6dcebb999df 200 (451ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:00:52] [WARN] [SECURITY]: Auth rejected: Attemped access of route with no token. (DELETE /api/booking/6acd2de60014e6dcebb999dd)
+[2026-10-12 21:00:52] [WARN] [HTTP]: DELETE /api/booking/6acd2de60014e6dcebb999dd 401 (15ms) - IP: ::1
+[2026-10-12 21:01:38] [INFO] [HTTP]: DELETE /api/booking/6acd2de60014e6dcebb999dd 200 (539ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:02:28] [WARN] [SECURITY]: Auth rejected: Attemped access of route with no token. (GET /api/booking?status=confirmed)
+[2026-10-12 21:02:28] [WARN] [HTTP]: GET /api/booking?status=confirmed 401 (5ms) - IP: ::1
+[2026-10-12 21:02:49] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (609ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:04:33] [INFO] [HTTP]: GET /api/booking/6acd2dfd0014e6dcebb999df 200 (437ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:05:03] [INFO] [HTTP]: GET /api/booking/6acd2dfd0014e6dcebb999df 200 (1164ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:06:15] [ERROR] [HTTP]: POST /api/booking 500 (329ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:06:34] [INFO] [HTTP]: GET /api/booking 200 (943ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:07:14] [INFO] [HTTP]: GET /api/booking 200 (284ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:08:02] [INFO] [HTTP]: GET /api/booking 200 (889ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:11:14] [WARN] [HTTP]: POST /api/transaction 404 (301ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:11:37] [INFO] [HTTP]: GET /api/transaction 200 (1789ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:12:23] [INFO] [HTTP]: GET /api/transaction/income 200 (717ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:15:14] [INFO] [HTTP]: GET /api/transaction 200 (645ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:18:04] [INFO] [HTTP]: GET /api/transaction/6acd2dfd0014e6dcebb999e0 200 (422ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:20:27] [ERROR] [HTTP]: POST /api/home/greet 500 (56ms) - IP: ::1
+[2026-10-12 21:20:53] [ERROR] [HTTP]: POST /api/home/message 500 (34ms) - IP: ::1
+[2026-10-12 21:21:13] [INFO] [HTTP]: GET /api/home/healthCheck 200 (82ms) - IP: ::1
+[2026-10-12 21:23:28] [INFO] [HTTP]: GET /api/transaction/income 200 (283ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:32:34] [INFO] [HTTP]: POST /api/auth/login 200 (6203ms) - IP: ::1
+[2026-10-12 21:33:40] [INFO] [HTTP]: POST /api/auth/login 200 (3341ms) - IP: ::1
+[2026-10-12 21:34:05] [INFO] [HTTP]: POST /api/auth/login 200 (1176ms) - IP: ::1
+[2026-10-12 21:36:20] [INFO] [HTTP]: POST /api/gig 201 (2478ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:36:39] [WARN] [HTTP]: POST /api/gig 400 (667ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:36:39] [WARN] [HTTP]: POST /api/gig 400 (725ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:37:03] [WARN] [HTTP]: POST /api/gig 400 (698ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:37:18] [INFO] [HTTP]: POST /api/gig 201 (1794ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:37:49] [INFO] [HTTP]: GET /api/gig 200 (2947ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:38:13] [INFO] [HTTP]: GET /api/gig 200 (1114ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:38:36] [INFO] [HTTP]: GET /api/gig 200 (1007ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:39:08] [INFO] [HTTP]: GET /api/gig/6acd26c50014e6dcebb999ca 200 (2495ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:39:25] [INFO] [HTTP]: GET /api/gig/6acd36ee0014e6dcebb999e5 200 (2374ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:39:59] [INFO] [HTTP]: GET /api/gig/6acd36ee0014e6dcebb999e5 200 (622ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:40:48] [INFO] [HTTP]: GET /api/gig/6acd36ee0014e6dcebb999e5 200 (1424ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:41:25] [INFO] [HTTP]: PUT /api/gig/6acd36ee0014e6dcebb999e5 200 (1406ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:41:42] [WARN] [SECURITY]: Auth forbidden: Anelisiwe attempted to access something they shouldn't. (PUT /api/gig/6acd36ee0014e6dcebb999e5)
+[2026-10-12 21:41:43] [WARN] [HTTP]: PUT /api/gig/6acd36ee0014e6dcebb999e5 403 (569ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:42:22] [INFO] [HTTP]: PUT /api/gig/6acd36ee0014e6dcebb999e5 200 (1551ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:42:44] [INFO] [HTTP]: DELETE /api/gig/6acd2a400014e6dcebb999ce 200 (417ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:43:34] [WARN] [SECURITY]: Auth forbidden: Anelisiwe attempted to access something they shouldn't. (DELETE /api/gig/6acd2a400014e6dcebb999ce)
+[2026-10-12 21:43:35] [WARN] [HTTP]: DELETE /api/gig/6acd2a400014e6dcebb999ce 403 (1133ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:44:02] [INFO] [HTTP]: GET /api/gig 200 (1533ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:44:45] [INFO] [HTTP]: GET /api/gig 200 (665ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:45:47] [INFO] [HTTP]: POST /api/booking 201 (506ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:46:42] [WARN] [SECURITY]: Auth forbidden: Natasha attempted to access something they shouldn't. (POST /api/booking)
+[2026-10-12 21:46:42] [WARN] [HTTP]: POST /api/booking 403 (170ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:48:05] [WARN] [HTTP]: POST /api/booking 400 (1231ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:48:41] [INFO] [HTTP]: GET /api/booking 200 (1136ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:49:29] [WARN] [HTTP]: GET /api/booking/null 400 (229ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:50:09] [INFO] [HTTP]: POST /api/booking 201 (1240ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:50:41] [INFO] [HTTP]: GET /api/booking/6acd39f10014e6dcebb999e8 200 (1586ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:52:47] [INFO] [HTTP]: POST /api/booking 201 (896ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:52:54] [INFO] [HTTP]: POST /api/booking 201 (358ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:53:11] [INFO] [HTTP]: GET /api/booking/6acd3a950014e6dcebb999ec 200 (412ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:53:24] [INFO] [HTTP]: GET /api/booking/6acd3a950014e6dcebb999ec 200 (290ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:54:59] [INFO] [HTTP]: GET /api/booking/6acd3a950014e6dcebb999ec 200 (401ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:55:29] [INFO] [HTTP]: PATCH /api/booking/6acd39f10014e6dcebb999e8 200 (1640ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:56:04] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (2544ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:56:51] [INFO] [HTTP]: DELETE /api/booking/6acd39f10014e6dcebb999e8 200 (2042ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 21:57:23] [WARN] [SECURITY]: Auth forbidden: Coddell attempted to access something they shouldn't. (DELETE /api/booking/6acd39f10014e6dcebb999e8)
+[2026-10-12 21:57:23] [WARN] [HTTP]: DELETE /api/booking/6acd39f10014e6dcebb999e8 403 (224ms) - IP: ::1 [User: Coddell]
+[2026-10-12 21:58:02] [WARN] [SECURITY]: Auth forbidden: Natasha attempted to access something they shouldn't. (DELETE /api/booking/6acd39f10014e6dcebb999e8)
+[2026-10-12 21:58:02] [WARN] [HTTP]: DELETE /api/booking/6acd39f10014e6dcebb999e8 403 (1853ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:58:50] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (1270ms) - IP: ::1 [User: Natasha]
+[2026-10-12 21:59:17] [INFO] [HTTP]: GET /api/booking?status=confirmed 200 (659ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 22:00:20] [INFO] [HTTP]: GET /api/transaction 200 (1153ms) - IP: ::1 [User: Coddell]
+[2026-10-12 22:01:23] [INFO] [HTTP]: GET /api/transaction 200 (1632ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 22:02:13] [INFO] [HTTP]: GET /api/transaction/6acd3a950014e6dcebb999ed 200 (522ms) - IP: ::1 [User: Natasha]
+[2026-10-12 22:03:27] [INFO] [HTTP]: GET /api/transaction/income 200 (512ms) - IP: ::1 [User: Coddell]
+[2026-10-12 22:04:36] [WARN] [SECURITY]: Auth forbidden: Anelisiwe attempted to access something they shouldn't. (GET /api/transaction/income)
+[2026-10-12 22:04:36] [WARN] [HTTP]: GET /api/transaction/income 403 (974ms) - IP: ::1 [User: Anelisiwe]
+[2026-10-12 22:04:59] [WARN] [SECURITY]: Auth forbidden: Natasha attempted to access something they shouldn't. (GET /api/transaction/income)
+[2026-10-12 22:05:00] [WARN] [HTTP]: GET /api/transaction/income 403 (984ms) - IP: ::1 [User: Natasha]
+[2026-10-12 22:06:04] [WARN] [HTTP]: POST /api/gig 400 (920ms) - IP: ::1 [User: Coddell]
