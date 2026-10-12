@@ -30,6 +30,7 @@ export const useAuth = (): AuthContextType => {
   return context;
 };
 /*Reference List:
-rudderz243. 2026. api.ts.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/routes/authRoutes.js> [Accessed 2 September 2026]. 
-TechStack, S. (2022). React context API using TypeScript. (Version 1.0) [Source Code] DEV Community. Available at: < https://dev.to/tndungu/react-context-api-using-typescript-5h40 > [Accessed 12 Oct. 2026].
+Kimtai Developer 2024. REACT TYPESCRIPT AUTHENTICATION GUIDE USING CONTEXT API. (Version 1.0) [Source Code]. Available at:< https://medium.com/@kimtai.developer/react-typescript-authentication-guide-using-context-api-5c82f2530eb1 > [Accessed 10 October 2026].
+rudderz243. 2026. insy7314-library.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/routes/authRoutes.js> [Accessed 2 September 2026]. 
+TechStack, S. 2022. React context API using TypeScript. (Version 1.0) [Source Code] . Available at: < https://dev.to/tndungu/react-context-api-using-typescript-5h40 > [Accessed 10 October 2026].
 */
