@@ -302,6 +302,9 @@ Testing what what happens when an admin provides the incorrect password. <br><br
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1ada0540-0eea-4cef-be8f-a601d51144fc" /> <br>
 Testing what what happens when an admin provides the incorrect email address. <br><br>
 
+<img width="1600" height="946" alt="image" src="https://github.com/user-attachments/assets/2620f9a9-b132-44ef-83e6-6e81d2af11a3" />
+
+
 
 #### Login Freelancer Request
 <img width="1108" height="705" alt="Image" src="https://github.com/user-attachments/assets/e594880c-5090-4920-9a2c-64dc8e91c728" /><br>
@@ -312,6 +315,51 @@ Freelancer enters the wrong password thus the system does not allow them to ente
 
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/239979c8-c625-40d9-ac7e-989ffc5b8f2d" /><br>
 Test proves that the user needs to provide all details to successfully log in the freelancer. <br><br>
+
+<img width="1600" height="980" alt="image" src="https://github.com/user-attachments/assets/a81f8b82-c2c0-4726-8fcf-b525e230f02f" />
+
+
+## Create A Gig Request
+<img width="1600" height="1148" alt="image" src="https://github.com/user-attachments/assets/a3e45313-c64c-4c0a-bd37-75c8cba14e62" />
+Tests show how succesfully creating a gig is handled. <br><br>
+
+<img width="1600" height="998" alt="image" src="https://github.com/user-attachments/assets/adfc3c00-e588-4525-bfde-3cd73427cb48" />
+Freelancer does not enter a number of delivery days or writes a number 0 and below, creating a gig fails. <br><br>
+
+<img width="1600" height="1008" alt="image" src="https://github.com/user-attachments/assets/45149e5a-1c7a-4c2d-87cb-f2d35caaca88" />
+Freelancer does not enter a number for the price input or enters a number less than 1, creating a gig fails. <br><br>
+
+## All gigs Request
+<img width="1600" height="994" alt="image" src="https://github.com/user-attachments/assets/c42496ae-b7b8-4fb8-90f6-aefd98096207" />
+This shows the get request for all clients gigs <br> <br>
+
+<img width="1600" height="1092" alt="image" src="https://github.com/user-attachments/assets/7f28c25b-e590-4f59-9399-aaea1f83c5ed" />
+This shows the get request for all freelancer gigs <br> <br>
+
+<img width="1347" height="958" alt="image" src="https://github.com/user-attachments/assets/b3ae0d67-c689-4fe0-8e0c-ffe65befa3d3" />
+This shows the get request for all gigs admins see <br> <br>
+
+## Get gig By ID Request
+<img width="1546" height="1179" alt="image" src="https://github.com/user-attachments/assets/33b85269-cb61-4661-b117-c906c6891f47" />
+
+## Update Gig Request
+<img width="1600" height="1156" alt="image" src="https://github.com/user-attachments/assets/fd741f60-da89-4dd9-9f64-e2d586bf2651" />
+Shows freelancer can update gigs <br> <br>
+
+<img width="1215" height="1179" alt="image" src="https://github.com/user-attachments/assets/429be2f6-400e-4c21-aef0-96abd418efb5" />
+Shows client cannot update gigs <br> <br>
+
+
+
+## Newman Tests
+<img width="1142" height="387" alt="image" src="https://github.com/user-attachments/assets/0c1d2832-80f1-4085-a8f4-588a9cb84739" />
+
+
+
+
+
+
+
 
 ## Application Screenshots 🖼️
 
@@ -347,7 +395,7 @@ The login page. Users enter their email and password. The signup tab goes to reg
 ## YouTube Video Link
 
 **Part 1 demonstration:** https://youtu.be/cdZXZ4eMTco
-**Part 2 demonstration:** 
+**Part 2 demonstration:** https://youtu.be/DjksF9ZcifM
 
 ## Request Flow
 We have made request flow diagram through draw.io that explain the how the registration and login works. Here is the draw.io link: <br> https://advtechonline-my.sharepoint.com/:u:/g/personal/st10450661_myemeris_edu_za/IQBOT_ttlNjxRZcm__xfRiPzASp9BhzVXXjbveV-9cxir8k?e=0teh5K <br>
