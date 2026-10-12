@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
 
+/* colours come from the site's variables (yellow theme), the second value is a fallback */
+
 .login-page {
     min-height: 75vh;
     padding: 1px 16px 40px;
@@ -26,13 +28,18 @@
     overflow: hidden;
 }
 
+/* the site hides the real cursor and draws its own, so no pointer cursor here */
 .login-container button {
-    cursor: pointer;
+    cursor: none;
     position: relative;
     text-transform: capitalize;
     font-size: 1em;
     outline: none;
     transition: 0.2s;
+}
+
+.login-container button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(245, 184, 0, 0.45);
 }
 
 .login-toggle {
@@ -63,9 +70,10 @@
     border-bottom-left-radius: 20px;
 }
 
+/* yellow needs dark text, white would be hard to read */
 .login-toggle button.active {
-    background: #57b846;
-    color: #fff;
+    background: var(--teal, #f5b800);
+    color: var(--text, #2c2c2a);
 }
 
 .login-form {
@@ -101,11 +109,13 @@
     font-weight: bold;
     transition: 0.4s;
     color: #222;
+    cursor: none;
 }
 
 .login-container input:focus,
 .login-container select:focus {
     transform: scaleX(1.02);
+    box-shadow: 0 0 0 2px var(--teal, #f5b800);
 }
 
 .login-container input::placeholder {
@@ -123,17 +133,18 @@
     padding: 0.8em 1em !important;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    background: #57b846;
-    color: #fff;
+    background: var(--teal, #f5b800);
+    color: var(--text, #2c2c2a);
     transition: 0.5s;
 }
 
 .login-submit:hover {
     background: #222;
+    color: #fff;
 }
 
 .login-container button:disabled {
-    cursor: not-allowed;
+    cursor: none;
     opacity: 0.7;
 }
 
@@ -154,10 +165,11 @@
     text-align: center;
 }
 
+/* dark gold, plain yellow is too light for text on white */
 .login-footer button {
     border: none;
     background: transparent;
-    color: #57b846;
+    color: var(--teal-d, #7a5600);
     font-weight: bold;
 }
 
@@ -180,3 +192,8 @@
         margin-top: 2em;
     }
 }
+
+/*
+References
+Codepen.io. 2021. Login form for fiver. [online] Available at: https://codepen.io/JaidenTheCoder/details/PoGXbRq [Accessed 12 October 2026].
+*/

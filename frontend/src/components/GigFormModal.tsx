@@ -1,3 +1,5 @@
+//Material UI,2026
+//rudderz243,2026
 import React, { useState } from "react";
 import type { Gig } from "../models/gig.ts";
 import { createGig, updateGig } from "../services/api.ts";
@@ -149,3 +151,7 @@ export const GigFormModal: React.FC<GigFormModalProps> = ({
     </Modal>
   );
 };
+/*References
+ Material UI.2026.Dialog. (Version 2.0) [Source code] . Available at: < https://mui.com/material-ui/react-dialog/#scrolling-long-content> [Accessed 12 Aug. 2026]. 
+rudderz243.2026. rudderz243/insy7314-library.  (Version 2.0) [Source code] . Available at: <https://github.com/rudderz243/insy7314-library> [Accessed 17 Aug. 2026].
+ */

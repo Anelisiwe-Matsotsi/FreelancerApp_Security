@@ -1,3 +1,4 @@
+//rudderz243, 2026
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import type { Gig } from "../models/gig.ts";
@@ -12,8 +13,7 @@ const MARQUEE_ITEMS = [
   "SEO Writing",
   "Video Editing",
   "Vetted Freelancers",
-  "Fast Delivery",
-  "Free Revisions",
+  
 ];
 
 // the small tick used in the "how it works" lists
@@ -209,7 +209,7 @@ export const GigsPage: React.FC = () => {
 
   return (
     <>
-      {/* ─── HERO ─── */}
+      {/* banner */}
       <main className='hero'>
         <div className='hero-bg-img' ref={heroBgRef} />
         <div className='hero-content'>
@@ -268,7 +268,7 @@ export const GigsPage: React.FC = () => {
           viewBox='0 0 1440 80'
           xmlns='http://www.w3.org/2000/svg'
           preserveAspectRatio='none'
-          style={{ height: 80, background: "#1D9E75" }}
+          style={{ height: 80, background: "#ca8e0c" }}
         >
           <path
             d='M0,80 L0,30 C180,70 360,0 540,30 C720,60 900,0 1080,30 C1260,60 1360,20 1440,40 L1440,80 Z'
@@ -289,7 +289,7 @@ export const GigsPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ─── FEATURED GIG ─── */}
+      {/* most recent gig */}
       {featured && (
         <section className='special-section' id='special'>
           <div className='special-ribbon'>Newest Gig</div>
@@ -492,3 +492,9 @@ export const GigsPage: React.FC = () => {
     </>
   );
 };
+
+/*
+References
+Codepen.io. 2018. The shore shack — Beach sandwich bar menu #CodepenChallenge. (Version 1.0) [Source Code] Available at:< https://codepen.io/jerora98/details/KwNNyjg > [Accessed 12 October 2026].
+rudderz243. 2026. insy7314-library.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/routes/authRoutes.js> [Accessed 2 September 2026]. 
+*/

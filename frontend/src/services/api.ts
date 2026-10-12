@@ -1,3 +1,4 @@
+//rudderz243, 2026
 import type { Book } from "../models/book.ts";
 import type { Booking } from "../models/booking.ts";
 import type { Gig } from "../models/gig.ts";
@@ -329,3 +330,8 @@ export async function getCurrentUser(): Promise<User> {
 
   return handleResponse<User>(response);
 }
+
+/*Reference List:
+rudderz243. 2026. api.ts.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/routes/authRoutes.js> [Accessed 2 September 2026]. 
+TechStack, S. (2022). React context API using TypeScript. (Version 1.0) [Source Code] DEV Community. Available at: < https://dev.to/tndungu/react-context-api-using-typescript-5h40 > [Accessed 12 Oct. 2026].
+*/

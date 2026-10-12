@@ -178,3 +178,7 @@ export const TransactionsPage: React.FC = () => {
     </div>
   );
 };
+/*
+References
+Codepen.io. 2018. The shore shack — Beach sandwich bar menu #CodepenChallenge. (Version 1.0) [Source Code] Available at:< https://codepen.io/jerora98/details/KwNNyjg > [Accessed 12 October 2026].
+*/

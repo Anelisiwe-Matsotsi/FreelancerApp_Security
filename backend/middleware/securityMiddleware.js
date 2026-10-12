@@ -1,3 +1,5 @@
+
+/*rudderz243, 2026*/
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -85,7 +87,7 @@ const generalLimiter = rateLimit({
 // this helps against brute-forcing attacks, and credential stuffing attacks
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  limit: 80, // lower limit compared to the general purpose limiter
+  limit: 10, // lower limit compared to the general purpose limiter
   standardHeaders: "draft-8",
   legacyHeaders: false,
   message: {
@@ -129,6 +131,6 @@ const setupSecurity = (app) => {
 module.exports = setupSecurity;
 
 /*Reference List:
-rudderz243. 2026. authController.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+rudderz243. 2026. securityMiddleware.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
 
 */

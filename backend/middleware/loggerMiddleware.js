@@ -1,3 +1,4 @@
+/*rudderz243, 2026*/
 const logger = require("../utils/logger.js");
 
 // this file will intercept each and every request coming in (because it is middleware), and write the appropriate log
@@ -29,8 +30,12 @@ const httpLogger = (req, res, next) => {
       logger.info(logMessage, "HTTP");
     }
   });
-  // once we are done logging -> pass the request on to the next middleware item
+  // finished  logging now to pass the request on to the next middleware item
   next();
 };
 
 module.exports = httpLogger;
+/*Reference List:
+rudderz243. 2026. securityMiddleware.(Version 1.0) [Source Code] Available at: <https://github.com/rudderz243/insy7314-library/blob/master/backend/controllers/authController.js> [Accessed 2 September 2026]. 
+
+*/
